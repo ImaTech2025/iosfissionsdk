@@ -45,8 +45,8 @@
     
     FSAdSDKConfiguration *configuration = FSAdSDKConfiguration.configuration;
     // TODO: to replace
-    configuration.appID = @"TEST";
-    configuration.appToken = @"1yh0ryt83i0czmcsugsk98q64kr7g24u";
+    configuration.appID = @"xxxxx";
+    configuration.appToken = @"xxxxx";
     /*
      集成方是否支持微信 api，以及小程序跳转
      默认为 NO，当YES时，飞梭服务端可能会下发小程序跳转
