@@ -23,9 +23,10 @@
 		579CB4F52C9707DB00E7FCC8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 579CB4F42C9707DB00E7FCC8 /* Base */; };
 		579CB4F82C9707DB00E7FCC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 579CB4F72C9707DB00E7FCC8 /* main.m */; };
 		57AC3C2D2CB7A97E00F7ED71 /* FSUnionAdSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5710A3582C9716AC00B579F5 /* FSUnionAdSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		57AE2E3A2CF9851500A94E13 /* FeedBrandAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AE2E392CF9851500A94E13 /* FeedBrandAdDemoViewController.m */; };
+		57AE2E3A2CF9851500A94E13 /* FeedFullAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AE2E392CF9851500A94E13 /* FeedFullAdDemoViewController.m */; };
 		57BADABE2CC15820005E1DBD /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BADABD2CC15820005E1DBD /* empty.swift */; };
 		57BADAC62CC1587E005E1DBD /* FSUnionAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57BADAC32CC1587E005E1DBD /* FSUnionAdSDK.bundle */; };
+		57E9C2032E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E9C2022E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.m */; };
 		ADA16B8450833F8D1A9F892A /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
@@ -69,11 +70,13 @@
 		579CB4F42C9707DB00E7FCC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579CB4F62C9707DB00E7FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		579CB4F72C9707DB00E7FCC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		57AE2E382CF9851500A94E13 /* FeedBrandAdDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBrandAdDemoViewController.h; sourceTree = "<group>"; };
-		57AE2E392CF9851500A94E13 /* FeedBrandAdDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBrandAdDemoViewController.m; sourceTree = "<group>"; };
+		57AE2E382CF9851500A94E13 /* FeedFullAdDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedFullAdDemoViewController.h; sourceTree = "<group>"; };
+		57AE2E392CF9851500A94E13 /* FeedFullAdDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedFullAdDemoViewController.m; sourceTree = "<group>"; };
 		57BADABD2CC15820005E1DBD /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		57BADAC32CC1587E005E1DBD /* FSUnionAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FSUnionAdSDK.bundle; sourceTree = "<group>"; };
 		57BADAC42CC1587E005E1DBD /* FSUnionAdSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FSUnionAdSDK.xcframework; sourceTree = "<group>"; };
+		57E9C2012E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedSmallBannerAdDemoViewController.h; sourceTree = "<group>"; };
+		57E9C2022E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedSmallBannerAdDemoViewController.m; sourceTree = "<group>"; };
 		57FDD3D72CA488A600196E05 /* FSUnionAdSDK_WK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSUnionAdSDK_WK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FDD3F62CA48C2100196E05 /* FSUnionAdSDK_WK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSUnionAdSDK_WK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D6D0F5F4D48B75846ECD4E /* Pods-FSUnionAdSDK-OCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSUnionAdSDK-OCDemo.debug.xcconfig"; path = "../FSUnionAdSDK-OCDemo/Pods/Target Support Files/Pods-FSUnionAdSDK-OCDemo/Pods-FSUnionAdSDK-OCDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,8 +149,10 @@
 		570727272C9BC5F30003F34F /* Expressed */ = {
 			isa = PBXGroup;
 			children = (
-				57AE2E382CF9851500A94E13 /* FeedBrandAdDemoViewController.h */,
-				57AE2E392CF9851500A94E13 /* FeedBrandAdDemoViewController.m */,
+				57E9C2012E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.h */,
+				57E9C2022E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.m */,
+				57AE2E382CF9851500A94E13 /* FeedFullAdDemoViewController.h */,
+				57AE2E392CF9851500A94E13 /* FeedFullAdDemoViewController.m */,
 				570727292C9BC6380003F34F /* FeedBannerAdDemoViewController.h */,
 				5707272A2C9BC6380003F34F /* FeedBannerAdDemoViewController.m */,
 			);
@@ -319,9 +324,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FSUnionAdSDK-OCDemo/Pods-FSUnionAdSDK-OCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FSUnionAdSDK-OCDemo/Pods-FSUnionAdSDK-OCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,7 +350,8 @@
 				573DD0D72CF9845300C11004 /* RewardedVideoAdDemoViewController.m in Sources */,
 				5707272B2C9BC6380003F34F /* FeedBannerAdDemoViewController.m in Sources */,
 				579CB4F82C9707DB00E7FCC8 /* main.m in Sources */,
-				57AE2E3A2CF9851500A94E13 /* FeedBrandAdDemoViewController.m in Sources */,
+				57AE2E3A2CF9851500A94E13 /* FeedFullAdDemoViewController.m in Sources */,
+				57E9C2032E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.m in Sources */,
 				5707268A2C9A7C3C0003F34F /* SplashAdDemoViewController.m in Sources */,
 				57BADABE2CC15820005E1DBD /* empty.swift in Sources */,
 				579CB4EA2C9707DA00E7FCC8 /* SceneDelegate.m in Sources */,

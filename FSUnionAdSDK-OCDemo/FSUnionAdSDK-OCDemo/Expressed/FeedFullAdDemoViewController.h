@@ -1,5 +1,5 @@
 //
-//  FeedBrandAdDemoViewController.h
+//  FeedFullAdDemoViewController.h
 //  FSUnionAdSDK-OCDemo
 //
 //  Created by 吴启晗 on 2024/9/19.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeedBrandAdDemoViewController : AdDemoViewController
+@interface FeedFullAdDemoViewController : AdDemoViewController
 
 @end
 
