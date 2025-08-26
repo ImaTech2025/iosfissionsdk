@@ -6,6 +6,7 @@ import AVFoundation
 import AdSupport
 import AppTrackingTransparency
 import SystemConfiguration.CaptiveNetwork
+import Combine
 import CommonCrypto
 import CoreLocation
 import CoreMedia
@@ -234,9 +235,8 @@ extension FSUnionAdSDK.FSTwinAd {
 @objc public enum FSNativeExpressType : Swift.Int {
   case none = 0
   case banner = 1
-  case feed = 2
-  case result = 3
-  case brand = 4
+  case smallBanner = 2
+  case full = 3
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -274,6 +274,9 @@ public enum FSUnionAdType {
     @objc get
   }
   @objc public var disableCpmFilter: Swift.Bool {
+    @objc get
+  }
+  @objc public var shakeSensitivity: Swift.Int {
     @objc get
   }
   @objc public var interactionType: FSUnionAdSDK.FSAdInteractionType {
@@ -473,7 +476,7 @@ extension FSUnionAdSDK.WfVideoPlayerView.State : Swift.Equatable {
   }
   @objc public var appName: Swift.String?
   @objc public var customDeviceID: Swift.String?
-  @objc public var extraUserData: [Swift.String : Any]?
+  @objc public var extraUserData: [Swift.String : Swift.AnyHashable]?
   @objc public var personalRecommend: Swift.Bool
   @objc public var teenagerModel: Swift.Bool
   @objc public var channel: Swift.String
@@ -485,32 +488,6 @@ extension FSUnionAdSDK.WfVideoPlayerView.State : Swift.Equatable {
 public protocol WfInputViewDelegate : ObjectiveC.NSObjectProtocol {
   func handleCancel()
   func handleSubmit(text: Swift.String)
-}
-public enum FSLogTag : Swift.String {
-  case common
-  case sdkInit
-  case interstitialAd
-  case splashAd
-  case nativeAd
-  case rewardedAd
-  case caid
-  case adxConfig
-  case request
-  case shake
-  case URLTracking
-  case URLTrackingDetail
-  case requestParameters
-  case differenceAttribution
-  case interactionAction
-  case externalTracker
-  case twinAd
-  case motion
-  case installedAppList
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
 }
 @objc @_inheritsConvenienceInitializers public class WfVideoFullscreenTransitioner : ObjectiveC.NSObject {
   public var playerView: FSUnionAdSDK.WfVideoPlayerView?
@@ -543,8 +520,8 @@ extension FSUnionAdSDK.WfVideoFullscreenTransitioner : UIKit.UIViewControllerAni
 @objc public protocol FSNativeExpressFeedsAdDelegate {
   @objc optional func fs_expressFeedAdLoadSuccess(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd)
   @objc optional func fs_expressFeedAdLoadFailed(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd, withError error: Foundation.NSError)
-  @objc optional func fs_expressFeedAdShowSuccess(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd)
-  @objc optional func fs_expressFeedAdShowFailed(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd, withError error: Foundation.NSError)
+  @objc optional func fs_expressFeedAdDidVisible(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd)
+  @objc optional func fs_expressFeedAdPresentFailed(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd, withError error: Foundation.NSError)
   @objc optional func fs_expressFeedAdDidClosed(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd)
   @objc optional func fs_expressFeedAdDidClicked(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd)
   @objc optional func fs_expressFeedAdDidCloseOtherController(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd, interactionType: FSUnionAdSDK.FSAdInteractionType)
@@ -628,6 +605,127 @@ public protocol WfNativeAdActionDelegate : ObjectiveC.NSObjectProtocol {
   @objc deinit
   @objc override dynamic public init()
 }
+@available(*, deprecated, renamed: "resetDynamicLogLevel", message: "Please use resetDynamicLogLevel")
+public func resetDefaultDebugLevel()
+public var asyncLoggingEnabled: Swift.Bool
+public struct FSLogMessageFormat : Swift.ExpressibleByStringInterpolation {
+  public typealias StringLiteralType = Swift.String
+  @usableFromInline
+  internal struct Storage {
+    @usableFromInline
+    internal typealias Args = Swift.Array<any Swift.CVarArg>
+    @usableFromInline
+    internal let requiresArgumentParsing: Swift.Bool
+    @usableFromInline
+    internal var format: Swift.String
+    @usableFromInline
+    internal var args: FSUnionAdSDK.FSLogMessageFormat.Storage.Args {
+      get
+      set
+    }
+    @usableFromInline
+    internal init(requiresArgumentParsing: Swift.Bool, format: Swift.String, args: FSUnionAdSDK.FSLogMessageFormat.Storage.Args)
+    @available(*, deprecated, message: "Use initializer specifying the need for argument parsing: init(requiresArgumentParsing:format:args:)")
+    @usableFromInline
+    internal init(format: Swift.String, args: FSUnionAdSDK.FSLogMessageFormat.Storage.Args)
+    @usableFromInline
+    internal mutating func addString(_ string: Swift.String)
+    @inlinable internal mutating func addValue(_ arg: FSUnionAdSDK.FSLogMessageFormat.Storage.Args.Element, withSpecifier specifier: Swift.String) {
+            format.append(specifier)
+            args.append(arg)
+        }
+  }
+  public struct StringInterpolation : Swift.StringInterpolationProtocol {
+    @usableFromInline
+    internal var storage: FSUnionAdSDK.FSLogMessageFormat.Storage
+    public init(literalCapacity: Swift.Int, interpolationCount: Swift.Int)
+    @inlinable public mutating func appendLiteral(_ literal: FSUnionAdSDK.FSLogMessageFormat.StringLiteralType) {
+            storage.addString(literal)
+        }
+    @inlinable internal mutating func appendInterpolation<S>(_ string: S) where S : Swift.StringProtocol {
+            storage.addValue(String(string), withSpecifier: "%@")
+        }
+    @inlinable internal mutating func appendInterpolation(_ int: Swift.Int8) {
+            storage.addValue(int, withSpecifier: "%c")
+        }
+    @inlinable internal mutating func appendInterpolation(_ int: Swift.UInt8) {
+            storage.addValue(int, withSpecifier: "%c")
+        }
+    @inlinable internal mutating func appendInterpolation(_ int: Swift.Int16) {
+            storage.addValue(int, withSpecifier: "%i")
+        }
+    @inlinable public mutating func appendInterpolation(_ int: Swift.UInt16) {
+            storage.addValue(int, withSpecifier: "%u")
+        }
+    @inlinable public mutating func appendInterpolation(_ int: Swift.Int32) {
+            storage.addValue(int, withSpecifier: "%li")
+        }
+    @inlinable public mutating func appendInterpolation(_ int: Swift.UInt32) {
+            storage.addValue(int, withSpecifier: "%lu")
+        }
+    @inlinable public mutating func appendInterpolation(_ int: Swift.Int64) {
+            storage.addValue(int, withSpecifier: "%lli")
+        }
+    @inlinable public mutating func appendInterpolation(_ int: Swift.UInt64) {
+            storage.addValue(int, withSpecifier: "%llu")
+        }
+    @inlinable public mutating func appendInterpolation(_ int: Swift.Int) {
+            storage.addValue(int, withSpecifier: "%lli")
+        }
+    @inlinable public mutating func appendInterpolation(_ int: Swift.UInt) {
+            storage.addValue(int, withSpecifier: "%llu")
+        }
+    @inlinable public mutating func appendInterpolation(_ flt: Swift.Float) {
+            storage.addValue(flt, withSpecifier: "%f")
+        }
+    @inlinable public mutating func appendInterpolation(_ dbl: Swift.Double) {
+            storage.addValue(dbl, withSpecifier: "%lf")
+        }
+    @inlinable public mutating func appendInterpolation(_ bool: Swift.Bool) {
+            storage.addValue(bool, withSpecifier: "%i")  
+        }
+    @inlinable public mutating func appendInterpolation<Convertible>(_ c: Convertible) where Convertible : Foundation.ReferenceConvertible {
+            if c is CVarArg {
+                print("""
+                [WARNING]: CocoaLumberjackSwift is creating a \(FSLogMessageFormat.self) with an interpolation conforming to `CVarArg` \
+                using the overload for `ReferenceConvertible` interpolations!
+                Please report this as a bug, including the following snippet:
+                ```
+                Convertible: \(Convertible.self), ReferenceType: \(Convertible.ReferenceType.self), type(of: c): \(type(of: c))
+                ```
+                """)
+            }
+             
+            storage.addValue(c as? CVarArg ?? c as! Convertible.ReferenceType, withSpecifier: "%@")
+        }
+    @inlinable public mutating func appendInterpolation<Obj>(_ o: Obj) where Obj : ObjectiveC.NSObject {
+            storage.addValue(o, withSpecifier: "%@")
+        }
+    @_disfavoredOverload public mutating func appendInterpolation(_ any: Any)
+    public typealias StringLiteralType = FSUnionAdSDK.FSLogMessageFormat.StringLiteralType
+  }
+  @usableFromInline
+  internal let storage: FSUnionAdSDK.FSLogMessageFormat.Storage
+  @inlinable internal var format: Swift.String {
+    get { storage.format }
+  }
+  @inlinable internal var args: FSUnionAdSDK.FSLogMessageFormat.Storage.Args {
+    get { storage.args }
+  }
+  @inlinable internal var formatted: Swift.String {
+    get {
+        guard storage.requiresArgumentParsing else { return storage.format }
+        return String(format: storage.format, arguments: storage.args)
+    }
+  }
+  public init(stringLiteral value: FSUnionAdSDK.FSLogMessageFormat.StringLiteralType)
+  public init(stringInterpolation: FSUnionAdSDK.FSLogMessageFormat.StringInterpolation)
+  public typealias ExtendedGraphemeClusterLiteralType = FSUnionAdSDK.FSLogMessageFormat.StringLiteralType
+  public typealias UnicodeScalarLiteralType = FSUnionAdSDK.FSLogMessageFormat.StringLiteralType
+}
+public func currentFileName(_ fileName: Swift.StaticString = #file) -> Swift.String
+@available(*, deprecated, renamed: "currentFileName", message: "Please use currentFileName")
+public func CurrentFileName(_ fileName: Swift.StaticString = #file) -> Swift.String
 @objc @_inheritsConvenienceInitializers public class WfVideoLoadManager : ObjectiveC.NSObject {
   public static let shared: FSUnionAdSDK.WfVideoLoadManager
   public var reportError: ((any Swift.Error) -> Swift.Void)?
@@ -859,9 +957,6 @@ extension FSUnionAdSDK.AdxSlotType : Swift.RawRepresentable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.Equatable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.Hashable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.RawRepresentable {}
-extension FSUnionAdSDK.FSLogTag : Swift.Equatable {}
-extension FSUnionAdSDK.FSLogTag : Swift.Hashable {}
-extension FSUnionAdSDK.FSLogTag : Swift.RawRepresentable {}
 extension FSUnionAdSDK.FSAdType : Swift.Equatable {}
 extension FSUnionAdSDK.FSAdType : Swift.Hashable {}
 extension FSUnionAdSDK.FSAdType : Swift.RawRepresentable {}
