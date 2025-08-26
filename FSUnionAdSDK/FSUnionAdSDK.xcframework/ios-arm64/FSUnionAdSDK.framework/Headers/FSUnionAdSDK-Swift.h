@@ -369,7 +369,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 /// 设备 ID
 @property (nonatomic, copy) NSString * _Nullable customDeviceID;
 /// 自定义参数
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable extraUserData;
+@property (nonatomic, copy) NSDictionary<NSString *, NSObject *> * _Nullable extraUserData;
 /// 个性化推荐开关  默认 false
 @property (nonatomic) BOOL personalRecommend;
 /// 青少年模式 默认 false
@@ -450,6 +450,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic, readonly, copy) NSString * _Nullable realCPM;
 @property (nonatomic, readonly) NSInteger dealType;
 @property (nonatomic, readonly) BOOL disableCpmFilter;
+@property (nonatomic, readonly) NSInteger shakeSensitivity;
 @property (nonatomic, readonly) enum FSAdInteractionType interactionType;
 - (void)win;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice;
@@ -671,8 +672,8 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK30FSNativeExpressFeedsAdDelegate_")
 @optional
 - (void)fs_expressFeedAdLoadSuccess:(FSNativeExpressFeedsAd * _Nonnull)ad;
 - (void)fs_expressFeedAdLoadFailed:(FSNativeExpressFeedsAd * _Nonnull)ad withError:(NSError * _Nonnull)error;
-- (void)fs_expressFeedAdShowSuccess:(FSNativeExpressFeedsAd * _Nonnull)ad;
-- (void)fs_expressFeedAdShowFailed:(FSNativeExpressFeedsAd * _Nonnull)ad withError:(NSError * _Nonnull)error;
+- (void)fs_expressFeedAdDidVisible:(FSNativeExpressFeedsAd * _Nonnull)ad;
+- (void)fs_expressFeedAdPresentFailed:(FSNativeExpressFeedsAd * _Nonnull)ad withError:(NSError * _Nonnull)error;
 - (void)fs_expressFeedAdDidClosed:(FSNativeExpressFeedsAd * _Nonnull)ad;
 - (void)fs_expressFeedAdDidClicked:(FSNativeExpressFeedsAd * _Nonnull)ad;
 - (void)fs_expressFeedAdDidCloseOtherController:(FSNativeExpressFeedsAd * _Nonnull)ad interactionType:(enum FSAdInteractionType)interactionType;
@@ -681,9 +682,8 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK30FSNativeExpressFeedsAdDelegate_")
 typedef SWIFT_ENUM(NSInteger, FSNativeExpressType, open) {
   FSNativeExpressTypeNone = 0,
   FSNativeExpressTypeBanner = 1,
-  FSNativeExpressTypeFeed = 2,
-  FSNativeExpressTypeResult = 3,
-  FSNativeExpressTypeBrand = 4,
+  FSNativeExpressTypeSmallBanner = 2,
+  FSNativeExpressTypeFull = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, FSPlayerPlayState, open) {
