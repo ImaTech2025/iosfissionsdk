@@ -1,18 +1,18 @@
 //
-//  FeedBrandAdDemoViewController.m
+//  FeedFullAdDemoViewController.m
 //  FSUnionAdSDK-OCDemo
 //
 //  Created by 吴启晗 on 2024/9/19.
 //
 
-#import "FeedBrandAdDemoViewController.h"
+#import "FeedFullAdDemoViewController.h"
 #ifdef FSUnionAdSDK_WK_OCDemo
 #import <FSUnionAdSDK_WK/FSUnionAdSDK_WK-Swift.h>
 #else
 #import <FSUnionAdSDK/FSUnionAdSDK-Swift.h>
 #endif
 
-@interface FeedBrandAdDemoViewController ()<FSNativeExpressFeedsAdDelegate>
+@interface FeedFullAdDemoViewController ()<FSNativeExpressFeedsAdDelegate>
 {
     NSUInteger _adIndex;
     BOOL _loadSuccess;
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation FeedBrandAdDemoViewController
+@implementation FeedFullAdDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,7 +37,7 @@
 - (void)_loadAdWithSlotID:(NSString *)slotID {
     FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:slotID type:FSAdTypeNativeExpress];
     FSNativeExpressFeedsAd *ad = [[FSNativeExpressFeedsAd alloc] initWithSlot:slot];
-    ad.expressType = FSNativeExpressTypeBrand;
+    ad.expressType = FSNativeExpressTypeFull;
     ad.delegate = self;
     ad.rootViewController = self;
     [ad loadAdData];
