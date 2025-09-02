@@ -94,8 +94,6 @@
 		<string>uusdk.l22</string>
 		<string>mergemansion</string>
 	</array>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>获取IDFA有助于提供更优质的个性化服务及内容</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

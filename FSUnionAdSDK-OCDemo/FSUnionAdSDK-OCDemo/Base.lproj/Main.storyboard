@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--demo-->
+        <!--FSUnionAdSDK-Demo-->
         <scene sceneID="5ql-zp-ZgH">
             <objects>
-                <tableViewController id="bpe-SG-GtC" customClass="DemoMainViewController" sceneMemberID="viewController">
+                <tableViewController title="FSUnionAdSDK-Demo" id="bpe-SG-GtC" customClass="DemoMainViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="G26-kI-qcJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +173,7 @@
                             <outlet property="delegate" destination="bpe-SG-GtC" id="y8s-he-DcM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="demo" id="Ib6-6K-oBJ"/>
+                    <navigationItem key="navigationItem" title="FSUnionAdSDK-Demo" id="Ib6-6K-oBJ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbW-jT-t67" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
