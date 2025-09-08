@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = 'FSUnionAdSDK'
-  s.version       = '1.0.1.52'
+  s.version       = '1.0.1.53'
   s.summary       = 'FSUnionAdSDK is a SDK from LinkSure providing union AD service.'
   s.description   = <<-DESC
                       FSUnionAdSDK provides Union ADs which include splash、interstitial、native、banner、feed、rewardVideo etc.
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
   s.frameworks      = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
   s.weak_frameworks = 'AppTrackingTransparency', 'DeviceCheck'
 
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  }
-  s.user_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  }
+  # s.pod_target_xcconfig = {
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+  # }
+  # s.user_target_xcconfig = {
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+  # }
 end
