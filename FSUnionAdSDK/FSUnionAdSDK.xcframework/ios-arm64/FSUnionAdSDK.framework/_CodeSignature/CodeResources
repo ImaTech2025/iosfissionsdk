@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		Hw/zTGDD9vOvJDYQBVTrayfIWyY=
-		</data>
 		<key>FSAlamofire.bundle/Info.plist</key>
 		<data>
 		9w4zQ/XFNakhle1GJLuCWz7VGa0=
@@ -59,7 +55,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KZXX+EJsacA7h0B+pqMMll5hLlA=
+		oQ39rlKy64sIix1/9e1w/esUozo=
 		</data>
 		<key>LottiePrivacyInfo.bundle/Info.plist</key>
 		<data>
@@ -71,7 +67,7 @@
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		AequsAL3U+qNBjyAZYiEOLfMWgM=
+		zy/gllzdm46mVdCEFRvli4sXy4U=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -249,11 +245,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AequsAL3U+qNBjyAZYiEOLfMWgM=
+			zy/gllzdm46mVdCEFRvli4sXy4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			SkEQikQj/NrQysvYaKFtOh541QxGhvQHtkBcWJFjmrs=
+			YR+vCGTI/pYChIw+e0c9PnB5W6qkb5rJAwfSvXU/xMk=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.abi.json</key>
