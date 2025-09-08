@@ -355,6 +355,7 @@ typedef SWIFT_ENUM(NSInteger, FSAdInteractionType, open) {
   FSAdInteractionTypeJustShow = 7,
 };
 
+@class UIImage;
 SWIFT_CLASS("_TtC12FSUnionAdSDK20FSAdSDKConfiguration")
 @interface FSAdSDKConfiguration : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfiguration * _Nonnull configuration;)
@@ -382,6 +383,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic) uint32_t buildNumber;
 /// 是否支持微信小程序跳转，默认为 false
 @property (nonatomic) BOOL supportWXApi;
+/// 自定义品牌 logo
+@property (nonatomic, strong) UIImage * _Nullable customUnionLogo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -502,7 +505,6 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK24FSInterstitialAdDelegate_")
 @end
 
 @class WfAdImage;
-@class UIImage;
 /// 广告依赖物料
 SWIFT_CLASS("_TtC12FSUnionAdSDK14FSMaterialMeta")
 @interface FSMaterialMeta : NSObject
@@ -592,6 +594,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK21FSNativeAdRelatedView")
 @property (nonatomic, strong) UIImageView * _Nonnull logoImageView;
 @property (nonatomic, strong) UILabel * _Nonnull adLabel;
 @property (nonatomic, strong) FSVideoAdView * _Nonnull videoAdView;
+@property (nonatomic, strong) UIImageView * _Nonnull unionLogoImageView;
 /// 摇一摇、扭一扭、点击等动作捕捉视图
 @property (nonatomic, strong) WfNativeAdActionView * _Nullable actionView;
 - (void)refreshData:(FSNativeAd * _Nonnull)nativeAd;

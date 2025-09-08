@@ -483,6 +483,7 @@ extension FSUnionAdSDK.WfVideoPlayerView.State : Swift.Equatable {
   @objc final public let version: Swift.String
   @objc public var buildNumber: Swift.UInt32
   @objc public var supportWXApi: Swift.Bool
+  @objc public var customUnionLogo: UIKit.UIImage?
   @objc deinit
 }
 public protocol WfInputViewDelegate : ObjectiveC.NSObjectProtocol {
@@ -600,6 +601,10 @@ public protocol WfNativeAdActionDelegate : ObjectiveC.NSObjectProtocol {
   @objc public var logoImageView: UIKit.UIImageView
   @objc public var adLabel: UIKit.UILabel
   @objc public var videoAdView: FSUnionAdSDK.FSVideoAdView
+  @objc public var unionLogoImageView: UIKit.UIImageView {
+    @objc get
+    @objc set
+  }
   @objc public var actionView: FSUnionAdSDK.WfNativeAdActionView?
   @objc public func refreshData(_ nativeAd: FSUnionAdSDK.FSNativeAd)
   @objc deinit
