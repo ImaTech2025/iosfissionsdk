@@ -480,8 +480,6 @@ extension FSUnionAdSDK.WfVideoPlayerView.State : Swift.Equatable {
   @objc public var personalRecommend: Swift.Bool
   @objc public var teenagerModel: Swift.Bool
   @objc public var channel: Swift.String
-  @objc final public let version: Swift.String
-  @objc public var buildNumber: Swift.UInt32
   @objc public var supportWXApi: Swift.Bool
   @objc public var customUnionLogo: UIKit.UIImage?
   @objc deinit

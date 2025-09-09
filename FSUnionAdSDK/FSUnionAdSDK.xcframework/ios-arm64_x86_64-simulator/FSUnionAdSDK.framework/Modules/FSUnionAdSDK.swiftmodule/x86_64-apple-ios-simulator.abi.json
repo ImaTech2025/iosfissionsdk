@@ -15873,152 +15873,6 @@
           },
           {
             "kind": "Var",
-            "name": "version",
-            "printedName": "version",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSDKConfiguration(py)version",
-            "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC7versionSSvp",
-            "moduleName": "FSUnionAdSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSDKConfiguration(im)version",
-                "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC7versionSSvg",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "buildNumber",
-            "printedName": "buildNumber",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UInt32",
-                "printedName": "Swift.UInt32",
-                "usr": "s:s6UInt32V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSDKConfiguration(py)buildNumber",
-            "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC11buildNumbers6UInt32Vvp",
-            "moduleName": "FSUnionAdSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt32",
-                    "printedName": "Swift.UInt32",
-                    "usr": "s:s6UInt32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSDKConfiguration(im)buildNumber",
-                "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC11buildNumbers6UInt32Vvg",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt32",
-                    "printedName": "Swift.UInt32",
-                    "usr": "s:s6UInt32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSDKConfiguration(im)setBuildNumber:",
-                "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC11buildNumbers6UInt32Vvs",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FSUnionAdSDK20FSAdSDKConfigurationC11buildNumbers6UInt32VvM",
-                "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC11buildNumbers6UInt32VvM",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "supportWXApi",
             "printedName": "supportWXApi",
             "children": [
@@ -47948,22 +47802,8 @@
     },
     {
       "filePath": "\/Users\/wuqh\/Desktop\/Project\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/FSAdSDKConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 1248,
-      "length": 9,
-      "value": "\"1.0.0.0\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Desktop\/Project\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/FSAdSDKConfiguration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1321,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Desktop\/Project\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/FSAdSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1477,
+      "offset": 1293,
       "length": 5,
       "value": "false"
     },
@@ -51213,7 +51053,7 @@
       "kind": "IntegerLiteral",
       "offset": 371,
       "length": 2,
-      "value": "53"
+      "value": "54"
     },
     {
       "filePath": "\/Users\/wuqh\/Desktop\/Project\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/FSAdSDKManager.swift",

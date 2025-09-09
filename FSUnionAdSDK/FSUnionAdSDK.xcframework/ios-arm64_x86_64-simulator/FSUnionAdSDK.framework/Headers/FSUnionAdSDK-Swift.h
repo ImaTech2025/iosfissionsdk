@@ -377,10 +377,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic) BOOL teenagerModel;
 /// 渠道名  默认“AppStore”
 @property (nonatomic, copy) NSString * _Nonnull channel;
-/// 版本号
-@property (nonatomic, readonly, copy) NSString * _Nonnull version;
-/// build number
-@property (nonatomic) uint32_t buildNumber;
 /// 是否支持微信小程序跳转，默认为 false
 @property (nonatomic) BOOL supportWXApi;
 /// 自定义品牌 logo
@@ -1324,10 +1320,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic) BOOL teenagerModel;
 /// 渠道名  默认“AppStore”
 @property (nonatomic, copy) NSString * _Nonnull channel;
-/// 版本号
-@property (nonatomic, readonly, copy) NSString * _Nonnull version;
-/// build number
-@property (nonatomic) uint32_t buildNumber;
 /// 是否支持微信小程序跳转，默认为 false
 @property (nonatomic) BOOL supportWXApi;
 /// 自定义品牌 logo
