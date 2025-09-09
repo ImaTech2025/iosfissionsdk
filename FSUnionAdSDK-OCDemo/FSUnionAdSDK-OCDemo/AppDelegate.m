@@ -44,9 +44,15 @@
     [FSAdSDKManager logEnable:YES];
     
     FSAdSDKConfiguration *configuration = FSAdSDKConfiguration.configuration;
+    
     // TODO: to replace
-    configuration.appID = @"xxxxx";
-    configuration.appToken = @"xxxxx";
+    NSString *appID = @"";
+    NSString *appToken = @"";
+    
+    NSAssert(appID.length > 0 && appToken.length > 0, @"请先设置 appID & appToken");
+
+    configuration.appID = appID;
+    configuration.appToken = appToken;
     /*
      集成方是否支持微信 api，以及小程序跳转
      默认为 NO，当YES时，飞梭服务端可能会下发小程序跳转
