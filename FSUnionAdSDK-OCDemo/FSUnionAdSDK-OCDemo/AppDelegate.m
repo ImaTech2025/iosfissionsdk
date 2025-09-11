@@ -41,13 +41,15 @@
 }
 
 - (void)setupFSAdSDK {
-    [FSAdSDKManager logEnable:YES];
+    [FSAdSDKManager logEnable:NO];
+    
+    NSLog(@"FSUnionAdSDK Version: [%@]", FSAdSDKManager.sdkVersion);
     
     FSAdSDKConfiguration *configuration = FSAdSDKConfiguration.configuration;
     
     // TODO: to replace
-    NSString *appID = @"";
-    NSString *appToken = @"";
+    NSString *appID = @"TEST";
+    NSString *appToken = @"1yh0ryt83i0czmcsugsk98q64kr7g24u";
     
     NSAssert(appID.length > 0 && appToken.length > 0, @"请先设置 appID & appToken");
 

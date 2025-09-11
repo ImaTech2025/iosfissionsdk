@@ -13,8 +13,6 @@
 #import <FSUnionAdSDK/FSUnionAdSDK-Swift.h>
 #endif
 
-#import <SDWebImage/SDWebImage.h>
-
 @interface NativeAdDemoViewController ()<FSNativeAdsManagerDelegate, FSNativeAdDelegate, FSVideoAdViewDelegate>
 
 @property (nonatomic, strong) FSNativeAdsManager *loadManager;
@@ -175,7 +173,22 @@
         }
     } else {
         self.imageView = [[UIImageView alloc] init];
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.nativeAd.material.images.firstObject.url]];
+        
+        NSURLSessionTask *task = [NSURLSession.sharedSession dataTaskWithURL:[NSURL URLWithString:self.nativeAd.material.images.firstObject.url] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            if (error) {
+                return;
+            }
+            if (data) {
+                UIImage *image = [UIImage imageWithData:data];
+                if (image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        self.imageView.image = image;
+                    });
+                }
+            }
+        }];
+        [task resume];
+        
         [self.adContainer addSubview:self.imageView];
         self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
         [self.imageView.topAnchor constraintEqualToAnchor:self.adContainer.topAnchor].active = YES;

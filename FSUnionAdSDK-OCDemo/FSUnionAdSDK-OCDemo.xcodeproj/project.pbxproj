@@ -235,7 +235,6 @@
 				579CB4DF2C9707DA00E7FCC8 /* Frameworks */,
 				579CB4E02C9707DA00E7FCC8 /* Resources */,
 				57AC3C2E2CB7A97E00F7ED71 /* Embed Frameworks */,
-				241FFCB5EFA459B8688A4125 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,27 +313,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		241FFCB5EFA459B8688A4125 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FSUnionAdSDK-OCDemo/Pods-FSUnionAdSDK-OCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FSUnionAdSDK-OCDemo/Pods-FSUnionAdSDK-OCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSUnionAdSDK-OCDemo/Pods-FSUnionAdSDK-OCDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -533,8 +511,6 @@
 					"$(inherited)",
 					"-framework",
 					"\"ImageIO\"",
-					"-framework",
-					"\"SDWebImage\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fs.adx.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -581,8 +557,6 @@
 					"$(inherited)",
 					"-framework",
 					"\"ImageIO\"",
-					"-framework",
-					"\"SDWebImage\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fs.adx.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
