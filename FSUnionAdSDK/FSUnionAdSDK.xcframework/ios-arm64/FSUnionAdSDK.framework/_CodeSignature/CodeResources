@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		mwiW5sN+HhbaUOpvF/hLRELn/YI=
-		</data>
 		<key>FSAlamofire.bundle/Info.plist</key>
 		<data>
-		9w4zQ/XFNakhle1GJLuCWz7VGa0=
+		S9LLyaopdbLlS0AOXgz9uGoXYmU=
 		</data>
 		<key>FSAlamofire.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -18,7 +14,7 @@
 		</data>
 		<key>FSCocoaLumberjackPrivacy.bundle/Info.plist</key>
 		<data>
-		ezCwuefZIrz7KdHYb3dUWSJJYt8=
+		bp3mQr+V5kwR990V2swEwYtBgEQ=
 		</data>
 		<key>FSCocoaLumberjackPrivacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -26,7 +22,7 @@
 		</data>
 		<key>FSCryptoSwift.bundle/Info.plist</key>
 		<data>
-		yz7w1WCpeh2LNae8X6mXFg/VOE8=
+		msYjSDKjWDyw6vuM8IVaKHV/X+U=
 		</data>
 		<key>FSCryptoSwift.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -43,7 +39,7 @@
 		</dict>
 		<key>FSSwiftProtobuf.bundle/Info.plist</key>
 		<data>
-		TAox8dl8QOOabu7rcLiiCSq5kbY=
+		XjtheuzbWiUgjtdHpdFdLhtpzEs=
 		</data>
 		<key>FSSwiftProtobuf.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -51,7 +47,7 @@
 		</data>
 		<key>Headers/FSUnionAdSDK-Swift.h</key>
 		<data>
-		RReR5P8Byek3I8u/9ruYxeAtoNY=
+		03gnbm53d3FFRbnG0VD+ej1VHzY=
 		</data>
 		<key>Headers/FSUnionAdSDK.h</key>
 		<data>
@@ -59,11 +55,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oQ39rlKy64sIix1/9e1w/esUozo=
+		K4qwBCEhAf0iQNFMIz5Ay6H2Gec=
 		</data>
 		<key>LottiePrivacyInfo.bundle/Info.plist</key>
 		<data>
-		oX2E+Zg41vjkogvd6gigEiBGSAY=
+		RMZB1f0vCNeiCAq42KzS0i9Mt+s=
 		</data>
 		<key>LottiePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -71,27 +67,27 @@
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		k7g9Lr1E/bfl3gBAdBmeq5n8OHQ=
+		3cfPYeucfZOr6m2+Xm3VbhpKb6I=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		eRKYQA8OoLiSLW3hjrNa20YSi7o=
+		bDckko2ZbMIHKqr0NyB9y97euPM=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		uJnS+T60oNJxkdQIJ4qDR0Wd2H8=
+		y4eZ3rS5dnW0iB31mIXSKFLdr9s=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		bI8hSrOtzftDwsqhINLduB6yHoQ=
+		oBoz39sn76JMyCxudZ6YUQRBOoM=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		uJnS+T60oNJxkdQIJ4qDR0Wd2H8=
+		y4eZ3rS5dnW0iB31mIXSKFLdr9s=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YaGYm4JtYa5Bu3fBvR3TCASzvhQ=
+		gJmsdGcHoCZSDiQYJfsR2/OZJAc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,21 +98,13 @@
 	<dict>
 		<key>FSAlamofire.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9w4zQ/XFNakhle1GJLuCWz7VGa0=
-			</data>
 			<key>hash2</key>
 			<data>
-			zhb18PBPLXPr18MAwwNJnspEh7cLNMgppYODRNXAJ9g=
+			IusmsM4NlXmL1Dd1HYfga0PqRzsyFvFc04i7rH8AAqE=
 			</data>
 		</dict>
 		<key>FSAlamofire.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ovFJMFOLMjzh8DLJKmXncj8JIgU=
-			</data>
 			<key>hash2</key>
 			<data>
 			CNkOaUbb/qDQtbF/tlnXfu0j5EO3Rdjntbn6N4y3RHc=
@@ -124,21 +112,13 @@
 		</dict>
 		<key>FSCocoaLumberjackPrivacy.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ezCwuefZIrz7KdHYb3dUWSJJYt8=
-			</data>
 			<key>hash2</key>
 			<data>
-			+4dpxtxYIEgZAh0CWIzZjYOqk+CtBmL0EfqkgSuaw5Y=
+			4u3md3nxjaMSPw0f6/ax8yRteCLE3Uu3smcUhPFWQpc=
 			</data>
 		</dict>
 		<key>FSCocoaLumberjackPrivacy.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4MLe/JNfAmWnKv0SN0uFkANew0w=
-			</data>
 			<key>hash2</key>
 			<data>
 			EyzsACYN4YTYVoWqydU6QpR6qYctp0ZHxFdxTmtf57Y=
@@ -146,21 +126,13 @@
 		</dict>
 		<key>FSCryptoSwift.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yz7w1WCpeh2LNae8X6mXFg/VOE8=
-			</data>
 			<key>hash2</key>
 			<data>
-			fk9CLU6ebmNM0rPnebVl34eKCf4XlEIEhP8dUfO5J1s=
+			0zjDIvGBQe/KXNgdUJ2dp+LU9fJdHauLqxNFT2R+9/0=
 			</data>
 		</dict>
 		<key>FSCryptoSwift.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ucg9pita0v8d353x3NuGfxweQYU=
-			</data>
 			<key>hash2</key>
 			<data>
 			Uh6274Qwdz5cAQ4YOP6d2PpdYre3bRzqjX2NqtyxROI=
@@ -168,10 +140,6 @@
 		</dict>
 		<key>FSSKeychain.bundle/en.lproj/FSKeychain.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WoCiIKeoNg0MzAMh0N3ZOAWMFcs=
-			</data>
 			<key>hash2</key>
 			<data>
 			zYMS2cMaHTLSoYuJAMVYuhXyfrs+lafAXGQSSdwlADg=
@@ -181,21 +149,13 @@
 		</dict>
 		<key>FSSwiftProtobuf.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TAox8dl8QOOabu7rcLiiCSq5kbY=
-			</data>
 			<key>hash2</key>
 			<data>
-			+FYrg+F7B3y4lZI9/Q5XY6gcpZxqENPbd3ATAcTsuZM=
+			QGKxVxjVZPY0/6FbrWgU4BJxpJfybzlgEP+veCkRkhI=
 			</data>
 		</dict>
 		<key>FSSwiftProtobuf.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			F6mYXr6EQZyLKcQNM0vmTGcGMns=
-			</data>
 			<key>hash2</key>
 			<data>
 			oHQY5f4SjiJM03lkvCHFA7eqL1dee0knRoR4rYcyFP4=
@@ -203,21 +163,13 @@
 		</dict>
 		<key>Headers/FSUnionAdSDK-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RReR5P8Byek3I8u/9ruYxeAtoNY=
-			</data>
 			<key>hash2</key>
 			<data>
-			PjcMweEVU0aFh8yjAT2F4N0PvYdy9gdMVrItvSyjzRQ=
+			eriYhlPZp8gNocTQccsnbwzuoL7x4V3Vjxn5D3YdFRg=
 			</data>
 		</dict>
 		<key>Headers/FSUnionAdSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			U584rmqGlbZ0tYqfngIsg6HT8SA=
-			</data>
 			<key>hash2</key>
 			<data>
 			JtyTcm1vN8JC9p8F4mGGulVMoFPSxhjznOJ10U+UkQc=
@@ -225,21 +177,13 @@
 		</dict>
 		<key>LottiePrivacyInfo.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oX2E+Zg41vjkogvd6gigEiBGSAY=
-			</data>
 			<key>hash2</key>
 			<data>
-			7t9ltr2YJ+nOFoE3s16ZZ5cMGBOGnj63JTzDfB/6844=
+			hu/BOnO+h3xaqBQG75xtKggU5va8Kvwzx9dKyfwdz1k=
 			</data>
 		</dict>
 		<key>LottiePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sdNbODBP/hqqAEXPxMAr/fmPM98=
-			</data>
 			<key>hash2</key>
 			<data>
 			ddYHOyfmt49uvJUt7dwIdoQpim+runz8qUmmOsVIYKk=
@@ -247,76 +191,48 @@
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			k7g9Lr1E/bfl3gBAdBmeq5n8OHQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			jEQeNRma2oxDCvVQ/WP2L/swjRJ0DbFWwiYQM00sb9w=
+			xmmvMppAhBSESrqTGvlW3KMVaJ1Y+ErYnvULw1ewTV4=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eRKYQA8OoLiSLW3hjrNa20YSi7o=
-			</data>
 			<key>hash2</key>
 			<data>
-			bXJHULD2KlBROW1HhSwrOi9f1Z8cMh9dOBO+8fSM8gI=
+			VUm8BU7/7gQ9UlrG+xi3mXlHRMvOBrpafhr9KhXthVw=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uJnS+T60oNJxkdQIJ4qDR0Wd2H8=
-			</data>
 			<key>hash2</key>
 			<data>
-			wWcXriaskEbaOiEYvWquFz3Q1v5zWqyx3RBGk98Dop8=
+			uyMFdTzbLTaxkNx+g+WylQjPioSEIcitwFtkO8m+sd4=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bI8hSrOtzftDwsqhINLduB6yHoQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			pSh6xwjvxeZEzOo8UinGfrF1KoTYD4GOGC/IbBmrsXU=
+			Y5Pl3/l28y1UFfoT0NqIbozuXPaguhFpv95So1ag6o8=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uJnS+T60oNJxkdQIJ4qDR0Wd2H8=
-			</data>
 			<key>hash2</key>
 			<data>
-			wWcXriaskEbaOiEYvWquFz3Q1v5zWqyx3RBGk98Dop8=
+			uyMFdTzbLTaxkNx+g+WylQjPioSEIcitwFtkO8m+sd4=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YaGYm4JtYa5Bu3fBvR3TCASzvhQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			tMlMKXCahUpGPLSDbZJ00sopzDACs4z82Z+CvXAt+zk=
+			qx1x4jGFv9p/LvgoF660fJZdK9kAW+/7Agm3pN2hHBM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			H2EC7B5s2DSCf5HK+/Q3yvxOJFk=
-			</data>
 			<key>hash2</key>
 			<data>
 			Xq9jCJQsn+IGR1ZonpLp49iEtZtMJLPhrMz5vtn9mS4=

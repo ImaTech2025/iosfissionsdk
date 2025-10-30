@@ -6760,6 +6760,16 @@
       },
       {
         "kind": "Import",
+        "name": "Compression",
+        "printedName": "Compression",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -18624,6 +18634,123 @@
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nativeAd",
+            "printedName": "nativeAd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FSUnionAdSDK.FSNativeAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FSNativeAd",
+                    "printedName": "FSUnionAdSDK.FSNativeAd",
+                    "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeExpressFeedsAd(py)nativeAd",
+            "mangledName": "$s12FSUnionAdSDK020FSNativeExpressFeedsB0C06nativeB0AA0dB0CSgvp",
+            "moduleName": "FSUnionAdSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FSUnionAdSDK.FSNativeAd?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FSNativeAd",
+                        "printedName": "FSUnionAdSDK.FSNativeAd",
+                        "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeExpressFeedsAd(im)nativeAd",
+                "mangledName": "$s12FSUnionAdSDK020FSNativeExpressFeedsB0C06nativeB0AA0dB0CSgvg",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FSUnionAdSDK.FSNativeAd?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FSNativeAd",
+                        "printedName": "FSUnionAdSDK.FSNativeAd",
+                        "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeExpressFeedsAd(im)setNativeAd:",
+                "mangledName": "$s12FSUnionAdSDK020FSNativeExpressFeedsB0C06nativeB0AA0dB0CSgvs",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FSUnionAdSDK020FSNativeExpressFeedsB0C06nativeB0AA0dB0CSgvM",
+                "mangledName": "$s12FSUnionAdSDK020FSNativeExpressFeedsB0C06nativeB0AA0dB0CSgvM",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -31563,6 +31690,16 @@
       },
       {
         "kind": "Import",
+        "name": "FSCryptoSwift",
+        "printedName": "FSCryptoSwift",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "FSDeviceKit",
         "printedName": "FSDeviceKit",
         "declKind": "Import",
@@ -44415,7 +44552,14 @@
     {
       "filePath": "\/Users\/wuqh\/Desktop\/Project\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/FSNetworkURL.swift",
       "kind": "StringLiteral",
-      "offset": 656,
+      "offset": 662,
+      "length": 22,
+      "value": "\"https:\/\/di.wkanx.com\""
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Desktop\/Project\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/FSNetworkURL.swift",
+      "kind": "StringLiteral",
+      "offset": 724,
       "length": 22,
       "value": "\"https:\/\/t1.wkanx.com\""
     },
@@ -50617,7 +50761,7 @@
     {
       "filePath": "\/Users\/wuqh\/Desktop\/Project\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2128,
+      "offset": 2133,
       "length": 5,
       "value": "false"
     },
@@ -51053,7 +51197,7 @@
       "kind": "IntegerLiteral",
       "offset": 371,
       "length": 2,
-      "value": "54"
+      "value": "59"
     },
     {
       "filePath": "\/Users\/wuqh\/Desktop\/Project\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/FSAdSDKManager.swift",
