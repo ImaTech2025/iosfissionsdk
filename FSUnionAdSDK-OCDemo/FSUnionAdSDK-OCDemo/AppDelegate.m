@@ -41,7 +41,7 @@
 }
 
 - (void)setupFSAdSDK {
-    [FSAdSDKManager logEnable:YES];
+//    [FSAdSDKManager logEnable:YES];
     
     FSAdSDKConfiguration *configuration = FSAdSDKConfiguration.configuration;
     

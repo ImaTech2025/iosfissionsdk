@@ -310,27 +310,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class NSString;
-@class NSBundle;
-@class NSCoder;
-SWIFT_CLASS("_TtC12FSUnionAdSDK27FSAdDebugMainViewController")
-@interface FSAdDebugMainViewController : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITableView;
-@class NSIndexPath;
-@class UITableViewCell;
-@interface FSAdDebugMainViewController (SWIFT_EXTENSION(FSUnionAdSDK)) <UITableViewDataSource, UITableViewDelegate>
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-@end
-
 SWIFT_CLASS("_TtC12FSUnionAdSDK25FSAdDifferenceAttribution")
 @interface FSAdDifferenceAttribution : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -355,6 +334,7 @@ typedef SWIFT_ENUM(NSInteger, FSAdInteractionType, open) {
   FSAdInteractionTypeJustShow = 7,
 };
 
+@class NSString;
 @class UIImage;
 SWIFT_CLASS("_TtC12FSUnionAdSDK20FSAdSDKConfiguration")
 @interface FSAdSDKConfiguration : NSObject
@@ -447,7 +427,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic, readonly, copy) NSString * _Nullable maxCPM;
 @property (nonatomic, readonly, copy) NSString * _Nullable minCPM;
 @property (nonatomic, readonly, copy) NSString * _Nullable realCPM;
-@property (nonatomic, readonly) NSInteger dealType;
+@property (nonatomic, readonly) uint32_t dealType;
 @property (nonatomic, readonly) BOOL disableCpmFilter;
 @property (nonatomic, readonly) NSInteger shakeSensitivity;
 @property (nonatomic, readonly) enum FSAdInteractionType interactionType;
@@ -459,6 +439,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @end
 
 @protocol FSInterstitialAdDelegate;
+@class UIViewController;
 SWIFT_CLASS("_TtC12FSUnionAdSDK16FSInterstitialAd")
 @interface FSInterstitialAd : FSUnionAd
 @property (nonatomic, weak) id <FSInterstitialAdDelegate> _Nullable delegate;
@@ -791,6 +772,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK8FSTwinAd")
 - (void)render;
 @end
 
+@class NSCoder;
 @class UIEvent;
 SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 @interface FSTwinAdView : UIView
