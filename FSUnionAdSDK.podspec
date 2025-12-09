@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
   
   s.swift_versions  = ['5']
 
-  s.vendored_frameworks =  'FSUnionAdSDK.xcframework'
-  s.resources           = 'FSUnionAdSDK.bundle'
+  s.vendored_frameworks =  'FSUnionAdSDK/FSUnionAdSDK.xcframework'
+  s.resources           = 'FSUnionAdSDK/FSUnionAdSDK.bundle'
 
   s.frameworks      = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
   s.weak_frameworks = 'AppTrackingTransparency', 'DeviceCheck'
