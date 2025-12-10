@@ -1,2 +1,0 @@
-FSUnionAdSDK/FSUnionAdSDK.xcframework/ios-arm64/FSUnionAdSDK.framework/FSUnionAdSDK filter=lfs diff=lfs merge=lfs -text
-FSUnionAdSDK/FSUnionAdSDK.xcframework/ios-arm64_x86_64-simulator/FSUnionAdSDK.framework/FSUnionAdSDK filter=lfs diff=lfs merge=lfs -text
