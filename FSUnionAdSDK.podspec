@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = 'FSUnionAdSDK'
-  s.version       = '1.0.2.4'
+  s.version       = '1.0.4.3'
   s.summary       = 'FSUnionAdSDK is a SDK from LinkSure providing union AD service.'
   s.description   = <<-DESC
                       FSUnionAdSDK provides Union ADs which include splash、interstitial、native、banner、feed、rewardVideo etc.
@@ -10,12 +10,10 @@ Pod::Spec.new do |s|
   s.homepage      = 'https://github.com/ImaTech2025/iosfissionsdk.git'
   s.author        = { 'ImaTech2025' => 'IMA-Tech@zenmen.com' }
 
-  s.source        = {
-    :http => "https://github.com/ImaTech2025/iosfissionsdk/releases/download/#{s.version}/FSUnionAdSDK.zip",
-    :type => 'zip'
-  }
+  s.source        = { :git => 'https://github.com/ImaTech2025/iosfissionsdk.git', :tag => s.version }
 
   s.ios.deployment_target = '12.0'
+
   
   s.swift_versions  = ['5']
 
