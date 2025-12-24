@@ -335,6 +335,7 @@ typedef SWIFT_ENUM(NSInteger, FSAdInteractionType, open) {
 };
 
 @class NSString;
+@class FSCAIDModel;
 @class UIImage;
 SWIFT_CLASS("_TtC12FSUnionAdSDK20FSAdSDKConfiguration")
 @interface FSAdSDKConfiguration : NSObject
@@ -349,6 +350,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic, copy) NSString * _Nullable appName;
 /// 设备 ID
 @property (nonatomic, copy) NSString * _Nullable customDeviceID;
+@property (nonatomic, copy) NSArray<FSCAIDModel *> * _Nullable caids;
 /// 自定义参数
 @property (nonatomic, copy) NSDictionary<NSString *, NSObject *> * _Nullable extraUserData;
 /// 个性化推荐开关  默认 false
@@ -417,6 +419,15 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK5FSApp")
 @property (nonatomic) uint32_t size;
 @property (nonatomic) BOOL hasApp;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC12FSUnionAdSDK11FSCAIDModel")
+@interface FSCAIDModel : NSObject
+@property (nonatomic, copy) NSString * _Nullable version;
+@property (nonatomic, copy) NSString * _Nullable caid;
+- (nonnull instancetype)initWithVersion:(NSString * _Nullable)version caid:(NSString * _Nullable)caid OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
@@ -821,32 +832,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK20WfNativeAdActionView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-@end
-
-SWIFT_CLASS("_TtC12FSUnionAdSDK27WfVideoFullscreenPlayerView")
-@interface WfVideoFullscreenPlayerView : UIView
-- (void)layoutSubviews;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC12FSUnionAdSDK29WfVideoFullscreenTransitioner")
-@interface WfVideoFullscreenTransitioner : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@protocol UIViewControllerAnimatedTransitioning;
-@interface WfVideoFullscreenTransitioner (SWIFT_EXTENSION(FSUnionAdSDK)) <UIViewControllerTransitioningDelegate>
-- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForPresentedController:(UIViewController * _Nonnull)presented presentingController:(UIViewController * _Nonnull)presenting sourceController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
-- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForDismissedController:(UIViewController * _Nonnull)dismissed SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@protocol UIViewControllerContextTransitioning;
-@protocol UIViewImplicitlyAnimating;
-@interface WfVideoFullscreenTransitioner (SWIFT_EXTENSION(FSUnionAdSDK)) <UIViewControllerAnimatedTransitioning>
-- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
-- (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
-- (id <UIViewImplicitlyAnimating> _Nonnull)interruptibleAnimatorForTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
@@ -1261,6 +1246,7 @@ typedef SWIFT_ENUM(NSInteger, FSAdInteractionType, open) {
 };
 
 @class NSString;
+@class FSCAIDModel;
 @class UIImage;
 SWIFT_CLASS("_TtC12FSUnionAdSDK20FSAdSDKConfiguration")
 @interface FSAdSDKConfiguration : NSObject
@@ -1275,6 +1261,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic, copy) NSString * _Nullable appName;
 /// 设备 ID
 @property (nonatomic, copy) NSString * _Nullable customDeviceID;
+@property (nonatomic, copy) NSArray<FSCAIDModel *> * _Nullable caids;
 /// 自定义参数
 @property (nonatomic, copy) NSDictionary<NSString *, NSObject *> * _Nullable extraUserData;
 /// 个性化推荐开关  默认 false
@@ -1343,6 +1330,15 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK5FSApp")
 @property (nonatomic) uint32_t size;
 @property (nonatomic) BOOL hasApp;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC12FSUnionAdSDK11FSCAIDModel")
+@interface FSCAIDModel : NSObject
+@property (nonatomic, copy) NSString * _Nullable version;
+@property (nonatomic, copy) NSString * _Nullable caid;
+- (nonnull instancetype)initWithVersion:(NSString * _Nullable)version caid:(NSString * _Nullable)caid OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
@@ -1747,32 +1743,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK20WfNativeAdActionView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-@end
-
-SWIFT_CLASS("_TtC12FSUnionAdSDK27WfVideoFullscreenPlayerView")
-@interface WfVideoFullscreenPlayerView : UIView
-- (void)layoutSubviews;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC12FSUnionAdSDK29WfVideoFullscreenTransitioner")
-@interface WfVideoFullscreenTransitioner : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@protocol UIViewControllerAnimatedTransitioning;
-@interface WfVideoFullscreenTransitioner (SWIFT_EXTENSION(FSUnionAdSDK)) <UIViewControllerTransitioningDelegate>
-- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForPresentedController:(UIViewController * _Nonnull)presented presentingController:(UIViewController * _Nonnull)presenting sourceController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
-- (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForDismissedController:(UIViewController * _Nonnull)dismissed SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@protocol UIViewControllerContextTransitioning;
-@protocol UIViewImplicitlyAnimating;
-@interface WfVideoFullscreenTransitioner (SWIFT_EXTENSION(FSUnionAdSDK)) <UIViewControllerAnimatedTransitioning>
-- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
-- (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
-- (id <UIViewImplicitlyAnimating> _Nonnull)interruptibleAnimatorForTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")

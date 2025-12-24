@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FSUnionAdSDK
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FSUnionAdSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AVFoundation
 import AdSupport
@@ -18,6 +18,8 @@ import Foundation
 import Network
 import NetworkExtension
 import OSLog
+import SQLite3
+import Security
 import StoreKit
 import Swift
 import SystemConfiguration
@@ -101,6 +103,12 @@ extension AVFoundation.AVPlayer {
   @objc optional func fs_splashAdFailedToPresent(_ ad: FSUnionAdSDK.FSSplashAd, error: Foundation.NSError)
   @objc optional func fs_splashAdDidClick(_ ad: FSUnionAdSDK.FSSplashAd)
   @objc optional func fs_splashAdDidClose(_ ad: FSUnionAdSDK.FSSplashAd, closeType: FSUnionAdSDK.FSSplashAdCloseType)
+}
+@objc @objcMembers public class FSCAIDModel : ObjectiveC.NSObject {
+  @objc public var version: Swift.String?
+  @objc public var caid: Swift.String?
+  @objc public init(version: Swift.String? = nil, caid: Swift.String? = nil)
+  @objc deinit
 }
 @objc public class FSSplashAd : FSUnionAdSDK.FSUnionAd {
   final public let slot: FSUnionAdSDK.FSAdSlot
@@ -428,6 +436,7 @@ extension FSUnionAdSDK.WfVideoPlayerView.State : Swift.Equatable {
     @objc get
     @objc set
   }
+  @objc public var caids: [FSUnionAdSDK.FSCAIDModel]?
   @objc public var extraUserData: [Swift.String : Swift.AnyHashable]?
   @objc public var personalRecommend: Swift.Bool
   @objc public var teenagerModel: Swift.Bool
@@ -462,24 +471,6 @@ extension Swift.Array {
 extension Swift.Array where Element == Swift.UInt8 {
   public init(hex: Swift.String)
   public func toHexString() -> Swift.String
-}
-@objc @_inheritsConvenienceInitializers public class WfVideoFullscreenTransitioner : ObjectiveC.NSObject {
-  public var playerView: FSUnionAdSDK.WfVideoPlayerView?
-  public var duration: Swift.Double
-  public var fullscreenControls: [UIKit.UIView]
-  public var fullscreenPlayerView: FSUnionAdSDK.WfVideoFullscreenPlayerView?
-  public var fullscreenVideoGravity: AVFoundation.AVLayerVideoGravity?
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension FSUnionAdSDK.WfVideoFullscreenTransitioner : UIKit.UIViewControllerTransitioningDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController, source: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animationController(forDismissed dismissed: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
-}
-extension FSUnionAdSDK.WfVideoFullscreenTransitioner : UIKit.UIViewControllerAnimatedTransitioning {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func transitionDuration(using transitionContext: (any UIKit.UIViewControllerContextTransitioning)?) -> Foundation.TimeInterval
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animateTransition(using transitionContext: any UIKit.UIViewControllerContextTransitioning)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func interruptibleAnimator(using transitionContext: any UIKit.UIViewControllerContextTransitioning) -> any UIKit.UIViewImplicitlyAnimating
 }
 @objc @_inheritsConvenienceInitializers public class FSAdDifferenceAttribution : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -739,12 +730,6 @@ public enum WfVideoCacheManager {
   public static func cachedConfiguration(for url: Foundation.URL) throws -> FSUnionAdSDK.WfVideoCacheConfiguration
   public static func calculateCachedSize() -> Swift.UInt
   public static func cleanAllCache() throws
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class WfVideoFullscreenPlayerView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class WfVideoPreloadMultiManager : ObjectiveC.NSObject {
   public static let shared: FSUnionAdSDK.WfVideoPreloadMultiManager
