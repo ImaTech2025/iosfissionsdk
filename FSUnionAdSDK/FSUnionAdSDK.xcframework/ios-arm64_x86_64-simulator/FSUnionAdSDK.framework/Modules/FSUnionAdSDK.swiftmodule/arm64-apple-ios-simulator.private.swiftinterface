@@ -52,6 +52,11 @@ extension AVFoundation.AVPlayer {
   @_Concurrency.MainActor @preconcurrency convenience public init(asset: AVFoundation.AVURLAsset)
   @_Concurrency.MainActor @preconcurrency public func getFirstFrameFromVideo() -> UIKit.UIImage?
 }
+@_hasMissingDesignatedInitializers public class FrameworkInfoTool {
+  public static func getMarketingVersion() -> Swift.String
+  public static func getBuildVersion() -> Swift.String
+  @objc deinit
+}
 @objc public protocol FSInterstitialAdDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func fs_interstitialAdSuccessToLoadAd(_ ad: FSUnionAdSDK.FSInterstitialAd)
   @objc optional func fs_interstitialAdFailedToLoadAd(_ ad: FSUnionAdSDK.FSInterstitialAd, error: any Swift.Error)
