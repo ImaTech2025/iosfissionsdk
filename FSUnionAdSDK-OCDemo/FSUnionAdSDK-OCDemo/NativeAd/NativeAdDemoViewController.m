@@ -33,14 +33,6 @@
 
 @property (weak, nonatomic) IBOutlet UIView *adContainer;
 
-@property (weak, nonatomic) IBOutlet UIButton *playButton;
-
-@property (weak, nonatomic) IBOutlet UIButton *pauseButton;
-
-@property (weak, nonatomic) IBOutlet UIButton *stopButton;
-
-@property (weak, nonatomic) IBOutlet UIButton *replayButton;
-
 @property (weak, nonatomic) IBOutlet UISwitch *autoPlaySwitch;
 
 @property (weak, nonatomic) IBOutlet UISwitch *muteSwitch;
@@ -121,26 +113,6 @@
     self.showButton.enabled = NO;
 }
 
-- (IBAction)playButtonClick:(id)sender {
-    [self.adRelatedView.videoAdView play];
-}
-
-- (IBAction)pauseButtonClick:(id)sender {
-    [self.adRelatedView.videoAdView pause];
-}
-
-- (IBAction)stopButtonClick:(id)sender {
-//    [self.adRelatedView.videoAdView destroy];
-}
-
-- (IBAction)replayButtonClick:(id)sender {
-    [self.adRelatedView.videoAdView replay];
-}
-
-- (IBAction)autoPlaySwitchClick:(UISwitch *)sender {
-    self.adRelatedView.videoAdView.isVisibleAutoPlay = sender.on;
-}
-
 - (IBAction)muteSwitchClick:(UISwitch *)sender {
     self.adRelatedView.videoAdView.isMuted = sender.on;
 }
@@ -162,7 +134,6 @@
         FSVideoAdView *videoAdView = self.adRelatedView.videoAdView;
         if (videoAdView) {
             videoAdView.delegate = self;
-            videoAdView.isVisibleAutoPlay = self.autoPlaySwitch.on;
             videoAdView.isMuted = self.muteSwitch.on;
             videoAdView.isAutoReplay = self.autoReplaySwitch.on;
             

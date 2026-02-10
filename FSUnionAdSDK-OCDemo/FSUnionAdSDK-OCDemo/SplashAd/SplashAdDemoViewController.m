@@ -79,7 +79,7 @@
 }
 
 - (void)fs_splashAdLoadFailed:(FSSplashAd *)ad error:(NSError *)error {
-    NSLog(@"splashAdDemo: %s",__FUNCTION__);
+    NSLog(@"splashAdDemo: %s error:%@",__FUNCTION__, error);
 }
 
 - (void)fs_splashAdMaterialDownloadSuccess:(FSSplashAd *)ad {
