@@ -219,7 +219,6 @@ public enum WfNativeAdInteractionStyle : Swift.Int {
   @objc final public let createTime: Swift.Double
   @objc weak public var rootViewController: UIKit.UIViewController?
   @objc weak public var delegate: (any FSUnionAdSDK.FSNativeAdDelegate)?
-  @objc public var landPadding: CoreFoundation.CGRect
   public var expressType: FSUnionAdSDK.FSNativeExpressType?
   @objc public var twinAd: FSUnionAdSDK.FSTwinAd?
   @objc deinit
@@ -668,9 +667,9 @@ public enum WfAdFeedMode : Swift.Int {
   @objc optional func fs_videoAdView(_ videoAdView: FSUnionAdSDK.FSVideoAdView, playStateDidChanged playState: FSUnionAdSDK.FSPlayerPlayState)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class FSVideoAdView : UIKit.UIView {
-  @objc @_Concurrency.MainActor @preconcurrency public var autoPlay: Swift.Bool
-  @objc @_Concurrency.MainActor @preconcurrency public var isVisibleAutoPlay: Swift.Bool
-  @objc @_Concurrency.MainActor @preconcurrency public var isPlayFinished: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency public var isPlayFinished: Swift.Bool {
+    get
+  }
   @objc @_Concurrency.MainActor @preconcurrency public var natureSize: CoreFoundation.CGSize {
     get
   }
@@ -691,6 +690,12 @@ public enum WfAdFeedMode : Swift.Int {
   @objc @_Concurrency.MainActor @preconcurrency public func destroy()
   @objc @_Concurrency.MainActor @preconcurrency public func pause()
   @objc @_Concurrency.MainActor @preconcurrency public func play()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class FSAdapterConstants : ObjectiveC.NSObject {
+  @objc public static let videoMuteKey: Swift.String
+  @objc public static let videoAutoReplayKey: Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 public enum AdConfigRequestError : Swift.Error, Foundation.LocalizedError {

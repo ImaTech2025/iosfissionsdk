@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/FSUnionAdSDK-Swift.h</key>
 		<data>
-		WNnzEyB/j/GJdWVUs0przPxNPCo=
+		yxPVqwsr4M2rQSdlnHhJDMo4GLA=
 		</data>
 		<key>Headers/FSUnionAdSDK.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QKP334PyYJpsTCZDrHDoDnMp7l8=
+		4yBxFRhs/TqQUGR5gW8WG07AiiM=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		HeNXR9BkzdDYA8qWBC+L2RdvfXI=
+		bmCu2eTtDZbN76/cFkOx/+Mgd+o=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ohJyC8dkq9xXi/JUCuTSVXz6V20=
+		SXKg2P1KoxuCNi7G35UKrp5CG+g=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		IyvthbF6aIcbh3sOeLx38jmRTRY=
+		C5XiNfoFQ0F81tja+Qrg+DTau2w=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ohJyC8dkq9xXi/JUCuTSVXz6V20=
+		SXKg2P1KoxuCNi7G35UKrp5CG+g=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6n2/aB3Ox44NUzl5wGsM22WYS8I=
+		j5xCnV7KGJoth9coJD2/AGQxk24=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sJNSpGg90pi20lXFw7gbuWXneRBoOPjth2/SvPGdKJc=
+			LFRTvaK92U3FwfzJCKCgdfKEBeK3hbxQX6sBcDvB4bI=
 			</data>
 		</dict>
 		<key>Headers/FSUnionAdSDK.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UA5VGoUHLQeBr0q7KPC45JUO6iyhUJblE0/7D3EOgyU=
+			qH/D6/lZ0oywNRZtoVN6jeITNt++u9Ft3UbCDmhf20g=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZSpv8w31ucaoDINB6Z47yRdGU1Gq5UXb7+djyV4BgTU=
+			UC77hMI01thl1pWDfyL2iEpqJaNM1h6b//+Uy9XK8Ys=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			USt2dfAFWpfMVhQBfbyS/gF5HoBQ3oA7jO9MSVjPJlw=
+			I1eNv1ka8H/ZrNQOPfT1I3EZFB9jtEFyyNkBwEnnlEA=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZSpv8w31ucaoDINB6Z47yRdGU1Gq5UXb7+djyV4BgTU=
+			UC77hMI01thl1pWDfyL2iEpqJaNM1h6b//+Uy9XK8Ys=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ev3cxzvikyRmNp7CI8W/WOFhBcFuDWsaNJjWNn0CBcA=
+			eePtdge3NYt8aRMq/xg8RkUOxHXTAEvxIVjF/qALwz0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

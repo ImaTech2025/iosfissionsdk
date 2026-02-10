@@ -403,6 +403,17 @@ typedef SWIFT_ENUM(NSUInteger, FSAdType, open) {
   FSAdTypeNativeExpress = 5,
 };
 
+SWIFT_CLASS("_TtC12FSUnionAdSDK18FSAdapterConstants")
+@interface FSAdapterConstants : NSObject
+/// 视频广告是否静音 （默认静音）
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull videoMuteKey;)
++ (NSString * _Nonnull)videoMuteKey SWIFT_WARN_UNUSED_RESULT;
+/// 视频广告是否自动重播（默认关闭）
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull videoAutoReplayKey;)
++ (NSString * _Nonnull)videoAutoReplayKey SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 SWIFT_CLASS("_TtC12FSUnionAdSDK5FSApp")
 @interface FSApp : NSObject
 /// APP ID
@@ -543,7 +554,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 /// Action method includes is ‘presentViewController’.
 @property (nonatomic, weak) UIViewController * _Nullable rootViewController;
 @property (nonatomic, weak) id <FSNativeAdDelegate> _Nullable delegate;
-@property (nonatomic) CGRect landPadding;
 @property (nonatomic, strong) FSTwinAd * _Nullable twinAd;
 /// 注册可点击views
 /// \param containerView adView 对应的容器
@@ -796,9 +806,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 /// 自渲染feed流视频播放组件
 SWIFT_CLASS("_TtC12FSUnionAdSDK13FSVideoAdView")
 @interface FSVideoAdView : UIView
-@property (nonatomic) BOOL autoPlay;
-@property (nonatomic) BOOL isVisibleAutoPlay;
-@property (nonatomic) BOOL isPlayFinished;
+@property (nonatomic, readonly) BOOL isPlayFinished;
 @property (nonatomic, readonly) CGSize natureSize;
 @property (nonatomic) BOOL isMuted;
 @property (nonatomic) BOOL isAutoReplay;
