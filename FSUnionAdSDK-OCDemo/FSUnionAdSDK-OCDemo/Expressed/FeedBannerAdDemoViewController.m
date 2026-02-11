@@ -95,12 +95,12 @@ UITableViewDataSource
     self.refreshButton.enabled = YES;
 }
 
-- (void)fs_expressFeedAdShowSuccess:(FSNativeExpressFeedsAd *)ad {
+- (void)fs_expressFeedAdDidVisible:(FSNativeExpressFeedsAd *)ad {
     NSLog(@"feedBannerAdDemo:%s", __FUNCTION__);
 }
 
-- (void)fs_expressFeedAdShowFailed:(FSNativeExpressFeedsAd *)ad withError:(NSError *)error {
-    NSLog(@"feedBannerAdDemo:%s", __FUNCTION__);
+- (void)fs_expressFeedAdPresentFailed:(FSNativeExpressFeedsAd *)ad withError:(NSError *)error {
+   NSLog(@"feedBannerAdDemo:%s", __FUNCTION__);
 }
 
 - (void)fs_expressFeedAdDidClosed:(FSNativeExpressFeedsAd *)ad {
