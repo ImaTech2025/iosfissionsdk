@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Wxnw/dUxkjy5bTM4Z+wxeY9vVUg=
+		Tc8kuR/QWPltBIupy7iFl+RrSDc=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bmCu2eTtDZbN76/cFkOx/+Mgd+o=
+		N4et8zN481AOAmF0GfXoCBc+pfI=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bmCu2eTtDZbN76/cFkOx/+Mgd+o=
+		N4et8zN481AOAmF0GfXoCBc+pfI=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qH/D6/lZ0oywNRZtoVN6jeITNt++u9Ft3UbCDmhf20g=
+			cfgEAbZXRWXMMwP0oZ4/HKVPZ2f+4bv+r7GpaOo69hc=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qH/D6/lZ0oywNRZtoVN6jeITNt++u9Ft3UbCDmhf20g=
+			cfgEAbZXRWXMMwP0oZ4/HKVPZ2f+4bv+r7GpaOo69hc=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

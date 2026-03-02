@@ -35749,7 +35749,7 @@
       "kind": "StringLiteral",
       "offset": 14467,
       "length": 11,
-      "value": "\"longitued\""
+      "value": "\"longitude\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
