@@ -108,6 +108,7 @@ extension AVFoundation.AVPlayer {
   @objc optional func fs_splashAdFailedToPresent(_ ad: FSUnionAdSDK.FSSplashAd, error: Foundation.NSError)
   @objc optional func fs_splashAdDidClick(_ ad: FSUnionAdSDK.FSSplashAd)
   @objc optional func fs_splashAdDidClose(_ ad: FSUnionAdSDK.FSSplashAd, closeType: FSUnionAdSDK.FSSplashAdCloseType)
+  @objc optional func fs_splashAdDidCloseOtherController(_ ad: FSUnionAdSDK.FSSplashAd, interactionType: FSUnionAdSDK.FSAdInteractionType)
 }
 @objc @objcMembers public class FSCAIDModel : ObjectiveC.NSObject {
   @objc public var version: Swift.String?
@@ -600,6 +601,7 @@ extension FSUnionAdSDK.WfVideoLoadManager : AVFoundation.AVAssetResourceLoaderDe
   @objc optional func fs_rewardedAdVideoDidPlayFinish(_ ad: FSUnionAdSDK.FSRewardedAd)
   @objc optional func fs_rewardedAdDidSucceed(_ ad: FSUnionAdSDK.FSRewardedAd)
   @objc optional func fs_rewardedAdDidClose(_ ad: FSUnionAdSDK.FSRewardedAd)
+  @objc optional func fs_rewardedAdDidCloseOtherController(_ ad: FSUnionAdSDK.FSRewardedAd, interactionType: FSUnionAdSDK.FSAdInteractionType)
   @objc optional func fs_rewardedAdDidClick(_ ad: FSUnionAdSDK.FSRewardedAd)
   @objc optional func fs_rewardedAdDidSkip(_ ad: FSUnionAdSDK.FSRewardedAd)
 }

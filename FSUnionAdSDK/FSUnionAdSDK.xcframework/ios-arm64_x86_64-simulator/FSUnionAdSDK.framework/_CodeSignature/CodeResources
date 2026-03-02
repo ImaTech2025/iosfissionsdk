@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/FSUnionAdSDK-Swift.h</key>
 		<data>
-		VmWrdAXsSbJAXFc3YaUMJtvOyGA=
+		4X0rCWLh54vPx7PbsaV5DM4hvOI=
 		</data>
 		<key>Headers/FSUnionAdSDK.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Tc8kuR/QWPltBIupy7iFl+RrSDc=
+		a824xVsGAGUILwRt0ywEgV/3roY=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		N4et8zN481AOAmF0GfXoCBc+pfI=
+		sbWLVBTIfyTGf7ecKyoC4zQ3izI=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lCbe4cDNT42eHGRf2gDVQRnblcI=
+		T1sxknSfGYTWIPKr/IPVZIew1qQ=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KI9HBo5o8wFmwAB3F8rn8JiXDKo=
+		AeSk7CwLWCQ5sEKSHEmNWH7TdF4=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lCbe4cDNT42eHGRf2gDVQRnblcI=
+		T1sxknSfGYTWIPKr/IPVZIew1qQ=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5JX9blo9mYO2U0d82pRzfTmIMGM=
+		U6kqjP+n0q+um8tC1evhC8Azv/8=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		N4et8zN481AOAmF0GfXoCBc+pfI=
+		sbWLVBTIfyTGf7ecKyoC4zQ3izI=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7CFa3VKAjexe9W8wNFeQ+K+xLKo=
+		11Kayv56qwl/dsKRH+IyiKIVI68=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Fruub36dU5KDbf6/v2M0mLLkdo4=
+		EpRl0SmCxDWDlPolfbtwxzpMpSQ=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7CFa3VKAjexe9W8wNFeQ+K+xLKo=
+		11Kayv56qwl/dsKRH+IyiKIVI68=
 		</data>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		849by2zK7lqia3UvwseG//6pbgk=
+		GqYHY6NkcyXM0SrzAD7A0t/Jnqo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cv56cFZfMFvtDdv8Z36gjJNiLrpp8C2s9zaFR+IP344=
+			hSSJHRmibaKXrBif60qCAkUHd+ZpIbFCRYGbEi0SVXU=
 			</data>
 		</dict>
 		<key>Headers/FSUnionAdSDK.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cfgEAbZXRWXMMwP0oZ4/HKVPZ2f+4bv+r7GpaOo69hc=
+			DPPDzv+8MuJfHHIOjITiegnWzY6DauMZ3I5rJG5s7aI=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e9n3UiwdfJg3HvtkH6OgtlGJjp1K9g81v4PSh7Qsalk=
+			0no37XJ5MmmvsEIkgy+VAdk3IIjgv0ufB4Gi3GGSN5Y=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uv+Cm0ZlNCM6ocYIwPl4rKwYH7vokirztqLRWSxlt6E=
+			lHe9/zBLTam4ijQvZP9sM6hMU9iHetYVXehcjgs66t0=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e9n3UiwdfJg3HvtkH6OgtlGJjp1K9g81v4PSh7Qsalk=
+			0no37XJ5MmmvsEIkgy+VAdk3IIjgv0ufB4Gi3GGSN5Y=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NVyg7io4spduMyjR06qdy4m9ML9lCVGVXAyNlZkrctY=
+			EdBwnctc3MpBvlmGzIWLjn88UC8IrVW+cqCK+KpkfpU=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cfgEAbZXRWXMMwP0oZ4/HKVPZ2f+4bv+r7GpaOo69hc=
+			DPPDzv+8MuJfHHIOjITiegnWzY6DauMZ3I5rJG5s7aI=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e7fqa7Yh3TgwNlfv619LIsuQyc4Q+eqoNnIoqOg3Dmc=
+			UlXtc8tZP2U4SuQY3/KGJkrn/PRIkh46vKUOYywy0b4=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qkNnYeWow9SzCWen4D1C2rbkAiccq9zbje8TTGLk/bs=
+			W1FcfKgWMbJNmLqMVoY24BWFQOyAZiqOdE4hsaCTAVM=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e7fqa7Yh3TgwNlfv619LIsuQyc4Q+eqoNnIoqOg3Dmc=
+			UlXtc8tZP2U4SuQY3/KGJkrn/PRIkh46vKUOYywy0b4=
 			</data>
 		</dict>
 		<key>Modules/FSUnionAdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vC2O1gk4UrWPBQdR4uUkcjBkb+SN1Y90TTugEgSA3Rw=
+			ahNXZzwGN0DZmmcke37ZgP69bxVXovHi/HCM76SoInE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

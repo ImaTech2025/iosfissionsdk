@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = 'FSUnionAdSDK'
-  s.version       = '1.0.5.3'
+  s.version       = '1.0.6.0'
   s.summary       = 'FSUnionAdSDK is a SDK from LinkSure providing union AD service.'
   s.description   = <<-DESC
                       FSUnionAdSDK provides Union ADs which include splash、interstitial、native、banner、feed、rewardVideo etc.

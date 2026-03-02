@@ -1964,6 +1964,44 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fs_splashAdDidCloseOtherController",
+            "printedName": "fs_splashAdDidCloseOtherController(_:interactionType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FSSplashAd",
+                "printedName": "FSUnionAdSDK.FSSplashAd",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSSplashAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FSAdInteractionType",
+                "printedName": "FSUnionAdSDK.FSAdInteractionType",
+                "usr": "c:@M@FSUnionAdSDK@E@FSAdInteractionType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FSUnionAdSDK@objc(pl)FSSplashAdDelegate(im)fs_splashAdDidCloseOtherController:interactionType:",
+            "mangledName": "$s12FSUnionAdSDK08FSSplashB8DelegateP09fs_splashB23DidCloseOtherController_15interactionTypeyAA0dB0C_AA015FSAdInteractionM0OtF",
+            "moduleName": "FSUnionAdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FSUnionAdSDK.FSSplashAdDelegate>",
+            "sugared_genericSig": "<Self where Self : FSUnionAdSDK.FSSplashAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -19700,6 +19738,44 @@
           },
           {
             "kind": "Function",
+            "name": "fs_rewardedAdDidCloseOtherController",
+            "printedName": "fs_rewardedAdDidCloseOtherController(_:interactionType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FSRewardedAd",
+                "printedName": "FSUnionAdSDK.FSRewardedAd",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSRewardedAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FSAdInteractionType",
+                "printedName": "FSUnionAdSDK.FSAdInteractionType",
+                "usr": "c:@M@FSUnionAdSDK@E@FSAdInteractionType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FSUnionAdSDK@objc(pl)FSRewardedAdDelegate(im)fs_rewardedAdDidCloseOtherController:interactionType:",
+            "mangledName": "$s12FSUnionAdSDK010FSRewardedB8DelegateP011fs_rewardedB23DidCloseOtherController_15interactionTypeyAA0dB0C_AA015FSAdInteractionM0OtF",
+            "moduleName": "FSUnionAdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FSUnionAdSDK.FSRewardedAdDelegate>",
+            "sugared_genericSig": "<Self where Self : FSUnionAdSDK.FSRewardedAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "fs_rewardedAdDidClick",
             "printedName": "fs_rewardedAdDidClick(_:)",
             "children": [
@@ -32219,70 +32295,70 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1184,
+      "offset": 1325,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1235,
+      "offset": 1376,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1273,
+      "offset": 1414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1314,
+      "offset": 1455,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1353,
+      "offset": 1494,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1546,
+      "offset": 1687,
       "length": 17,
       "value": "\"fs_loading_icon\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1879,
+      "offset": 2020,
       "length": 17,
       "value": "\"adx_mute_enable\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1957,
+      "offset": 2098,
       "length": 18,
       "value": "\"adx_mute_disable\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2379,
+      "offset": 2520,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2702,
+      "offset": 2843,
       "length": 4,
       "value": "true"
     },
@@ -38757,7 +38833,7 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1599,
+      "offset": 1741,
       "length": 5,
       "value": "false"
     },

@@ -730,6 +730,8 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK20FSRewardedAdDelegate_")
 - (void)fs_rewardedAdDidSucceed:(FSRewardedAd * _Nonnull)ad;
 /// 广告关闭回调
 - (void)fs_rewardedAdDidClose:(FSRewardedAd * _Nonnull)ad;
+/// 此回调在广告跳转到其他控制器时，该控制器被关闭时调用interactionType：此参数可区分是打开的appstore/落地页等
+- (void)fs_rewardedAdDidCloseOtherController:(FSRewardedAd * _Nonnull)ad interactionType:(enum FSAdInteractionType)interactionType;
 /// 广告点击
 - (void)fs_rewardedAdDidClick:(FSRewardedAd * _Nonnull)ad;
 /// 广告跳过
@@ -781,6 +783,8 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK18FSSplashAdDelegate_")
 - (void)fs_splashAdDidClick:(FSSplashAd * _Nonnull)ad;
 /// 开屏广告关闭
 - (void)fs_splashAdDidClose:(FSSplashAd * _Nonnull)ad closeType:(enum FSSplashAdCloseType)closeType;
+/// 此回调在广告跳转到其他控制器时，该控制器被关闭时调用interactionType：此参数可区分是打开的appstore/落地页等
+- (void)fs_splashAdDidCloseOtherController:(FSSplashAd * _Nonnull)ad interactionType:(enum FSAdInteractionType)interactionType;
 @end
 
 @class FSTwinAdView;
