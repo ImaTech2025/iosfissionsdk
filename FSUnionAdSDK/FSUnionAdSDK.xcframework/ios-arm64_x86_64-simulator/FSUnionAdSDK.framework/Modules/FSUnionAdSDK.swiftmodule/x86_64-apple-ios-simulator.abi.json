@@ -170,93 +170,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "FrameworkInfoTool",
-        "printedName": "FrameworkInfoTool",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "getMarketingVersion",
-            "printedName": "getMarketingVersion()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FSUnionAdSDK17FrameworkInfoToolC19getMarketingVersionSSyFZ",
-            "mangledName": "$s12FSUnionAdSDK17FrameworkInfoToolC19getMarketingVersionSSyFZ",
-            "moduleName": "FSUnionAdSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getBuildVersion",
-            "printedName": "getBuildVersion()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FSUnionAdSDK17FrameworkInfoToolC15getBuildVersionSSyFZ",
-            "mangledName": "$s12FSUnionAdSDK17FrameworkInfoToolC15getBuildVersionSSyFZ",
-            "moduleName": "FSUnionAdSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:12FSUnionAdSDK17FrameworkInfoToolC",
-        "mangledName": "$s12FSUnionAdSDK17FrameworkInfoToolC",
-        "moduleName": "FSUnionAdSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FSUnionAdSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "FSInterstitialAdDelegate",
         "printedName": "FSInterstitialAdDelegate",
         "children": [
@@ -5627,7 +5540,6 @@
               "ReferenceOwnership",
               "SetterAccess",
               "AccessControl",
-              "RawDocComment",
               "ObjC"
             ],
             "ownership": 1,
@@ -5772,7 +5684,6 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -5866,7 +5777,6 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -5960,7 +5870,6 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -6028,218 +5937,6 @@
                 "declKind": "Accessor",
                 "usr": "s:12FSUnionAdSDK08FSNativeB0C6minCpms6UInt32VvM",
                 "mangledName": "$s12FSUnionAdSDK08FSNativeB0C6minCpms6UInt32VvM",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "smartRankPkg",
-            "printedName": "smartRankPkg",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd(py)smartRankPkg",
-            "mangledName": "$s12FSUnionAdSDK08FSNativeB0C12smartRankPkgSSSgvp",
-            "moduleName": "FSUnionAdSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd(im)smartRankPkg",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB0C12smartRankPkgSSSgvg",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd(im)setSmartRankPkg:",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB0C12smartRankPkgSSSgvs",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FSUnionAdSDK08FSNativeB0C12smartRankPkgSSSgvM",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB0C12smartRankPkgSSSgvM",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "maxCpmDiff",
-            "printedName": "maxCpmDiff",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UInt32",
-                "printedName": "Swift.UInt32",
-                "usr": "s:s6UInt32V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd(py)maxCpmDiff",
-            "mangledName": "$s12FSUnionAdSDK08FSNativeB0C10maxCpmDiffs6UInt32Vvp",
-            "moduleName": "FSUnionAdSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt32",
-                    "printedName": "Swift.UInt32",
-                    "usr": "s:s6UInt32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd(im)maxCpmDiff",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB0C10maxCpmDiffs6UInt32Vvg",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt32",
-                    "printedName": "Swift.UInt32",
-                    "usr": "s:s6UInt32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAd(im)setMaxCpmDiff:",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB0C10maxCpmDiffs6UInt32Vvs",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FSUnionAdSDK08FSNativeB0C10maxCpmDiffs6UInt32VvM",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB0C10maxCpmDiffs6UInt32VvM",
                 "moduleName": "FSUnionAdSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7360,114 +7057,9 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "WfNativeAdActionView",
-        "printedName": "WfNativeAdActionView",
+        "name": "FSNativeAdMotionView",
+        "printedName": "FSNativeAdMotionView",
         "children": [
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any FSUnionAdSDK.WfNativeAdActionDelegate)?"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12FSUnionAdSDK08WfNativeB10ActionViewC8delegateAA0debF8Delegate_pSgvp",
-            "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC8delegateAA0debF8Delegate_pSgvp",
-            "moduleName": "FSUnionAdSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
-              "HasStorage",
-              "ReferenceOwnership",
-              "AccessControl"
-            ],
-            "ownership": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any FSUnionAdSDK.WfNativeAdActionDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WfNativeAdActionDelegate",
-                        "printedName": "any FSUnionAdSDK.WfNativeAdActionDelegate",
-                        "usr": "s:12FSUnionAdSDK08WfNativeB14ActionDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FSUnionAdSDK08WfNativeB10ActionViewC8delegateAA0debF8Delegate_pSgvg",
-                "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC8delegateAA0debF8Delegate_pSgvg",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any FSUnionAdSDK.WfNativeAdActionDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WfNativeAdActionDelegate",
-                        "printedName": "any FSUnionAdSDK.WfNativeAdActionDelegate",
-                        "usr": "s:12FSUnionAdSDK08WfNativeB14ActionDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FSUnionAdSDK08WfNativeB10ActionViewC8delegateAA0debF8Delegate_pSgvs",
-                "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC8delegateAA0debF8Delegate_pSgvs",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FSUnionAdSDK08WfNativeB10ActionViewC8delegateAA0debF8Delegate_pSgvM",
-                "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC8delegateAA0debF8Delegate_pSgvM",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -7475,9 +7067,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WfNativeAdActionView",
-                "printedName": "FSUnionAdSDK.WfNativeAdActionView",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)WfNativeAdActionView"
+                "name": "FSNativeAdMotionView",
+                "printedName": "FSUnionAdSDK.FSNativeAdMotionView",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdMotionView"
               },
               {
                 "kind": "TypeNominal",
@@ -7487,8 +7079,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@FSUnionAdSDK@objc(cs)WfNativeAdActionView(im)initWithFrame:",
-            "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC5frameACSo6CGRectV_tcfc",
+            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdMotionView(im)initWithFrame:",
+            "mangledName": "$s12FSUnionAdSDK08FSNativeB10MotionViewC5frameACSo6CGRectV_tcfc",
             "moduleName": "FSUnionAdSDK",
             "overriding": true,
             "objc_name": "initWithFrame:",
@@ -7501,104 +7093,11 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "layoutSubviews",
-            "printedName": "layoutSubviews()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FSUnionAdSDK@objc(cs)WfNativeAdActionView(im)layoutSubviews",
-            "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC14layoutSubviewsyyF",
-            "moduleName": "FSUnionAdSDK",
-            "overriding": true,
-            "objc_name": "layoutSubviews",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startMotion",
-            "printedName": "startMotion()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FSUnionAdSDK08WfNativeB10ActionViewC11startMotionyyF",
-            "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC11startMotionyyF",
-            "moduleName": "FSUnionAdSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "restartMotion",
-            "printedName": "restartMotion()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FSUnionAdSDK08WfNativeB10ActionViewC13restartMotionyyF",
-            "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC13restartMotionyyF",
-            "moduleName": "FSUnionAdSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stopMotion",
-            "printedName": "stopMotion()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FSUnionAdSDK08WfNativeB10ActionViewC10stopMotionyyF",
-            "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC10stopMotionyyF",
-            "moduleName": "FSUnionAdSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@FSUnionAdSDK@objc(cs)WfNativeAdActionView",
-        "mangledName": "$s12FSUnionAdSDK08WfNativeB10ActionViewC",
+        "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdMotionView",
+        "mangledName": "$s12FSUnionAdSDK08FSNativeB10MotionViewC",
         "moduleName": "FSUnionAdSDK",
         "declAttributes": [
           "Preconcurrency",
@@ -8337,6 +7836,229 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "FSAdClickType",
+        "printedName": "FSAdClickType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "normal",
+            "printedName": "normal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FSUnionAdSDK.FSAdClickType.Type) -> FSUnionAdSDK.FSAdClickType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FSAdClickType",
+                    "printedName": "FSUnionAdSDK.FSAdClickType",
+                    "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FSUnionAdSDK.FSAdClickType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FSAdClickType",
+                        "printedName": "FSUnionAdSDK.FSAdClickType",
+                        "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType@FSAdClickTypeNormal",
+            "mangledName": "$s12FSUnionAdSDK13FSAdClickTypeO6normalyA2CmF",
+            "moduleName": "FSUnionAdSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "shake",
+            "printedName": "shake",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FSUnionAdSDK.FSAdClickType.Type) -> FSUnionAdSDK.FSAdClickType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FSAdClickType",
+                    "printedName": "FSUnionAdSDK.FSAdClickType",
+                    "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FSUnionAdSDK.FSAdClickType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FSAdClickType",
+                        "printedName": "FSUnionAdSDK.FSAdClickType",
+                        "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType@FSAdClickTypeShake",
+            "mangledName": "$s12FSUnionAdSDK13FSAdClickTypeO5shakeyA2CmF",
+            "moduleName": "FSUnionAdSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FSUnionAdSDK.FSAdClickType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FSAdClickType",
+                    "printedName": "FSUnionAdSDK.FSAdClickType",
+                    "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12FSUnionAdSDK13FSAdClickTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s12FSUnionAdSDK13FSAdClickTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "FSUnionAdSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12FSUnionAdSDK13FSAdClickTypeO8rawValueSivp",
+            "mangledName": "$s12FSUnionAdSDK13FSAdClickTypeO8rawValueSivp",
+            "moduleName": "FSUnionAdSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FSUnionAdSDK13FSAdClickTypeO8rawValueSivg",
+                "mangledName": "$s12FSUnionAdSDK13FSAdClickTypeO8rawValueSivg",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType",
+        "mangledName": "$s12FSUnionAdSDK13FSAdClickTypeO",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "FSUnionAd",
         "printedName": "FSUnionAd",
         "children": [
@@ -8874,6 +8596,99 @@
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clickType",
+            "printedName": "clickType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FSAdClickType",
+                "printedName": "FSUnionAdSDK.FSAdClickType",
+                "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSUnionAd(py)clickType",
+            "mangledName": "$s12FSUnionAdSDK0aB0C9clickTypeAA09FSAdClickE0Ovp",
+            "moduleName": "FSUnionAdSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FSAdClickType",
+                    "printedName": "FSUnionAdSDK.FSAdClickType",
+                    "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSUnionAd(im)clickType",
+                "mangledName": "$s12FSUnionAdSDK0aB0C9clickTypeAA09FSAdClickE0Ovg",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FSAdClickType",
+                    "printedName": "FSUnionAdSDK.FSAdClickType",
+                    "usr": "c:@M@FSUnionAdSDK@E@FSAdClickType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSUnionAd(im)setClickType:",
+                "mangledName": "$s12FSUnionAdSDK0aB0C9clickTypeAA09FSAdClickE0Ovs",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FSUnionAdSDK0aB0C9clickTypeAA09FSAdClickE0OvM",
+                "mangledName": "$s12FSUnionAdSDK0aB0C9clickTypeAA09FSAdClickE0OvM",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -13308,6 +13123,64 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "FSAdSDKPrivacyProvider",
+        "printedName": "FSAdSDKPrivacyProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fs_privacyOptions",
+            "printedName": "fs_privacyOptions()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FSUnionAdSDK@objc(pl)FSAdSDKPrivacyProvider(im)fs_privacyOptions",
+            "mangledName": "$s12FSUnionAdSDK22FSAdSDKPrivacyProviderP17fs_privacyOptionsSo12NSDictionaryCyF",
+            "moduleName": "FSUnionAdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FSUnionAdSDK.FSAdSDKPrivacyProvider>",
+            "sugared_genericSig": "<Self where Self : FSUnionAdSDK.FSAdSDKPrivacyProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@FSUnionAdSDK@objc(pl)FSAdSDKPrivacyProvider",
+        "mangledName": "$s12FSUnionAdSDK22FSAdSDKPrivacyProviderP",
+        "moduleName": "FSUnionAdSDK",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "FSAdSDKConfiguration",
         "printedName": "FSAdSDKConfiguration",
         "children": [
@@ -14609,6 +14482,117 @@
           },
           {
             "kind": "Var",
+            "name": "privacyProvider",
+            "printedName": "privacyProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any FSUnionAdSDK.FSAdSDKPrivacyProvider)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSDKConfiguration(py)privacyProvider",
+            "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC15privacyProviderAA0d10SDKPrivacyG0_pSgvp",
+            "moduleName": "FSUnionAdSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any FSUnionAdSDK.FSAdSDKPrivacyProvider)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FSAdSDKPrivacyProvider",
+                        "printedName": "any FSUnionAdSDK.FSAdSDKPrivacyProvider",
+                        "usr": "c:@M@FSUnionAdSDK@objc(pl)FSAdSDKPrivacyProvider"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSDKConfiguration(im)privacyProvider",
+                "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC15privacyProviderAA0d10SDKPrivacyG0_pSgvg",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any FSUnionAdSDK.FSAdSDKPrivacyProvider)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FSAdSDKPrivacyProvider",
+                        "printedName": "any FSUnionAdSDK.FSAdSDKPrivacyProvider",
+                        "usr": "c:@M@FSUnionAdSDK@objc(pl)FSAdSDKPrivacyProvider"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSDKConfiguration(im)setPrivacyProvider:",
+                "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC15privacyProviderAA0d10SDKPrivacyG0_pSgvs",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FSUnionAdSDK20FSAdSDKConfigurationC15privacyProviderAA0d10SDKPrivacyG0_pSgvM",
+                "mangledName": "$s12FSUnionAdSDK20FSAdSDKConfigurationC15privacyProviderAA0d10SDKPrivacyG0_pSgvM",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "customUnionLogo",
             "printedName": "customUnionLogo",
             "children": [
@@ -14805,6 +14789,67 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "FSDeviceKit",
+        "printedName": "FSDeviceKit",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -17882,10 +17927,13 @@
             "mangledName": "$s12FSUnionAdSDK8FSAdSlotC5countSuvp",
             "moduleName": "FSUnionAdSDK",
             "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -17903,6 +17951,7 @@
                 "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSlot(im)count",
                 "mangledName": "$s12FSUnionAdSDK8FSAdSlotC5countSuvg",
                 "moduleName": "FSUnionAdSDK",
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -17929,6 +17978,7 @@
                 "usr": "c:@M@FSUnionAdSDK@objc(cs)FSAdSlot(im)setCount:",
                 "mangledName": "$s12FSUnionAdSDK8FSAdSlotC5countSuvs",
                 "moduleName": "FSUnionAdSDK",
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -18547,31 +18597,32 @@
           },
           {
             "kind": "Var",
-            "name": "actionView",
-            "printedName": "actionView",
+            "name": "motionView",
+            "printedName": "motionView",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FSUnionAdSDK.WfNativeAdActionView?",
+                "printedName": "FSUnionAdSDK.FSNativeAdMotionView?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "WfNativeAdActionView",
-                    "printedName": "FSUnionAdSDK.WfNativeAdActionView",
-                    "usr": "c:@M@FSUnionAdSDK@objc(cs)WfNativeAdActionView"
+                    "name": "FSNativeAdMotionView",
+                    "printedName": "FSUnionAdSDK.FSNativeAdMotionView",
+                    "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdMotionView"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdRelatedView(py)actionView",
-            "mangledName": "$s12FSUnionAdSDK08FSNativeB11RelatedViewC06actionF0AA08WfNativeb6ActionF0CSgvp",
+            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdRelatedView(py)motionView",
+            "mangledName": "$s12FSUnionAdSDK08FSNativeB11RelatedViewC06motionF0AA0db6MotionF0CSgvp",
             "moduleName": "FSUnionAdSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -18586,80 +18637,27 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "FSUnionAdSDK.WfNativeAdActionView?",
+                    "printedName": "FSUnionAdSDK.FSNativeAdMotionView?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "WfNativeAdActionView",
-                        "printedName": "FSUnionAdSDK.WfNativeAdActionView",
-                        "usr": "c:@M@FSUnionAdSDK@objc(cs)WfNativeAdActionView"
+                        "name": "FSNativeAdMotionView",
+                        "printedName": "FSUnionAdSDK.FSNativeAdMotionView",
+                        "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdMotionView"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdRelatedView(im)actionView",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB11RelatedViewC06actionF0AA08WfNativeb6ActionF0CSgvg",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdRelatedView(im)motionView",
+                "mangledName": "$s12FSUnionAdSDK08FSNativeB11RelatedViewC06motionF0AA0db6MotionF0CSgvg",
                 "moduleName": "FSUnionAdSDK",
                 "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FSUnionAdSDK.WfNativeAdActionView?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WfNativeAdActionView",
-                        "printedName": "FSUnionAdSDK.WfNativeAdActionView",
-                        "usr": "c:@M@FSUnionAdSDK@objc(cs)WfNativeAdActionView"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSNativeAdRelatedView(im)setActionView:",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB11RelatedViewC06actionF0AA08WfNativeb6ActionF0CSgvs",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FSUnionAdSDK08FSNativeB11RelatedViewC06actionF0AA08WfNativeb6ActionF0CSgvM",
-                "mangledName": "$s12FSUnionAdSDK08FSNativeB11RelatedViewC06actionF0AA08WfNativeb6ActionF0CSgvM",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -22272,7 +22270,9 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "SetterAccess",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -22298,51 +22298,6 @@
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSMaterialMeta(im)setIsShakeEnabled:",
-                "mangledName": "$s12FSUnionAdSDK14FSMaterialMetaC14isShakeEnabledSbvs",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FSUnionAdSDK14FSMaterialMetaC14isShakeEnabledSbvM",
-                "mangledName": "$s12FSUnionAdSDK14FSMaterialMetaC14isShakeEnabledSbvM",
-                "moduleName": "FSUnionAdSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -23694,6 +23649,102 @@
           },
           {
             "kind": "Var",
+            "name": "isAutoPlay",
+            "printedName": "isAutoPlay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FSUnionAdSDK@objc(cs)FSVideoAdView(py)isAutoPlay",
+            "mangledName": "$s12FSUnionAdSDK07FSVideoB4ViewC10isAutoPlaySbvp",
+            "moduleName": "FSUnionAdSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSVideoAdView(im)isAutoPlay",
+                "mangledName": "$s12FSUnionAdSDK07FSVideoB4ViewC10isAutoPlaySbvg",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FSUnionAdSDK@objc(cs)FSVideoAdView(im)setIsAutoPlay:",
+                "mangledName": "$s12FSUnionAdSDK07FSVideoB4ViewC10isAutoPlaySbvs",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FSUnionAdSDK07FSVideoB4ViewC10isAutoPlaySbvM",
+                "mangledName": "$s12FSUnionAdSDK07FSVideoB4ViewC10isAutoPlaySbvM",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isMuted",
             "printedName": "isMuted",
             "children": [
@@ -24457,8 +24508,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "FSUnionAdSDK",
         "declAttributes": [
@@ -24473,6 +24524,26 @@
         "moduleName": "FSUnionAdSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FSDeviceKit",
+        "printedName": "FSDeviceKit",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -24519,6 +24590,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "FSUnionAdSDK",
         "declAttributes": [
@@ -27189,6 +27270,26 @@
       },
       {
         "kind": "Import",
+        "name": "FSKeychain",
+        "printedName": "FSKeychain",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FSUnionAdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -29829,6 +29930,34 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Generated\/FSAdSDKBuildVersion.FSUnionAdSDK.generated.swift",
+      "kind": "StringLiteral",
+      "offset": 133,
+      "length": 7,
+      "value": "\"1.0.7\""
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Generated\/FSAdSDKBuildVersion.FSUnionAdSDK.generated.swift",
+      "kind": "StringLiteral",
+      "offset": 171,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Generated\/FSAdSDKBuildVersion.FSUnionAdSDK.generated.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 9,
+      "value": "\"1.0.7.0\""
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Generated\/FSAdSDKBuildVersion.FSUnionAdSDK.generated.swift",
+      "kind": "IntegerLiteral",
+      "offset": 253,
+      "length": 7,
+      "value": "1000700"
+    },
+    {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/Image\u0005Loader\/ImageDiskCache.swift",
       "kind": "StringLiteral",
       "offset": 234,
@@ -30237,336 +30366,336 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 3553,
+      "offset": 3685,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 3592,
+      "offset": 3724,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 3631,
+      "offset": 3763,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "Array",
-      "offset": 3683,
+      "offset": 3815,
       "length": 16,
       "value": "[0.4, 0.75, 1.0]"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 3750,
+      "offset": 3882,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 3758,
+      "offset": 3890,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 3811,
+      "offset": 3943,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3819,
+      "offset": 3951,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 3925,
+      "offset": 4057,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3973,
+      "offset": 4105,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 4178,
+      "offset": 4310,
       "length": 8,
       "value": "\"fs_app\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 4258,
+      "offset": 4390,
       "length": 8,
       "value": "\"fs_app\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4393,
+      "offset": 4525,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 4576,
+      "offset": 4708,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4629,
+      "offset": 4761,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 4664,
+      "offset": 4796,
       "length": 15,
       "value": "\" 了解更多\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 4862,
+      "offset": 4994,
       "length": 16,
       "value": "\"fs_mobkit_link\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 4986,
+      "offset": 5118,
       "length": 6,
       "value": "\"%.1f\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5068,
+      "offset": 5200,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5074,
+      "offset": 5206,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5088,
+      "offset": 5220,
       "length": 5,
       "value": "204.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5094,
+      "offset": 5226,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5107,
+      "offset": 5239,
       "length": 5,
       "value": "103.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5113,
+      "offset": 5245,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5127,
+      "offset": 5259,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5189,
+      "offset": 5321,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5334,
+      "offset": 5466,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 5451,
+      "offset": 5583,
       "length": 74,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 5492,
+      "offset": 5624,
       "length": 14,
       "value": "\"查看详情\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 5509,
+      "offset": 5641,
       "length": 14,
       "value": "\"立即下载\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 5524,
+      "offset": 5656,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5594,
+      "offset": 5726,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5598,
+      "offset": 5730,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5612,
+      "offset": 5744,
       "length": 5,
       "value": "133.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5618,
+      "offset": 5750,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5631,
+      "offset": 5763,
       "length": 5,
       "value": "240.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5637,
+      "offset": 5769,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5651,
+      "offset": 5783,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5699,
+      "offset": 5831,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5753,
+      "offset": 5885,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5818,
+      "offset": 5950,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5830,
+      "offset": 5962,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "FloatLiteral",
-      "offset": 5992,
+      "offset": 6124,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 6036,
+      "offset": 6168,
       "length": 9,
       "value": "\" 重播\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6127,
+      "offset": 6259,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 6243,
+      "offset": 6375,
       "length": 21,
       "value": "\"fs_feed_replay_icon\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 6444,
+      "offset": 6576,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerEndView.swift",
       "kind": "StringLiteral",
-      "offset": 6450,
+      "offset": 6582,
       "length": 8,
       "value": "\"广告\""
     },
@@ -30608,14 +30737,14 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/AdxConfig\/FSAdxConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 677,
-      "length": 4,
-      "value": "true"
+      "offset": 715,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/AdxConfig\/FSAdxConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 751,
+      "offset": 797,
       "length": 2,
       "value": "30"
     },
@@ -31073,27 +31202,6 @@
       "offset": 231,
       "length": 20,
       "value": "\"com.fs.url.tracker\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/FrameworkInfoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 286,
-      "length": 14,
-      "value": "\"FSUnionAdSDK\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/FrameworkInfoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 471,
-      "length": 11,
-      "value": "\"framework\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/FrameworkInfoTool.swift",
-      "kind": "StringLiteral",
-      "offset": 509,
-      "length": 12,
-      "value": "\"Frameworks\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Interstitial\/FSInterstitialAd.swift",
@@ -31574,7 +31682,7 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 853,
+      "offset": 793,
       "length": 5,
       "value": "false"
     },
@@ -31910,154 +32018,154 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2514,
+      "offset": 2520,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2568,
+      "offset": 2574,
       "length": 5,
       "value": "229.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2574,
+      "offset": 2580,
       "length": 5,
       "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2588,
-      "length": 5,
-      "value": "243.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
       "offset": 2594,
       "length": 5,
-      "value": "255.0"
+      "value": "243.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2607,
+      "offset": 2600,
       "length": 5,
-      "value": "254.0"
+      "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
       "offset": 2613,
       "length": 5,
+      "value": "254.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2619,
+      "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2627,
+      "offset": 2633,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2686,
+      "offset": 2692,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2695,
+      "offset": 2701,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2706,
+      "offset": 2712,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2716,
+      "offset": 2722,
       "length": 2,
       "value": "-5"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2783,
+      "offset": 2789,
       "length": 4,
       "value": "13.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2834,
+      "offset": 2840,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2838,
+      "offset": 2844,
       "length": 5,
       "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2852,
-      "length": 5,
-      "value": "133.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
       "offset": 2858,
       "length": 5,
-      "value": "255.0"
+      "value": "133.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2871,
+      "offset": 2864,
       "length": 5,
-      "value": "240.0"
+      "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
       "offset": 2877,
       "length": 5,
+      "value": "240.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2883,
+      "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2891,
+      "offset": 2897,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2956,
+      "offset": 2962,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedSmallBannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 3201,
+      "offset": 3207,
       "length": 27,
       "value": "\"fs_feed_native_close_icon\""
     },
@@ -32218,51 +32326,51 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2379,
+      "offset": 2380,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2450,
+      "offset": 2419,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2503,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2644,
+      "offset": 2458,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3389,
+      "offset": 3133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3470,
+      "offset": 3214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3811,
+      "offset": 3555,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6086,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfAdMotionManager.swift",
@@ -32368,20 +32476,6 @@
       "offset": 286,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/WfNativeAdActionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 639,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/WfNativeAdActionView.swift",
-      "kind": "StringLiteral",
-      "offset": 664,
-      "length": 14,
-      "value": "\"立即打开\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
@@ -33141,106 +33235,120 @@
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 538,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 576,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2185,
+      "offset": 2309,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2195,
+      "offset": 2319,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2374,
+      "offset": 2498,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2384,
+      "offset": 2508,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2566,
+      "offset": 2690,
       "length": 12,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2577,
+      "offset": 2701,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2808,
+      "offset": 2932,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2943,
+      "offset": 3067,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3061,
+      "offset": 3185,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3151,
+      "offset": 3275,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 4289,
+      "offset": 4474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "Dictionary",
-      "offset": 4333,
+      "offset": 4518,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4471,
+      "offset": 4656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4522,
+      "offset": 4707,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4564,
+      "offset": 4749,
       "length": 5,
       "value": "false"
     },
@@ -33506,511 +33614,511 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "StringLiteral",
-      "offset": 330,
+      "offset": 336,
       "length": 8,
       "value": "\"fs_app\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 814,
+      "offset": 823,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 3612,
+      "offset": 3721,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3660,
+      "offset": 3769,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 3726,
-      "length": 4,
-      "value": "14.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3793,
-      "length": 4,
-      "value": "51.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3798,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3812,
-      "length": 4,
-      "value": "51.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3817,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3830,
-      "length": 4,
-      "value": "51.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
       "offset": 3835,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3849,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3904,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3908,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4092,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4141,
-      "length": 5,
-      "value": "102.0"
+      "offset": 3902,
+      "length": 4,
+      "value": "51.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4147,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4161,
-      "length": 5,
-      "value": "102.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4167,
+      "offset": 3907,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4180,
-      "length": 5,
-      "value": "102.0"
+      "offset": 3921,
+      "length": 4,
+      "value": "51.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4186,
+      "offset": 3926,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4200,
+      "offset": 3939,
+      "length": 4,
+      "value": "51.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3944,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3958,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4254,
+      "offset": 4013,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4258,
+      "offset": 4017,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4454,
+      "offset": 4201,
+      "length": 4,
+      "value": "14.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4250,
+      "length": 5,
+      "value": "102.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4256,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4270,
+      "length": 5,
+      "value": "102.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4276,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4289,
+      "length": 5,
+      "value": "102.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4295,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4309,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4363,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4367,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4563,
       "length": 4,
       "value": "11.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4507,
+      "offset": 4616,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4560,
+      "offset": 4669,
       "length": 4,
       "value": "86.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4565,
+      "offset": 4674,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4579,
+      "offset": 4688,
       "length": 4,
       "value": "92.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4584,
+      "offset": 4693,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4597,
+      "offset": 4706,
       "length": 5,
       "value": "116.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4603,
+      "offset": 4712,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4617,
+      "offset": 4726,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4725,
+      "offset": 4834,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4732,
+      "offset": 4841,
       "length": 4,
       "value": "18.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4790,
+      "offset": 4899,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4796,
+      "offset": 4905,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4810,
+      "offset": 4919,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4816,
+      "offset": 4925,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4829,
+      "offset": 4938,
       "length": 4,
       "value": "54.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4834,
+      "offset": 4943,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4848,
+      "offset": 4957,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4922,
+      "offset": 5031,
       "length": 4,
       "value": "11.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4980,
+      "offset": 5089,
       "length": 5,
       "value": "153.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 4986,
+      "offset": 5095,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5000,
+      "offset": 5109,
       "length": 5,
       "value": "153.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5006,
+      "offset": 5115,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5019,
+      "offset": 5128,
       "length": 5,
       "value": "153.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5025,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5039,
-      "length": 3,
-      "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
       "offset": 5134,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5148,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5243,
       "length": 4,
       "value": "11.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5140,
+      "offset": 5249,
       "length": 4,
       "value": "13.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5198,
+      "offset": 5307,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5202,
+      "offset": 5311,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5216,
+      "offset": 5325,
       "length": 5,
       "value": "133.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5222,
+      "offset": 5331,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5235,
+      "offset": 5344,
       "length": 5,
       "value": "240.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5241,
+      "offset": 5350,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5255,
+      "offset": 5364,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5317,
+      "offset": 5426,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5324,
+      "offset": 5433,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5379,
+      "offset": 5488,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5391,
+      "offset": 5500,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5459,
+      "offset": 5568,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5626,
+      "offset": 5735,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5691,
+      "offset": 5800,
       "length": 5,
       "value": "244.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5697,
+      "offset": 5806,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5711,
+      "offset": 5820,
       "length": 5,
       "value": "246.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5717,
+      "offset": 5826,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5730,
+      "offset": 5839,
       "length": 5,
       "value": "250.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5736,
+      "offset": 5845,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5750,
+      "offset": 5859,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedInfoExtraView.swift",
       "kind": "FloatLiteral",
-      "offset": 5796,
+      "offset": 5905,
       "length": 3,
       "value": "8.0"
     },
@@ -34381,105 +34489,161 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 314,
+      "offset": 433,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1253,
+      "offset": 1372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1332,
+      "offset": 1451,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1414,
+      "offset": 1533,
       "length": 10,
       "value": "\"AppStore\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1526,
+      "offset": 1645,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Privacy\/FSAdPrivacyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 12,
+      "value": "\"allow_idfa\""
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Privacy\/FSAdPrivacyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 16,
+      "value": "\"allow_location\""
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Privacy\/FSAdPrivacyManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 424,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Privacy\/FSAdPrivacyManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 470,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Privacy\/FSAdPrivacyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 38,
+      "value": "\"00000000-0000-0000-0000-000000000000\""
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Privacy\/FSAdLocationProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 378,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Privacy\/FSAdLocationProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 416,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Privacy\/FSAdLocationProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 466,
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "StringLiteral",
       "offset": 154,
-      "length": 6,
-      "value": "\"    \""
+      "length": 7,
+      "value": "\"     \""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 288,
+      "offset": 289,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 356,
+      "offset": 357,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 517,
+      "offset": 518,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 586,
+      "offset": 587,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 196,
+      "offset": 197,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 813,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 818,
+      "offset": 819,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 828,
+      "offset": 829,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSCTAButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 840,
+      "offset": 841,
       "length": 2,
       "value": "34"
     },
@@ -34668,7 +34832,7 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 559,
+      "offset": 628,
       "length": 4,
       "value": "true"
     },
@@ -35795,364 +35959,322 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14350,
+      "offset": 14282,
       "length": 11,
       "value": "\"longitude\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14396,
-      "length": 11,
-      "value": "\"longitude\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
-      "kind": "StringLiteral",
-      "offset": 14411,
-      "length": 14,
+      "offset": 14297,
+      "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14424,
+      "offset": 14314,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14467,
-      "length": 11,
-      "value": "\"longitude\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
-      "kind": "StringLiteral",
-      "offset": 14482,
-      "length": 5,
-      "value": "\"0.0\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
-      "kind": "StringLiteral",
-      "offset": 14559,
+      "offset": 14328,
       "length": 10,
       "value": "\"latitude\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14604,
-      "length": 10,
-      "value": "\"latitude\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
-      "kind": "StringLiteral",
-      "offset": 14618,
-      "length": 13,
+      "offset": 14342,
+      "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14630,
+      "offset": 14358,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14673,
-      "length": 10,
-      "value": "\"latitude\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
-      "kind": "StringLiteral",
-      "offset": 14687,
-      "length": 5,
-      "value": "\"0.0\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
-      "kind": "StringLiteral",
-      "offset": 14819,
+      "offset": 14462,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14930,
+      "offset": 14573,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14982,
+      "offset": 14625,
       "length": 4,
       "value": "\"x1\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 14990,
+      "offset": 14633,
       "length": 60,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "IntegerLiteral",
-      "offset": 15047,
+      "offset": 14690,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15049,
+      "offset": 14692,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15064,
+      "offset": 14707,
       "length": 4,
       "value": "\"y1\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15072,
+      "offset": 14715,
       "length": 59,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "IntegerLiteral",
-      "offset": 15128,
+      "offset": 14771,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15130,
+      "offset": 14773,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15145,
+      "offset": 14788,
       "length": 5,
       "value": "\"itb\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15154,
+      "offset": 14797,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15171,
+      "offset": 14814,
       "length": 11,
       "value": "\"win_price\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15186,
+      "offset": 14829,
       "length": 59,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "IntegerLiteral",
-      "offset": 15242,
+      "offset": 14885,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15244,
+      "offset": 14887,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15326,
+      "offset": 14969,
       "length": 14,
       "value": "\"win_sdk_type\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15365,
+      "offset": 15008,
       "length": 14,
       "value": "\"win_sdk_type\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15431,
+      "offset": 15074,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15448,
+      "offset": 15091,
       "length": 11,
       "value": "\"win_title\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15517,
+      "offset": 15160,
       "length": 11,
       "value": "\"win_title\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15544,
+      "offset": 15187,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15559,
+      "offset": 15202,
       "length": 18,
       "value": "\"win_package_name\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15635,
+      "offset": 15278,
       "length": 18,
       "value": "\"win_package_name\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15669,
+      "offset": 15312,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 15958,
+      "offset": 15601,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 16040,
+      "offset": 15683,
       "length": 6,
       "value": "\"-999\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "IntegerLiteral",
-      "offset": 16160,
+      "offset": 15803,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 16369,
+      "offset": 16012,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 16496,
+      "offset": 16139,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 16643,
+      "offset": 16286,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 16788,
+      "offset": 16431,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 16961,
+      "offset": 16604,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 17130,
+      "offset": 16773,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 17529,
+      "offset": 17172,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 17639,
+      "offset": 17282,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 17866,
+      "offset": 17509,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 18121,
+      "offset": 17764,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/Tracker\/URLTracker\/FSAdURLQueryMacroData.swift",
       "kind": "StringLiteral",
-      "offset": 18334,
+      "offset": 17977,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBrandAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 554,
+      "offset": 601,
       "length": 4,
       "value": "true"
     },
@@ -36327,7 +36449,7 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2072,
+      "offset": 2085,
       "length": 5,
       "value": "false"
     },
@@ -36537,7 +36659,7 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSlot.swift",
       "kind": "IntegerLiteral",
-      "offset": 1176,
+      "offset": 984,
       "length": 1,
       "value": "1"
     },
@@ -36551,140 +36673,140 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1524,
+      "offset": 1538,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1527,
+      "offset": 1541,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1530,
+      "offset": 1544,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1534,
+      "offset": 1548,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "StringLiteral",
-      "offset": 1663,
+      "offset": 1677,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "StringLiteral",
-      "offset": 1799,
+      "offset": 1813,
       "length": 8,
       "value": "\"fs_app\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1875,
+      "offset": 1889,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1878,
+      "offset": 1892,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1881,
+      "offset": 1895,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "FloatLiteral",
-      "offset": 1886,
+      "offset": 1900,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "StringLiteral",
-      "offset": 1949,
+      "offset": 1963,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2005,
+      "offset": 2019,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "FloatLiteral",
-      "offset": 2106,
+      "offset": 2120,
       "length": 4,
       "value": "51.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2111,
-      "length": 5,
-      "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "FloatLiteral",
       "offset": 2125,
-      "length": 4,
-      "value": "51.0"
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2130,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "FloatLiteral",
-      "offset": 2143,
+      "offset": 2139,
       "length": 4,
       "value": "51.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "FloatLiteral",
-      "offset": 2148,
+      "offset": 2144,
       "length": 5,
       "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2157,
+      "length": 4,
+      "value": "51.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "FloatLiteral",
       "offset": 2162,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2176,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSNativeAdRelatedView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2224,
+      "offset": 2238,
       "length": 4,
       "value": "true"
     },
@@ -36697,29 +36819,8 @@
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
-      "kind": "StringLiteral",
-      "offset": 306,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
-      "kind": "StringLiteral",
-      "offset": 443,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
-      "kind": "StringLiteral",
-      "offset": 481,
-      "length": 6,
-      "value": "\"%02d\""
-    },
-    {
-      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 569,
+      "offset": 408,
       "length": 5,
       "value": "false"
     },
@@ -36859,21 +36960,21 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSMaterialMeta.swift",
       "kind": "BooleanLiteral",
-      "offset": 1114,
+      "offset": 1163,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSMaterialMeta.swift",
       "kind": "IntegerLiteral",
-      "offset": 3843,
+      "offset": 3892,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSMaterialMeta.swift",
       "kind": "BooleanLiteral",
-      "offset": 3880,
+      "offset": 3929,
       "length": 5,
       "value": "false"
     },
@@ -36887,28 +36988,35 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSVideoAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 864,
+      "offset": 1009,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSVideoAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1056,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSVideoAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1576,
+      "offset": 1768,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSVideoAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2089,
+      "offset": 2281,
       "length": 16,
       "value": "\"adx_vedio_play\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/View\/FSVideoAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2236,
+      "offset": 2428,
       "length": 4,
       "value": "true"
     },
@@ -37142,6 +37250,13 @@
       "offset": 840,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/CAID\/CAIDRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 188,
+      "length": 18,
+      "value": "\"6UTPhrBGxw2BRSzm\""
     },
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AttributionReport.swift",
@@ -38826,7 +38941,7 @@
     {
       "filePath": "\/Users\/wuqh\/Documents\/ima-projects\/fsunionadsdk-ios\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedBrandExtraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 442,
+      "offset": 443,
       "length": 5,
       "value": "false"
     },

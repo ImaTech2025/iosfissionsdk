@@ -310,6 +310,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+typedef SWIFT_ENUM(NSInteger, FSAdClickType, open) {
+  FSAdClickTypeNormal = 0,
+  FSAdClickTypeShake = 1,
+};
+
 SWIFT_CLASS("_TtC12FSUnionAdSDK25FSAdDifferenceAttribution")
 @interface FSAdDifferenceAttribution : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -336,6 +341,7 @@ typedef SWIFT_ENUM(NSInteger, FSAdInteractionType, open) {
 
 @class NSString;
 @class FSCAIDModel;
+@protocol FSAdSDKPrivacyProvider;
 @class UIImage;
 SWIFT_CLASS("_TtC12FSUnionAdSDK20FSAdSDKConfiguration")
 @interface FSAdSDKConfiguration : NSObject
@@ -361,6 +367,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic, copy) NSString * _Nonnull channel;
 /// 是否支持微信小程序跳转，默认为 false
 @property (nonatomic) BOOL supportWXApi;
+/// 隐私信息提供者
+@property (nonatomic, weak) id <FSAdSDKPrivacyProvider> _Nullable privacyProvider;
 /// 自定义品牌 logo
 @property (nonatomic, strong) UIImage * _Nullable customUnionLogo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -374,6 +382,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)logEnable:(BOOL)logEnable;
 + (void)startWithCompletionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_PROTOCOL("_TtP12FSUnionAdSDK22FSAdSDKPrivacyProvider_")
+@protocol FSAdSDKPrivacyProvider <NSObject>
+- (NSDictionary * _Nonnull)fs_privacyOptions SWIFT_WARN_UNUSED_RESULT;
 @end
 
 enum FSAdType : NSUInteger;
@@ -453,6 +466,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic, readonly) BOOL disableCpmFilter;
 @property (nonatomic, readonly) NSInteger shakeSensitivity;
 @property (nonatomic, readonly) enum FSAdInteractionType interactionType;
+@property (nonatomic) enum FSAdClickType clickType;
 - (void)win;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice extraWinInfo:(NSDictionary<NSString *, id> * _Nonnull)extraWinInfo;
@@ -524,7 +538,8 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK14FSMaterialMeta")
 /// 应用信息
 @property (nonatomic, strong) FSApp * _Nullable app;
 @property (nonatomic) CGFloat appRating;
-@property (nonatomic) BOOL isShakeEnabled;
+/// 是否支持摇一摇功能
+@property (nonatomic, readonly) BOOL isShakeEnabled;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -536,16 +551,9 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK14FSMaterialMeta")
 SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 @interface FSNativeAd : FSUnionAd
 @property (nonatomic, readonly, weak) FSNativeAdRelatedView * _Nullable nativeAdRelatedView;
-/// realCpm
 @property (nonatomic) uint32_t realCpm;
-/// 获取智能竞价价差
 @property (nonatomic) uint32_t maxCpm;
-/// minCpm
 @property (nonatomic) uint32_t minCpm;
-/// 智能竞价标记
-@property (nonatomic, copy) NSString * _Nullable smartRankPkg;
-/// 智能竞价最大价差
-@property (nonatomic) uint32_t maxCpmDiff;
 /// 素材
 @property (nonatomic, readonly, strong) FSMaterialMeta * _Nonnull material;
 @property (nonatomic, readonly) double createTime;
@@ -583,10 +591,17 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK18FSNativeAdDelegate_")
 - (void)fs_nativeAdDidClickWithNativeAd:(FSNativeAd * _Nonnull)nativeAd containerView:(UIView * _Nullable)containerView;
 @end
 
+@class NSCoder;
+/// 摇一摇、扭一扭、点击等动作捕捉视图
+SWIFT_CLASS("_TtC12FSUnionAdSDK20FSNativeAdMotionView")
+@interface FSNativeAdMotionView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
 @class UIImageView;
 @class UILabel;
 @class FSVideoAdView;
-@class WfNativeAdActionView;
 SWIFT_CLASS("_TtC12FSUnionAdSDK21FSNativeAdRelatedView")
 @interface FSNativeAdRelatedView : NSObject
 @property (nonatomic, strong) UIImageView * _Nonnull logoImageView;
@@ -594,7 +609,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK21FSNativeAdRelatedView")
 @property (nonatomic, strong) FSVideoAdView * _Nonnull videoAdView;
 @property (nonatomic, strong) UIImageView * _Nonnull unionLogoImageView;
 /// 摇一摇、扭一扭、点击等动作捕捉视图
-@property (nonatomic, strong) WfNativeAdActionView * _Nullable actionView;
+@property (nonatomic, readonly, strong) FSNativeAdMotionView * _Nullable motionView;
 - (void)refreshData:(FSNativeAd * _Nonnull)nativeAd;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -797,7 +812,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK8FSTwinAd")
 - (void)render;
 @end
 
-@class NSCoder;
 @class UIEvent;
 SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 @interface FSTwinAdView : UIView
@@ -812,6 +826,8 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK13FSVideoAdView")
 @interface FSVideoAdView : UIView
 @property (nonatomic, readonly) BOOL isPlayFinished;
 @property (nonatomic, readonly) CGSize natureSize;
+/// 默认为 true，SDK 根据广告是否曝光控制视频播放与暂停,设置为 false 则默认不会自动播放(不建议关设置为 false)
+@property (nonatomic) BOOL isAutoPlay;
 @property (nonatomic) BOOL isMuted;
 @property (nonatomic) BOOL isAutoReplay;
 @property (nonatomic, strong) UIView * _Nonnull backgroundView;
@@ -836,14 +852,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9WfAdImage")
 /// image height
 @property (nonatomic) double height;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-/// 摇一摇、扭一扭、点击等动作捕捉视图
-SWIFT_CLASS("_TtC12FSUnionAdSDK20WfNativeAdActionView")
-@interface WfNativeAdActionView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
@@ -1233,6 +1241,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+typedef SWIFT_ENUM(NSInteger, FSAdClickType, open) {
+  FSAdClickTypeNormal = 0,
+  FSAdClickTypeShake = 1,
+};
+
 SWIFT_CLASS("_TtC12FSUnionAdSDK25FSAdDifferenceAttribution")
 @interface FSAdDifferenceAttribution : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1259,6 +1272,7 @@ typedef SWIFT_ENUM(NSInteger, FSAdInteractionType, open) {
 
 @class NSString;
 @class FSCAIDModel;
+@protocol FSAdSDKPrivacyProvider;
 @class UIImage;
 SWIFT_CLASS("_TtC12FSUnionAdSDK20FSAdSDKConfiguration")
 @interface FSAdSDKConfiguration : NSObject
@@ -1284,6 +1298,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic, copy) NSString * _Nonnull channel;
 /// 是否支持微信小程序跳转，默认为 false
 @property (nonatomic) BOOL supportWXApi;
+/// 隐私信息提供者
+@property (nonatomic, weak) id <FSAdSDKPrivacyProvider> _Nullable privacyProvider;
 /// 自定义品牌 logo
 @property (nonatomic, strong) UIImage * _Nullable customUnionLogo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1297,6 +1313,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)logEnable:(BOOL)logEnable;
 + (void)startWithCompletionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_PROTOCOL("_TtP12FSUnionAdSDK22FSAdSDKPrivacyProvider_")
+@protocol FSAdSDKPrivacyProvider <NSObject>
+- (NSDictionary * _Nonnull)fs_privacyOptions SWIFT_WARN_UNUSED_RESULT;
 @end
 
 enum FSAdType : NSUInteger;
@@ -1376,6 +1397,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic, readonly) BOOL disableCpmFilter;
 @property (nonatomic, readonly) NSInteger shakeSensitivity;
 @property (nonatomic, readonly) enum FSAdInteractionType interactionType;
+@property (nonatomic) enum FSAdClickType clickType;
 - (void)win;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice extraWinInfo:(NSDictionary<NSString *, id> * _Nonnull)extraWinInfo;
@@ -1447,7 +1469,8 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK14FSMaterialMeta")
 /// 应用信息
 @property (nonatomic, strong) FSApp * _Nullable app;
 @property (nonatomic) CGFloat appRating;
-@property (nonatomic) BOOL isShakeEnabled;
+/// 是否支持摇一摇功能
+@property (nonatomic, readonly) BOOL isShakeEnabled;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1459,16 +1482,9 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK14FSMaterialMeta")
 SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 @interface FSNativeAd : FSUnionAd
 @property (nonatomic, readonly, weak) FSNativeAdRelatedView * _Nullable nativeAdRelatedView;
-/// realCpm
 @property (nonatomic) uint32_t realCpm;
-/// 获取智能竞价价差
 @property (nonatomic) uint32_t maxCpm;
-/// minCpm
 @property (nonatomic) uint32_t minCpm;
-/// 智能竞价标记
-@property (nonatomic, copy) NSString * _Nullable smartRankPkg;
-/// 智能竞价最大价差
-@property (nonatomic) uint32_t maxCpmDiff;
 /// 素材
 @property (nonatomic, readonly, strong) FSMaterialMeta * _Nonnull material;
 @property (nonatomic, readonly) double createTime;
@@ -1506,10 +1522,17 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK18FSNativeAdDelegate_")
 - (void)fs_nativeAdDidClickWithNativeAd:(FSNativeAd * _Nonnull)nativeAd containerView:(UIView * _Nullable)containerView;
 @end
 
+@class NSCoder;
+/// 摇一摇、扭一扭、点击等动作捕捉视图
+SWIFT_CLASS("_TtC12FSUnionAdSDK20FSNativeAdMotionView")
+@interface FSNativeAdMotionView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
 @class UIImageView;
 @class UILabel;
 @class FSVideoAdView;
-@class WfNativeAdActionView;
 SWIFT_CLASS("_TtC12FSUnionAdSDK21FSNativeAdRelatedView")
 @interface FSNativeAdRelatedView : NSObject
 @property (nonatomic, strong) UIImageView * _Nonnull logoImageView;
@@ -1517,7 +1540,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK21FSNativeAdRelatedView")
 @property (nonatomic, strong) FSVideoAdView * _Nonnull videoAdView;
 @property (nonatomic, strong) UIImageView * _Nonnull unionLogoImageView;
 /// 摇一摇、扭一扭、点击等动作捕捉视图
-@property (nonatomic, strong) WfNativeAdActionView * _Nullable actionView;
+@property (nonatomic, readonly, strong) FSNativeAdMotionView * _Nullable motionView;
 - (void)refreshData:(FSNativeAd * _Nonnull)nativeAd;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1720,7 +1743,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK8FSTwinAd")
 - (void)render;
 @end
 
-@class NSCoder;
 @class UIEvent;
 SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 @interface FSTwinAdView : UIView
@@ -1735,6 +1757,8 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK13FSVideoAdView")
 @interface FSVideoAdView : UIView
 @property (nonatomic, readonly) BOOL isPlayFinished;
 @property (nonatomic, readonly) CGSize natureSize;
+/// 默认为 true，SDK 根据广告是否曝光控制视频播放与暂停,设置为 false 则默认不会自动播放(不建议关设置为 false)
+@property (nonatomic) BOOL isAutoPlay;
 @property (nonatomic) BOOL isMuted;
 @property (nonatomic) BOOL isAutoReplay;
 @property (nonatomic, strong) UIView * _Nonnull backgroundView;
@@ -1759,14 +1783,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9WfAdImage")
 /// image height
 @property (nonatomic) double height;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-/// 摇一摇、扭一扭、点击等动作捕捉视图
-SWIFT_CLASS("_TtC12FSUnionAdSDK20WfNativeAdActionView")
-@interface WfNativeAdActionView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
