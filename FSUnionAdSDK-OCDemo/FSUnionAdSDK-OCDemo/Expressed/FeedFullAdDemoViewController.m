@@ -36,6 +36,15 @@
 #pragma mark - private
 - (void)_loadAdWithSlotID:(NSString *)slotID {
     FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:slotID type:FSAdTypeNativeExpress];
+    
+    // 半屏弹窗样式
+    [slot addRequestParamWithKey:FSAdParamsKey.landStyle
+                           value:@(FSAdLandStyleSheet)];
+    // 点击空白区域关闭
+    [slot addRequestParamWithKey:FSAdParamsKey.landOutsideCancel
+                           value:@(YES)];
+    
+    
     FSNativeExpressFeedsAd *ad = [[FSNativeExpressFeedsAd alloc] initWithSlot:slot];
     ad.expressType = FSNativeExpressTypeFull;
     ad.delegate = self;

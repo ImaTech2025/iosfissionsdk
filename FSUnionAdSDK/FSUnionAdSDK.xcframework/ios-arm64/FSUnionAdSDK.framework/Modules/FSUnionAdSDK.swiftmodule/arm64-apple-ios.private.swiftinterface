@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FSUnionAdSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import AdSupport
 import AppTrackingTransparency
@@ -40,9 +40,11 @@ extension AVFoundation.AVPlayer {
   @_Concurrency.MainActor @preconcurrency public var currentDuration: Swift.Double {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var currentImage: UIKit.UIImage? {
     get
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency public var playProgress: Swift.Double {
     get
   }
@@ -50,7 +52,9 @@ extension AVFoundation.AVPlayer {
     get
   }
   @_Concurrency.MainActor @preconcurrency convenience public init(asset: AVFoundation.AVURLAsset)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func getFirstFrameFromVideo() -> UIKit.UIImage?
+  #endif
 }
 @objc public protocol FSInterstitialAdDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func fs_interstitialAdSuccessToLoadAd(_ ad: FSUnionAdSDK.FSInterstitialAd)
@@ -87,7 +91,9 @@ extension AVFoundation.AVPlayer {
   case clickSkip
   case countdownToZero
   case clickJump
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -108,7 +114,9 @@ extension AVFoundation.AVPlayer {
 @objc @objcMembers public class FSCAIDModel : ObjectiveC.NSObject {
   @objc public var version: Swift.String?
   @objc public var caid: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(version: Swift.String? = nil, caid: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 @objc public class FSSplashAd : FSUnionAdSDK.FSUnionAd {
@@ -122,7 +130,9 @@ extension AVFoundation.AVPlayer {
   @objc deinit
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc override public func loadAdData()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func showSplash(in rootViewController: UIKit.UIViewController, bottomView: UIKit.UIView?)
+  #endif
 }
 extension FSUnionAdSDK.FSSplashAd {
   @objc dynamic public func price() -> Swift.String
@@ -134,7 +144,9 @@ extension FSUnionAdSDK.FSSplashAd {
   case stopped
   case pause
   case failed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -145,11 +157,15 @@ public struct WfNetwork {
   public var bssid: Swift.String?
 }
 extension FSUnionAdSDK.WfNetwork {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func fetchCurrentInfo() -> FSUnionAdSDK.WfNetwork?
+  #endif
 }
 @objc public protocol FSNativeAdsManagerDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func fs_nativeAdsManagerSuccessToLoad(_ adsManager: FSUnionAdSDK.FSNativeAdsManager, nativeAds: [FSUnionAdSDK.FSNativeAd])
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func fs_nativeAdsManagerDidFail(_ adsManager: FSUnionAdSDK.FSNativeAdsManager, error: (any Swift.Error)?)
+  #endif
 }
 @objc public class FSNativeAdsManager : ObjectiveC.NSObject {
   @objc weak public var delegate: (any FSUnionAdSDK.FSNativeAdsManagerDelegate)?
@@ -164,7 +180,9 @@ public enum WfNativeAdDealType : Swift.Int {
   case pdb
   case pd
   case rtb
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -179,7 +197,9 @@ public enum WfNativeAdDealType : Swift.Int {
   case market = 5
   case quickApp = 6
   case justShow = 7
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -195,7 +215,9 @@ public enum WfNativeAdInteractionStyle : Swift.Int {
   case rotateX
   case rotateY
   case rotateZ
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -237,7 +259,9 @@ extension FSUnionAdSDK.FSTwinAd {
   case banner = 1
   case smallBanner = 2
   case full = 3
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -254,31 +278,45 @@ public enum FSUnionAdType {
 @objc public enum FSAdClickType : Swift.Int {
   case normal = 0
   case shake
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc @_inheritsConvenienceInitializers public class FSUnionAd : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var dspName: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var dspID: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var sid: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var maxCPM: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var minCPM: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var realCPM: Swift.String? {
     @objc get
   }
+  #endif
   @objc public var dealType: Swift.UInt32 {
     @objc get
   }
@@ -300,7 +338,9 @@ public enum FSUnionAdType {
   @objc override dynamic public init()
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class FSTwinAdView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  #endif
   @objc deinit
 }
 extension Foundation.NSNotification.Name {
@@ -310,7 +350,9 @@ extension Foundation.NSNotification.Name {
 public protocol WfVideoDownloaderDelegate : AnyObject {
   func downloader(_ downloader: FSUnionAdSDK.WfVideoDownloader, didReceive response: Foundation.URLResponse)
   func downloader(_ downloader: FSUnionAdSDK.WfVideoDownloader, didReceive data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   func downloader(_ downloader: FSUnionAdSDK.WfVideoDownloader, didFinished error: (any Swift.Error)?)
+  #endif
 }
 public class WfVideoDownloader {
   weak public var delegate: (any FSUnionAdSDK.WfVideoDownloaderDelegate)?
@@ -337,17 +379,21 @@ public class WfVideoDownloader {
     case hidden
     case userInteraction
     case waitingKeepUp
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @_Concurrency.MainActor @preconcurrency final public let playerLayer: AVFoundation.AVPlayerLayer
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var player: AVFoundation.AVPlayer? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency public var playerURL: Foundation.URL?
   @_Concurrency.MainActor @preconcurrency public var state: FSUnionAdSDK.WfVideoPlayerView.State {
     get
@@ -397,7 +443,9 @@ public class WfVideoDownloader {
     @objc set
   }
   @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @objc deinit
 }
@@ -408,12 +456,18 @@ public class WfVideoDownloader {
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func replay(resetCount: Swift.Bool = false)
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func resume()
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func pause()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func seek(to time: CoreMedia.CMTime, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func seek(to time: CoreMedia.CMTime, toleranceBefore: CoreMedia.CMTime, toleranceAfter: CoreMedia.CMTime, completion: @escaping (Swift.Bool) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   @nonobjc @_Concurrency.MainActor @preconcurrency public func addBoundaryTimeObserver(forTimes times: [CoreMedia.CMTime], queue: Dispatch.DispatchQueue? = nil, using: @escaping () -> Swift.Void) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @discardableResult
   @_Concurrency.MainActor @preconcurrency dynamic open func addPeriodicTimeObserver(forInterval interval: CoreMedia.CMTime, queue: Dispatch.DispatchQueue? = nil, using: @escaping (CoreMedia.CMTime) -> Swift.Void) -> Any?
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func removeTimeObserver(_ observer: Any)
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func destroy()
 }
@@ -469,11 +523,13 @@ extension Swift.Array {
     self[self.startIndex ..< self.endIndex]
   }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable internal subscript(safe index: Swift.Array<Element>.Index) -> Element? {
     get {
     return indices.contains(index) ? self[index] : nil
   }
   }
+  #endif
 }
 extension Swift.Array where Element == Swift.UInt8 {
   public init(hex: Swift.String)
@@ -487,7 +543,9 @@ extension Swift.Array where Element == Swift.UInt8 {
   @objc optional func fs_nativeAdWillVisible(nativeAd: FSUnionAdSDK.FSNativeAd)
   @objc optional func fs_nativeAdDidBecomeVisible(nativeAd: FSUnionAdSDK.FSNativeAd)
   @objc optional func fs_nativeAdDidCloseOtherController(nativeAd: FSUnionAdSDK.FSNativeAd, interactionType: FSUnionAdSDK.FSAdInteractionType)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func fs_nativeAdDidClick(nativeAd: FSUnionAdSDK.FSNativeAd, containerView: UIKit.UIView?)
+  #endif
 }
 @objc public protocol FSNativeExpressFeedsAdDelegate {
   @objc optional func fs_expressFeedAdLoadSuccess(_ ad: FSUnionAdSDK.FSNativeExpressFeedsAd)
@@ -522,24 +580,50 @@ extension Swift.Array where Element == Swift.UInt8 {
   @objc public var nativeAd: FSUnionAdSDK.FSNativeAd?
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc public func loadAdData()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func showInView(_ view: UIKit.UIView?)
+  #endif
   @objc public func render()
   @objc deinit
 }
 extension FSUnionAdSDK.FSNativeExpressFeedsAd : FSUnionAdSDK.FSNativeAdsManagerDelegate {
   @objc dynamic public func fs_nativeAdsManagerSuccessToLoad(_ adsManager: FSUnionAdSDK.FSNativeAdsManager, nativeAds: [FSUnionAdSDK.FSNativeAd])
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func fs_nativeAdsManagerDidFail(_ adsManager: FSUnionAdSDK.FSNativeAdsManager, error: (any Swift.Error)?)
+  #endif
 }
 extension FSUnionAdSDK.FSNativeExpressFeedsAd : FSUnionAdSDK.FSVideoAdViewDelegate {
   @objc dynamic public func fs_videoAdViewReadyToPlay(_ videoAdView: FSUnionAdSDK.FSVideoAdView)
   @objc dynamic public func fs_videoAdViewDidPlayFinish(_ videoAdView: FSUnionAdSDK.FSVideoAdView)
   @objc dynamic public func fs_videoAdView(_ videoAdView: FSUnionAdSDK.FSVideoAdView, playStateDidChanged playState: FSUnionAdSDK.FSPlayerPlayState)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func fs_videoAdView(_ videoAdView: FSUnionAdSDK.FSVideoAdView, didLoadFailedWithError error: Foundation.NSError?)
+  #endif
 }
 extension FSUnionAdSDK.FSNativeExpressFeedsAd : FSUnionAdSDK.FSNativeAdDelegate {
   @objc dynamic public func fs_nativeAdDidBecomeVisible(nativeAd: FSUnionAdSDK.FSNativeAd)
   @objc dynamic public func fs_nativeAdDidCloseOtherController(nativeAd: FSUnionAdSDK.FSNativeAd, interactionType: FSUnionAdSDK.FSAdInteractionType)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func fs_nativeAdDidClick(nativeAd: FSUnionAdSDK.FSNativeAd, containerView: UIKit.UIView?)
+  #endif
+}
+@_inheritsConvenienceInitializers @objc public class FSAdParamsKey : ObjectiveC.NSObject {
+  @objc public static let landHeight: Swift.String
+  @objc public static let landStyle: Swift.String
+  @objc public static let landOutsideCancel: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum FSAdLandStyle : Swift.UInt {
+  case none
+  case sheet
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.UInt)
+  #endif
+  public typealias RawValue = Swift.UInt
+  public var rawValue: Swift.UInt {
+    get
+  }
 }
 @objc public enum FSAdType : Swift.UInt {
   case none
@@ -548,7 +632,9 @@ extension FSUnionAdSDK.FSNativeExpressFeedsAd : FSUnionAdSDK.FSNativeAdDelegate 
   case reward
   case native
   case nativeExpress
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
+  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -560,8 +646,24 @@ extension FSUnionAdSDK.FSNativeExpressFeedsAd : FSUnionAdSDK.FSNativeAdDelegate 
   @objc public var timeout: Swift.Double
   @objc public var requestID: Swift.String
   @objc public var count: Swift.UInt
+  @objc public var extra: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
   @objc public init(slotID: Swift.String, type: FSUnionAdSDK.FSAdType)
   @objc deinit
+}
+extension FSUnionAdSDK.FSAdSlot {
+  @objc dynamic public func addRequestParam(key: Swift.String, value: Any)
+  @objc dynamic public func addRequestParams(_ params: [Swift.String : Any])
+  @objc dynamic public func removeRequestParam(forKey key: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func getRequestParam(forKey key: Swift.String) -> Any?
+  #endif
+  @objc dynamic public func clearAllParams()
+  @objc dynamic public func resetAllParams()
+  @discardableResult
+  @objc dynamic public func setParam(key: Swift.String, value: Any) -> Self
 }
 public protocol WfNativeAdActionDelegate : ObjectiveC.NSObjectProtocol {
   func actionDetected(nativeAd: FSUnionAdSDK.FSNativeAd, interactionStyle: FSUnionAdSDK.WfNativeAdInteractionStyle)
@@ -612,13 +714,17 @@ extension FSUnionAdSDK.WfVideoLoadManager : AVFoundation.AVAssetResourceLoaderDe
   @objc deinit
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc override public func loadAdData()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func showAdFromRootViewController(_ rootViewController: UIKit.UIViewController?)
+  #endif
   @objc public func price() -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class FSAdSDKManager : ObjectiveC.NSObject {
   @objc public static let sdkVersion: Swift.String
   @objc public static func logEnable(_ logEnable: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func startWithCompletionHandler(_ completionHandler: ((Swift.Bool, (any Swift.Error)?) -> Swift.Void)?)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -629,7 +735,9 @@ public enum WfAdFeedMode : Swift.Int {
   case WfAdFeedModeHorizontalVideo
   case WfAdFeedModeVerticalVideo
   case WfAdFeedModeVultiPics
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -668,7 +776,9 @@ public enum WfAdFeedMode : Swift.Int {
 @objc public protocol FSVideoAdViewDelegate {
   @objc optional func fs_videoAdViewReadyToPlay(_ videoAdView: FSUnionAdSDK.FSVideoAdView)
   @objc optional func fs_videoAdViewDidPlayFinish(_ videoAdView: FSUnionAdSDK.FSVideoAdView)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func fs_videoAdView(_ videoAdView: FSUnionAdSDK.FSVideoAdView, didLoadFailedWithError error: Foundation.NSError?)
+  #endif
   @objc optional func fs_videoAdView(_ videoAdView: FSUnionAdSDK.FSVideoAdView, playStateDidChanged playState: FSUnionAdSDK.FSPlayerPlayState)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class FSVideoAdView : UIKit.UIView {
@@ -708,9 +818,11 @@ public enum AdConfigRequestError : Swift.Error, Foundation.LocalizedError {
   case commenError(Swift.Int32, Swift.String)
   case noNewData
   case noData
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 @objc public protocol WfVideoPreloadManagerDelegate : ObjectiveC.NSObjectProtocol {
   @objc func videoPreloadManagerDidFinish(_ preloadManager: FSUnionAdSDK.WfVideoPreloadManager)
@@ -728,7 +840,9 @@ public enum AdConfigRequestError : Swift.Error, Foundation.LocalizedError {
 extension FSUnionAdSDK.WfVideoPreloadManager : FSUnionAdSDK.WfVideoDownloaderDelegate {
   public func downloader(_ downloader: FSUnionAdSDK.WfVideoDownloader, didReceive response: Foundation.URLResponse)
   public func downloader(_ downloader: FSUnionAdSDK.WfVideoDownloader, didReceive data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func downloader(_ downloader: FSUnionAdSDK.WfVideoDownloader, didFinished error: (any Swift.Error)?)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class WfAdImage : ObjectiveC.NSObject {
   @objc public var url: Swift.String
@@ -759,7 +873,9 @@ extension FSUnionAdSDK.WfVideoPreloadMultiManager {
   public func addManager(_ manager: FSUnionAdSDK.WfVideoPreloadManager, withURLString URLString: Swift.String)
   public func removeManager(withURLString URLString: Swift.String)
   public func removeManager(_ manager: FSUnionAdSDK.WfVideoPreloadManager)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func managerWithURLString(_ URLString: Swift.String) -> FSUnionAdSDK.WfVideoPreloadManager?
+  #endif
 }
 public class WfVideoCacheHandler {
   public init(url: Foundation.URL) throws
@@ -808,6 +924,9 @@ extension FSUnionAdSDK.FSAdClickType : Swift.RawRepresentable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.Equatable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.Hashable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.RawRepresentable {}
+extension FSUnionAdSDK.FSAdLandStyle : Swift.Equatable {}
+extension FSUnionAdSDK.FSAdLandStyle : Swift.Hashable {}
+extension FSUnionAdSDK.FSAdLandStyle : Swift.RawRepresentable {}
 extension FSUnionAdSDK.FSAdType : Swift.Equatable {}
 extension FSUnionAdSDK.FSAdType : Swift.Hashable {}
 extension FSUnionAdSDK.FSAdType : Swift.RawRepresentable {}
