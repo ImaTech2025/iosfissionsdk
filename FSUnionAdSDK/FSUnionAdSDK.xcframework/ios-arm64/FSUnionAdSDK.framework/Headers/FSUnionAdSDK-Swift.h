@@ -356,7 +356,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class FSCAIDModel;
+@class FSXIDModel;
 @protocol FSAdSDKPrivacyProvider;
 @class UIImage;
 SWIFT_CLASS("_TtC12FSUnionAdSDK20FSAdSDKConfiguration")
@@ -372,7 +372,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic, copy) NSString * _Nullable appName;
 /// 设备 ID
 @property (nonatomic, copy) NSString * _Nullable customDeviceID;
-@property (nonatomic, copy) NSArray<FSCAIDModel *> * _Nullable caids;
+@property (nonatomic, copy) NSArray<FSXIDModel *> * _Nullable xids;
 /// 自定义参数
 @property (nonatomic, copy) NSDictionary<NSString *, NSObject *> * _Nullable extraUserData;
 /// 个性化推荐开关  默认 false
@@ -478,15 +478,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK5FSApp")
 @property (nonatomic) uint32_t size;
 @property (nonatomic) BOOL hasApp;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC12FSUnionAdSDK11FSCAIDModel")
-@interface FSCAIDModel : NSObject
-@property (nonatomic, copy) NSString * _Nullable version;
-@property (nonatomic, copy) NSString * _Nullable caid;
-- (nonnull instancetype)initWithVersion:(NSString * _Nullable)version caid:(NSString * _Nullable)caid OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
@@ -875,6 +866,15 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK13FSVideoAdView")
 - (void)destroy;
 - (void)pause;
 - (void)play;
+@end
+
+SWIFT_CLASS("_TtC12FSUnionAdSDK10FSXIDModel")
+@interface FSXIDModel : NSObject
+@property (nonatomic, copy) NSString * _Nullable version;
+@property (nonatomic, copy) NSString * _Nullable xid;
+- (nonnull instancetype)initWithVersion:(NSString * _Nullable)version xid:(NSString * _Nullable)xid OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 /// 图片信息类

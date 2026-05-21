@@ -86,6 +86,12 @@ extension AVFoundation.AVPlayer {
   @objc override public func loadAdData()
   @objc public func showAdFromRootViewController(_ rootViewController: UIKit.UIViewController)
 }
+@_hasMissingDesignatedInitializers public class XIDHelper {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public class func getXid() -> [[Swift.String : Swift.String]]?
+  #endif
+  @objc deinit
+}
 @objc public enum FSSplashAdCloseType : Swift.Int {
   case unknown
   case clickSkip
@@ -111,11 +117,11 @@ extension AVFoundation.AVPlayer {
   @objc optional func fs_splashAdDidClose(_ ad: FSUnionAdSDK.FSSplashAd, closeType: FSUnionAdSDK.FSSplashAdCloseType)
   @objc optional func fs_splashAdDidCloseOtherController(_ ad: FSUnionAdSDK.FSSplashAd, interactionType: FSUnionAdSDK.FSAdInteractionType)
 }
-@objc @objcMembers public class FSCAIDModel : ObjectiveC.NSObject {
+@objc @objcMembers public class FSXIDModel : ObjectiveC.NSObject {
   @objc public var version: Swift.String?
-  @objc public var caid: Swift.String?
+  @objc public var xid: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(version: Swift.String? = nil, caid: Swift.String? = nil)
+  @objc public init(version: Swift.String? = nil, xid: Swift.String? = nil)
   #endif
   @objc deinit
 }
@@ -496,7 +502,7 @@ extension FSUnionAdSDK.WfVideoPlayerView.State : Swift.Equatable {
     @objc get
     @objc set
   }
-  @objc public var caids: [FSUnionAdSDK.FSCAIDModel]?
+  @objc public var xids: [FSUnionAdSDK.FSXIDModel]?
   @objc public var extraUserData: [Swift.String : Swift.AnyHashable]?
   @objc public var personalRecommend: Swift.Bool
   @objc public var teenagerModel: Swift.Bool
