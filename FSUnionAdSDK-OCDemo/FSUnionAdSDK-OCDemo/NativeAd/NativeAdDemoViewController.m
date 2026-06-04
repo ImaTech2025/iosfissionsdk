@@ -121,7 +121,7 @@
 }
 
 - (void)load {
-    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text type:FSAdTypeNative];
+    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text];
     FSNativeAdsManager *loadManager = [[FSNativeAdsManager alloc] initWithSlot:slot];
     loadManager.delegate = self;
     [loadManager loadAd];

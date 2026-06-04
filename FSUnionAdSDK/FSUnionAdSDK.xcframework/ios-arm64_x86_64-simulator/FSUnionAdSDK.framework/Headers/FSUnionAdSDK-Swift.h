@@ -314,13 +314,6 @@ typedef SWIFT_ENUM(NSInteger, FSAdClickType, open) {
   FSAdClickTypeShake = 1,
 };
 
-
-SWIFT_CLASS("_TtC12FSUnionAdSDK25FSAdDifferenceAttribution")
-@interface FSAdDifferenceAttribution : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 /// 广告跳转类型
 typedef SWIFT_ENUM(NSInteger, FSAdInteractionType, open) {
   FSAdInteractionTypeUnspecified = 0,
@@ -412,14 +405,11 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK22FSAdSDKPrivacyProvider_")
 - (NSDictionary * _Nonnull)fs_privacyOptions SWIFT_WARN_UNUSED_RESULT;
 @end
 
-enum FSAdType : NSUInteger;
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK8FSAdSlot")
 @interface FSAdSlot : NSObject
 /// 广告位 id
 @property (nonatomic, copy) NSString * _Nonnull slotID;
-/// 广告位类型
-@property (nonatomic) enum FSAdType type;
 /// 广告请求超时时间
 @property (nonatomic) NSTimeInterval timeout;
 /// 请求
@@ -428,7 +418,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK8FSAdSlot")
 @property (nonatomic) NSUInteger count;
 /// 对外暴露的额外配置数据（只读）
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull extra;
-- (nonnull instancetype)initWithSlotID:(NSString * _Nonnull)slotID type:(enum FSAdType)type OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSlotID:(NSString * _Nonnull)slotID OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -497,9 +487,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic, readonly, copy) NSString * _Nullable dspName;
 @property (nonatomic, readonly, copy) NSString * _Nullable dspID;
 @property (nonatomic, readonly, copy) NSString * _Nullable sid;
-@property (nonatomic, readonly, copy) NSString * _Nullable maxCPM;
-@property (nonatomic, readonly, copy) NSString * _Nullable minCPM;
-@property (nonatomic, readonly, copy) NSString * _Nullable realCPM;
 @property (nonatomic, readonly) uint32_t dealType;
 @property (nonatomic, readonly) BOOL disableCpmFilter;
 @property (nonatomic, readonly) NSInteger shakeSensitivity;
@@ -590,16 +577,12 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK14FSMaterialMeta")
 
 @class FSNativeAdRelatedView;
 @protocol FSNativeAdDelegate;
-@class FSTwinAd;
 @class UIView;
 
 /// 支持自定义样式的广告
 SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 @interface FSNativeAd : FSUnionAd
 @property (nonatomic, readonly, weak) FSNativeAdRelatedView * _Nullable nativeAdRelatedView;
-@property (nonatomic) uint32_t realCpm;
-@property (nonatomic) uint32_t maxCpm;
-@property (nonatomic) uint32_t minCpm;
 /// 素材
 @property (nonatomic, readonly, strong) FSMaterialMeta * _Nonnull material;
 @property (nonatomic, readonly) double createTime;
@@ -608,7 +591,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 /// Action method includes is ‘presentViewController’.
 @property (nonatomic, weak) UIViewController * _Nullable rootViewController;
 @property (nonatomic, weak) id <FSNativeAdDelegate> _Nullable delegate;
-@property (nonatomic, strong) FSTwinAd * _Nullable twinAd;
 /// 注册可点击views
 /// \param containerView adView 对应的容器
 ///
@@ -623,6 +605,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -763,6 +746,7 @@ typedef SWIFT_ENUM(NSInteger, FSNativeExpressType, open) {
   FSNativeExpressTypeBanner = 1,
   FSNativeExpressTypeSmallBanner = 2,
   FSNativeExpressTypeFull = 3,
+  FSNativeExpressTypeMidBanner = 4,
 };
 
 typedef SWIFT_ENUM(NSInteger, FSPlayerPlayState, open) {
@@ -834,10 +818,10 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSSplashAd")
 @end
 
 
+
 @interface FSSplashAd (SWIFT_EXTENSION(FSUnionAdSDK))
 - (NSString * _Nonnull)price SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 
@@ -904,6 +888,8 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 
 
 
+
+
 @class UIButton;
 
 /// 自渲染feed流视频播放组件
@@ -950,6 +936,9 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSXIDModel")
 
 
 
+
+
+
 /// 图片信息类
 SWIFT_CLASS("_TtC12FSUnionAdSDK9WfAdImage")
 @interface WfAdImage : NSObject
@@ -968,7 +957,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class AVAssetResourceLoader;
 @class AVAssetResourceLoadingRequest;
 
@@ -976,6 +964,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (BOOL)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest SWIFT_WARN_UNUSED_RESULT;
 - (void)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest;
 @end
+
 
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK17WfVideoPlayerView")
@@ -1366,13 +1355,6 @@ typedef SWIFT_ENUM(NSInteger, FSAdClickType, open) {
   FSAdClickTypeShake = 1,
 };
 
-
-SWIFT_CLASS("_TtC12FSUnionAdSDK25FSAdDifferenceAttribution")
-@interface FSAdDifferenceAttribution : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 /// 广告跳转类型
 typedef SWIFT_ENUM(NSInteger, FSAdInteractionType, open) {
   FSAdInteractionTypeUnspecified = 0,
@@ -1464,14 +1446,11 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK22FSAdSDKPrivacyProvider_")
 - (NSDictionary * _Nonnull)fs_privacyOptions SWIFT_WARN_UNUSED_RESULT;
 @end
 
-enum FSAdType : NSUInteger;
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK8FSAdSlot")
 @interface FSAdSlot : NSObject
 /// 广告位 id
 @property (nonatomic, copy) NSString * _Nonnull slotID;
-/// 广告位类型
-@property (nonatomic) enum FSAdType type;
 /// 广告请求超时时间
 @property (nonatomic) NSTimeInterval timeout;
 /// 请求
@@ -1480,7 +1459,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK8FSAdSlot")
 @property (nonatomic) NSUInteger count;
 /// 对外暴露的额外配置数据（只读）
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull extra;
-- (nonnull instancetype)initWithSlotID:(NSString * _Nonnull)slotID type:(enum FSAdType)type OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSlotID:(NSString * _Nonnull)slotID OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1549,9 +1528,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic, readonly, copy) NSString * _Nullable dspName;
 @property (nonatomic, readonly, copy) NSString * _Nullable dspID;
 @property (nonatomic, readonly, copy) NSString * _Nullable sid;
-@property (nonatomic, readonly, copy) NSString * _Nullable maxCPM;
-@property (nonatomic, readonly, copy) NSString * _Nullable minCPM;
-@property (nonatomic, readonly, copy) NSString * _Nullable realCPM;
 @property (nonatomic, readonly) uint32_t dealType;
 @property (nonatomic, readonly) BOOL disableCpmFilter;
 @property (nonatomic, readonly) NSInteger shakeSensitivity;
@@ -1642,16 +1618,12 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK14FSMaterialMeta")
 
 @class FSNativeAdRelatedView;
 @protocol FSNativeAdDelegate;
-@class FSTwinAd;
 @class UIView;
 
 /// 支持自定义样式的广告
 SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 @interface FSNativeAd : FSUnionAd
 @property (nonatomic, readonly, weak) FSNativeAdRelatedView * _Nullable nativeAdRelatedView;
-@property (nonatomic) uint32_t realCpm;
-@property (nonatomic) uint32_t maxCpm;
-@property (nonatomic) uint32_t minCpm;
 /// 素材
 @property (nonatomic, readonly, strong) FSMaterialMeta * _Nonnull material;
 @property (nonatomic, readonly) double createTime;
@@ -1660,7 +1632,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 /// Action method includes is ‘presentViewController’.
 @property (nonatomic, weak) UIViewController * _Nullable rootViewController;
 @property (nonatomic, weak) id <FSNativeAdDelegate> _Nullable delegate;
-@property (nonatomic, strong) FSTwinAd * _Nullable twinAd;
 /// 注册可点击views
 /// \param containerView adView 对应的容器
 ///
@@ -1675,6 +1646,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -1815,6 +1787,7 @@ typedef SWIFT_ENUM(NSInteger, FSNativeExpressType, open) {
   FSNativeExpressTypeBanner = 1,
   FSNativeExpressTypeSmallBanner = 2,
   FSNativeExpressTypeFull = 3,
+  FSNativeExpressTypeMidBanner = 4,
 };
 
 typedef SWIFT_ENUM(NSInteger, FSPlayerPlayState, open) {
@@ -1886,10 +1859,10 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSSplashAd")
 @end
 
 
+
 @interface FSSplashAd (SWIFT_EXTENSION(FSUnionAdSDK))
 - (NSString * _Nonnull)price SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 
@@ -1956,6 +1929,8 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 
 
 
+
+
 @class UIButton;
 
 /// 自渲染feed流视频播放组件
@@ -2002,6 +1977,9 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSXIDModel")
 
 
 
+
+
+
 /// 图片信息类
 SWIFT_CLASS("_TtC12FSUnionAdSDK9WfAdImage")
 @interface WfAdImage : NSObject
@@ -2020,7 +1998,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class AVAssetResourceLoader;
 @class AVAssetResourceLoadingRequest;
 
@@ -2028,6 +2005,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (BOOL)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest SWIFT_WARN_UNUSED_RESULT;
 - (void)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest;
 @end
+
 
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK17WfVideoPlayerView")

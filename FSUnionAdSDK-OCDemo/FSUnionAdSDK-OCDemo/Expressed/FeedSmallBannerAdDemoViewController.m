@@ -40,7 +40,7 @@
 
 #pragma mark - private
 - (void)_loadAdWithSlotID:(NSString *)slotID {
-    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:slotID type:FSAdTypeNativeExpress];
+    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:slotID];
     FSNativeExpressFeedsAd *ad = [[FSNativeExpressFeedsAd alloc] initWithSlot:slot];
     ad.expressType = FSNativeExpressTypeSmallBanner;
     ad.delegate = self;

@@ -41,7 +41,7 @@
 
 #pragma mark - private
 - (void)_loadAd {
-    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text type:FSAdTypeSplash];
+    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text];
     self.splashAd = [[FSSplashAd alloc] initWithSlot:slot];
     self.splashAd.delegate = self;
     [self.splashAd loadAdData];

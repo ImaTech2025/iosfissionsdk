@@ -35,7 +35,7 @@
 
 #pragma mark - private
 - (void)_loadAdWithSlotID:(NSString *)slotID {
-    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:slotID type:FSAdTypeNativeExpress];
+    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:slotID];
     
     // 半屏弹窗样式
     [slot addRequestParamWithKey:FSAdParamsKey.landStyle

@@ -41,7 +41,7 @@
         return;
     }
     
-    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text type:FSAdTypeInterstitial];
+    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text];
     slot.timeout = 5.0;
     FSInterstitialAd *ad = [[FSInterstitialAd alloc] initWithSlot:slot];
     ad.videoMuted = _muted;
@@ -67,7 +67,7 @@
         return;
     }
     
-    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text type:FSAdTypeInterstitial];
+    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text];
     FSInterstitialAd *ad = [[FSInterstitialAd alloc] initWithSlot:slot];
     ad.videoMuted = _muted;
     ad.delegate = self;

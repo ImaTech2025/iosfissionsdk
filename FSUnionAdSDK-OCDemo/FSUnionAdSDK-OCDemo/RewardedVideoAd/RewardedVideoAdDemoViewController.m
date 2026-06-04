@@ -36,7 +36,7 @@
 }
 
 - (IBAction)loadButtonClick:(UIButton *)sender {
-    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text type:FSAdTypeReward];
+    FSAdSlot *slot = [[FSAdSlot alloc] initWithSlotID:self.slotIDTextField.text];
     FSRewardedAd *rewardedAd = [[FSRewardedAd alloc] initWithSlot:slot];
     rewardedAd.delegate = self;
     [rewardedAd loadAdData];

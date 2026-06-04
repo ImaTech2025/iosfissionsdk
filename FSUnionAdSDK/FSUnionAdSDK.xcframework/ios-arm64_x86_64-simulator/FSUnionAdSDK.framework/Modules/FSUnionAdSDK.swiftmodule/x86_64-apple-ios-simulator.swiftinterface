@@ -210,15 +210,11 @@ public enum WfNativeAdInteractionStyle : Swift.Int {
     get
   }
   public var interactionStyle: FSUnionAdSDK.WfNativeAdInteractionStyle
-  @objc public var realCpm: Swift.UInt32
-  @objc public var maxCpm: Swift.UInt32
-  @objc public var minCpm: Swift.UInt32
   @objc final public let material: FSUnionAdSDK.FSMaterialMeta
   @objc final public let createTime: Swift.Double
   @objc weak public var rootViewController: UIKit.UIViewController?
   @objc weak public var delegate: (any FSUnionAdSDK.FSNativeAdDelegate)?
   public var expressType: FSUnionAdSDK.FSNativeExpressType?
-  @objc public var twinAd: FSUnionAdSDK.FSTwinAd?
   @objc deinit
   @objc public func registerContainer(_ containerView: UIKit.UIView, withClickableViews clickableViews: [UIKit.UIView])
   @objc override public func loadAdData()
@@ -241,6 +237,7 @@ extension FSUnionAdSDK.FSTwinAd {
   case banner = 1
   case smallBanner = 2
   case full = 3
+  case midBanner = 4
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -272,15 +269,6 @@ public enum FSUnionAdType {
     @objc get
   }
   @objc public var sid: Swift.String? {
-    @objc get
-  }
-  @objc public var maxCPM: Swift.String? {
-    @objc get
-  }
-  @objc public var minCPM: Swift.String? {
-    @objc get
-  }
-  @objc public var realCPM: Swift.String? {
     @objc get
   }
   @objc public var dealType: Swift.UInt32 {
@@ -483,10 +471,6 @@ extension Swift.Array where Element == Swift.UInt8 {
   public init(hex: Swift.String)
   public func toHexString() -> Swift.String
 }
-@objc @_inheritsConvenienceInitializers public class FSAdDifferenceAttribution : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc public protocol FSNativeAdDelegate {
   @objc optional func fs_nativeAdWillVisible(nativeAd: FSUnionAdSDK.FSNativeAd)
   @objc optional func fs_nativeAdDidBecomeVisible(nativeAd: FSUnionAdSDK.FSNativeAd)
@@ -576,7 +560,6 @@ extension FSUnionAdSDK.FSNativeExpressFeedsAd : FSUnionAdSDK.FSNativeAdDelegate 
 }
 @objc @objcMembers public class FSAdSlot : ObjectiveC.NSObject {
   @objc public var slotID: Swift.String
-  @objc public var type: FSUnionAdSDK.FSAdType
   @objc public var timeout: Swift.Double
   @objc public var requestID: Swift.String
   @objc public var count: Swift.UInt
@@ -584,7 +567,7 @@ extension FSUnionAdSDK.FSNativeExpressFeedsAd : FSUnionAdSDK.FSNativeAdDelegate 
     @objc get
     @objc set
   }
-  @objc public init(slotID: Swift.String, type: FSUnionAdSDK.FSAdType)
+  @objc public init(slotID: Swift.String)
   @objc deinit
 }
 extension FSUnionAdSDK.FSAdSlot {
