@@ -25032,8 +25032,7 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -26112,6 +26111,390 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "defaultPreloadByteCount",
+            "printedName": "defaultPreloadByteCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO23defaultPreloadByteCountSivpZ",
+            "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO23defaultPreloadByteCountSivpZ",
+            "moduleName": "FSUnionAdSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO23defaultPreloadByteCountSivgZ",
+                "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO23defaultPreloadByteCountSivgZ",
+                "moduleName": "FSUnionAdSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "PreloadState",
+            "printedName": "PreloadState",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "none",
+                "printedName": "none",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FSUnionAdSDK.WfVideoCacheManager.PreloadState.Type) -> FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PreloadState",
+                        "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                        "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PreloadState",
+                            "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                            "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO4noneyA2EmF",
+                "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO4noneyA2EmF",
+                "moduleName": "FSUnionAdSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "partial",
+                "printedName": "partial",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FSUnionAdSDK.WfVideoCacheManager.PreloadState.Type) -> FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PreloadState",
+                        "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                        "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PreloadState",
+                            "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                            "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO7partialyA2EmF",
+                "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO7partialyA2EmF",
+                "moduleName": "FSUnionAdSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ready",
+                "printedName": "ready",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FSUnionAdSDK.WfVideoCacheManager.PreloadState.Type) -> FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PreloadState",
+                        "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                        "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PreloadState",
+                            "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                            "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO5readyyA2EmF",
+                "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO5readyyA2EmF",
+                "moduleName": "FSUnionAdSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PreloadState",
+                    "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                    "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PreloadState",
+                    "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                    "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO2eeoiySbAE_AEtFZ",
+                "moduleName": "FSUnionAdSDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO9hashValueSivp",
+                "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO9hashValueSivp",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO9hashValueSivg",
+                    "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO9hashValueSivg",
+                    "moduleName": "FSUnionAdSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO4hash4intoys6HasherVz_tF",
+                "moduleName": "FSUnionAdSDK",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO",
+            "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO",
+            "moduleName": "FSUnionAdSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "preloadState",
+            "printedName": "preloadState(for:preloadByteCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PreloadState",
+                "printedName": "FSUnionAdSDK.WfVideoCacheManager.PreloadState",
+                "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12PreloadStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO12preloadState3for0H9ByteCountAC07PreloadI0O10Foundation3URLV_SitFZ",
+            "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO12preloadState3for0H9ByteCountAC07PreloadI0O10Foundation3URLV_SitFZ",
+            "moduleName": "FSUnionAdSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isPreloadReady",
+            "printedName": "isPreloadReady(for:preloadByteCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO14isPreloadReady3for16preloadByteCountSb10Foundation3URLV_SitFZ",
+            "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO14isPreloadReady3for16preloadByteCountSb10Foundation3URLV_SitFZ",
+            "moduleName": "FSUnionAdSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanExpiredCache",
+            "printedName": "cleanExpiredCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FSUnionAdSDK19WfVideoCacheManagerO012cleanExpiredF0yyFZ",
+            "mangledName": "$s12FSUnionAdSDK19WfVideoCacheManagerO012cleanExpiredF0yyFZ",
+            "moduleName": "FSUnionAdSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "calculateCachedSize",
             "printedName": "calculateCachedSize()",
@@ -26624,34 +27007,6 @@
             ],
             "throwing": true,
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "isCache",
-            "printedName": "isCache(url:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FSUnionAdSDK19WfVideoCacheHandlerC02isF03urlSb10Foundation3URLV_tFZ",
-            "mangledName": "$s12FSUnionAdSDK19WfVideoCacheHandlerC02isF03urlSb10Foundation3URLV_tFZ",
-            "moduleName": "FSUnionAdSDK",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -29253,21 +29608,21 @@
       "kind": "StringLiteral",
       "offset": 171,
       "length": 3,
-      "value": "\"0\""
+      "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Generated\/FSAdSDKBuildVersion.FSUnionAdSDK.generated.swift",
       "kind": "StringLiteral",
       "offset": 204,
       "length": 9,
-      "value": "\"1.0.8.0\""
+      "value": "\"1.0.8.1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Generated\/FSAdSDKBuildVersion.FSUnionAdSDK.generated.swift",
       "kind": "IntegerLiteral",
       "offset": 253,
       "length": 7,
-      "value": "1000800"
+      "value": "1000801"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/ImageLoader\/ImageDiskCache.swift",
@@ -33479,77 +33834,84 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 856,
+      "offset": 861,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 961,
+      "offset": 966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1096,
+      "offset": 1101,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 1391,
+      "offset": 1397,
       "length": 6,
       "value": "\"m3u8\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1751,
+      "offset": 1986,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2003,
+      "offset": 2414,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2428,
+      "offset": 2740,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2693,
+      "offset": 3143,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2971,
+      "offset": 3399,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 3040,
+      "offset": 3677,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3746,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfImageDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 3115,
+      "offset": 3821,
       "length": 5,
       "value": "false"
     },
@@ -33605,49 +33967,49 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2372,
+      "offset": 2363,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2628,
+      "offset": 2619,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 2806,
+      "offset": 2797,
       "length": 14,
       "value": "\"com.fs.adsdk\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 2917,
+      "offset": 2908,
       "length": 15,
       "value": "\"present error\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 3422,
+      "offset": 3413,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4333,
+      "offset": 4324,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4349,
+      "offset": 4340,
       "length": 5,
       "value": "false"
     },
@@ -33661,63 +34023,63 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5542,
+      "offset": 5533,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5852,
+      "offset": 5843,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5872,
+      "offset": 5863,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 6140,
+      "offset": 6131,
       "length": 14,
       "value": "\"com.fs.adsdk\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6548,
+      "offset": 6539,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6717,
+      "offset": 6708,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 6903,
+      "offset": 6894,
       "length": 41,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 6941,
+      "offset": 6932,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Splash\/FSSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 6943,
+      "offset": 6934,
       "length": 1,
       "value": "\"\""
     },
@@ -35201,140 +35563,140 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2374,
+      "offset": 2536,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2406,
+      "offset": 2568,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2438,
+      "offset": 2600,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3115,
+      "offset": 3293,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3196,
+      "offset": 3374,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3531,
+      "offset": 3709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 3571,
+      "offset": 3749,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3855,
+      "offset": 4033,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3931,
+      "offset": 4109,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3976,
+      "offset": 4154,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 4021,
+      "offset": 4199,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 4146,
+      "offset": 4324,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 4555,
+      "offset": 4733,
       "length": 20,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 4568,
+      "offset": 4746,
       "length": 5,
       "value": "\" start\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 4838,
+      "offset": 5016,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 4851,
+      "offset": 5029,
       "length": 3,
       "value": "\" end\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5426,
+      "offset": 5604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 5974,
+      "offset": 6152,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 5984,
+      "offset": 6162,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6110,
+      "offset": 6288,
       "length": 4,
       "value": "true"
     },
@@ -35348,98 +35710,98 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 6666,
+      "offset": 6844,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6712,
+      "offset": 6890,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7119,
+      "offset": 7297,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7156,
+      "offset": 7334,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7260,
+      "offset": 7438,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "FloatLiteral",
-      "offset": 7313,
+      "offset": 7491,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7441,
+      "offset": 7619,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7596,
+      "offset": 7774,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7600,
+      "offset": 7778,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10275,
+      "offset": 10453,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10303,
+      "offset": 10481,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10733,
+      "offset": 10911,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 10916,
+      "offset": 11094,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/NativeFeed\/FSNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 10957,
+      "offset": 11135,
       "length": 1,
       "value": "0"
     },
@@ -37119,399 +37481,406 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11129,
+      "offset": 10758,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11155,
+      "offset": 11188,
       "length": 6,
       "value": "\"http\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11163,
+      "offset": 11196,
       "length": 7,
       "value": "\"https\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11228,
+      "offset": 11261,
       "length": 6,
       "value": "\"file\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11384,
+      "offset": 11417,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11434,
+      "offset": 11467,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11478,
+      "offset": 11511,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11753,
+      "offset": 11786,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11978,
+      "offset": 12011,
       "length": 7,
       "value": "\"title\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12109,
+      "offset": 12142,
       "length": 19,
       "value": "\"estimatedProgress\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12322,
+      "offset": 12355,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12380,
+      "offset": 12413,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12386,
+      "offset": 12419,
       "length": 5,
       "value": "\"...\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12584,
+      "offset": 12617,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12621,
+      "offset": 12654,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12693,
+      "offset": 12726,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13018,
+      "offset": 13051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13071,
+      "offset": 13104,
       "length": 8,
       "value": "0x333333"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13220,
+      "offset": 13253,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14820,
+      "offset": 14853,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14963,
+      "offset": 14996,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15078,
+      "offset": 15111,
       "length": 15,
       "value": "\"adx_web_error\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 15224,
+      "offset": 15257,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 15232,
+      "offset": 15265,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 15318,
+      "offset": 15351,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 15326,
+      "offset": 15359,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15332,
+      "offset": 15365,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15397,
+      "offset": 15430,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15463,
+      "offset": 15496,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15562,
+      "offset": 15595,
       "length": 29,
       "value": "\"别慌，出了点小意外\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15683,
+      "offset": 15716,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15832,
+      "offset": 15865,
       "length": 8,
       "value": "0x333333"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15877,
+      "offset": 15910,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15938,
+      "offset": 15971,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16038,
+      "offset": 16071,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16298,
+      "offset": 16331,
       "length": 8,
       "value": "0x666666"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16360,
+      "offset": 16393,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16391,
+      "offset": 16424,
       "length": 50,
       "value": "\"请确认网络连接正常后，再刷新试试\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16522,
+      "offset": 16555,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16584,
+      "offset": 16617,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16688,
+      "offset": 16721,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16770,
+      "offset": 16803,
       "length": 14,
       "value": "\"点击重试\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16824,
+      "offset": 16857,
       "length": 14,
       "value": "\"点击重试\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16895,
+      "offset": 16928,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 16934,
+      "offset": 16967,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16980,
+      "offset": 17013,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17046,
+      "offset": 17079,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17211,
+      "offset": 17244,
       "length": 8,
       "value": "0x0285F0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17284,
+      "offset": 17317,
       "length": 8,
       "value": "0x0285F0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17466,
+      "offset": 17499,
       "length": 8,
       "value": "0x0285F0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 17483,
+      "offset": 17516,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17657,
+      "offset": 17690,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 17663,
+      "offset": 17696,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17702,
+      "offset": 17735,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17706,
+      "offset": 17739,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17710,
+      "offset": 17743,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Common\/WfWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17908,
+      "offset": 17941,
       "length": 4,
       "value": "true"
     },
@@ -37756,938 +38125,938 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2342,
+      "offset": 2947,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2352,
+      "offset": 2957,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2518,
+      "offset": 3123,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2528,
+      "offset": 3133,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2697,
+      "offset": 3302,
       "length": 12,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 2708,
+      "offset": 3313,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2830,
+      "offset": 3451,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3267,
+      "offset": 3888,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3402,
+      "offset": 4023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3520,
+      "offset": 4141,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3610,
+      "offset": 4231,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 4740,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
-      "kind": "Dictionary",
-      "offset": 4784,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4922,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4973,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5015,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5337,
+      "offset": 5361,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "Dictionary",
-      "offset": 5404,
+      "offset": 5405,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5543,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5594,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5636,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5958,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
+      "kind": "Dictionary",
+      "offset": 6025,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 5534,
+      "offset": 6155,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5736,
+      "offset": 6357,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5764,
+      "offset": 6385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5793,
+      "offset": 6414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 5962,
+      "offset": 6583,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7378,
+      "offset": 7999,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7461,
+      "offset": 8082,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7541,
+      "offset": 8162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7625,
+      "offset": 8246,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7831,
+      "offset": 8452,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7878,
+      "offset": 8499,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 8067,
+      "offset": 8688,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 8161,
+      "offset": 8782,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 8208,
+      "offset": 8829,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 8307,
+      "offset": 8928,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8471,
+      "offset": 9092,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8562,
+      "offset": 9183,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8641,
+      "offset": 9262,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 8939,
+      "offset": 9560,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 9047,
+      "offset": 9668,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 9268,
+      "offset": 9889,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 9319,
+      "offset": 9940,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 9426,
+      "offset": 10047,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 9602,
+      "offset": 10223,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 9705,
+      "offset": 10326,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 9821,
+      "offset": 10442,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 9905,
+      "offset": 10526,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10095,
+      "offset": 10716,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10191,
+      "offset": 10812,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 10237,
+      "offset": 10858,
       "length": 27,
       "value": "\"secondary Confirm Visible\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 10369,
+      "offset": 10990,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 10452,
+      "offset": 11073,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10532,
+      "offset": 11153,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 10577,
+      "offset": 11198,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 10606,
+      "offset": 11227,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10631,
+      "offset": 11252,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10689,
+      "offset": 11310,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10730,
+      "offset": 11351,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10868,
+      "offset": 11489,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10895,
+      "offset": 11516,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 11636,
+      "offset": 12257,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 11854,
+      "offset": 12475,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 12013,
+      "offset": 12634,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 12145,
+      "offset": 12766,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 12243,
+      "offset": 12864,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 12375,
+      "offset": 12996,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 12384,
+      "offset": 13005,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14409,
+      "offset": 15030,
       "length": 5,
       "value": "\"cpm\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14434,
+      "offset": 15055,
       "length": 12,
       "value": "\"time_stamp\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14486,
+      "offset": 15107,
       "length": 8,
       "value": "\"adxSid\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14503,
+      "offset": 15124,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14519,
+      "offset": 15140,
       "length": 8,
       "value": "\"slotId\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14539,
+      "offset": 15160,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14555,
+      "offset": 15176,
       "length": 10,
       "value": "\"adxDspId\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14576,
+      "offset": 15197,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14592,
+      "offset": 15213,
       "length": 11,
       "value": "\"requestId\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14631,
+      "offset": 15252,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14647,
+      "offset": 15268,
       "length": 10,
       "value": "\"dsp_name\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 14670,
+      "offset": 15291,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 15092,
+      "offset": 15713,
       "length": 8,
       "value": "\"call_b\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 15115,
+      "offset": 15736,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 15119,
+      "offset": 15740,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 15134,
+      "offset": 15755,
       "length": 12,
       "value": "\"click_type\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 16627,
+      "offset": 17248,
       "length": 50,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 16666,
+      "offset": 17287,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 16671,
+      "offset": 17292,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 16676,
+      "offset": 17297,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 16751,
+      "offset": 17372,
       "length": 41,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 16788,
+      "offset": 17409,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 16791,
+      "offset": 17412,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 16871,
+      "offset": 17492,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 16900,
+      "offset": 17521,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 16902,
+      "offset": 17523,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 16980,
+      "offset": 17601,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 17007,
+      "offset": 17628,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17009,
+      "offset": 17630,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 17125,
+      "offset": 17746,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17134,
+      "offset": 17755,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17140,
+      "offset": 17761,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 17269,
+      "offset": 17890,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 17347,
+      "offset": 17968,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17370,
+      "offset": 17991,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17410,
+      "offset": 18031,
       "length": 37,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 17440,
+      "offset": 18061,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17446,
+      "offset": 18067,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17698,
+      "offset": 18319,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17704,
+      "offset": 18325,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17744,
+      "offset": 18365,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17888,
+      "offset": 18509,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 17965,
+      "offset": 18586,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18101,
+      "offset": 18722,
       "length": 3,
       "value": "\"4\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18192,
+      "offset": 18813,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18240,
+      "offset": 18861,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18418,
+      "offset": 19039,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18536,
+      "offset": 19157,
       "length": 3,
       "value": "\"4\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18635,
+      "offset": 19256,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18691,
+      "offset": 19312,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18767,
+      "offset": 19388,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18826,
+      "offset": 19447,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18913,
+      "offset": 19534,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 18943,
+      "offset": 19564,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 18945,
+      "offset": 19566,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 19082,
+      "offset": 19703,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 19227,
+      "offset": 19848,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 19352,
+      "offset": 19973,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 19397,
+      "offset": 20018,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 19457,
+      "offset": 20078,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "StringLiteral",
-      "offset": 19497,
+      "offset": 20118,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 19760,
+      "offset": 20381,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 19812,
+      "offset": 20433,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 19837,
+      "offset": 20458,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 19966,
+      "offset": 20587,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 20085,
+      "offset": 20706,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 20190,
+      "offset": 20811,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 20272,
+      "offset": 20893,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUnionAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 20313,
+      "offset": 20934,
       "length": 4,
       "value": "true"
     },
@@ -40682,77 +41051,77 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 4275,
+      "offset": 4870,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 4792,
+      "offset": 5432,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 4920,
+      "offset": 5560,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "StringLiteral",
-      "offset": 4950,
+      "offset": 5590,
       "length": 23,
       "value": "\"bytes=\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "StringLiteral",
-      "offset": 4965,
+      "offset": 5605,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "StringLiteral",
-      "offset": 4972,
+      "offset": 5612,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "StringLiteral",
-      "offset": 4995,
+      "offset": 5635,
       "length": 7,
       "value": "\"Range\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "Dictionary",
-      "offset": 5092,
+      "offset": 5732,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 5452,
+      "offset": 6092,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "StringLiteral",
-      "offset": 5723,
+      "offset": 6363,
       "length": 15,
       "value": "\"configuration\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloaderHandler.swift",
       "kind": "StringLiteral",
-      "offset": 5916,
+      "offset": 6556,
       "length": 15,
       "value": "\"configuration\""
     },
@@ -41333,63 +41702,63 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 1979,
+      "offset": 2000,
       "length": 15,
       "value": "\"Content-Range\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 2031,
+      "offset": 2052,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 2044,
+      "offset": 2065,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "IntegerLiteral",
-      "offset": 2060,
+      "offset": 2081,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 2155,
+      "offset": 2176,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 2174,
+      "offset": 2195,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 2285,
+      "offset": 2306,
       "length": 15,
       "value": "\"Accept-Ranges\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "StringLiteral",
-      "offset": 2329,
+      "offset": 2350,
       "length": 7,
       "value": "\"bytes\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Download\/WfVideoDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2341,
+      "offset": 2362,
       "length": 5,
       "value": "false"
     },
@@ -49740,273 +50109,273 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1040,
+      "offset": 1045,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 1223,
+      "offset": 1228,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2085,
+      "offset": 2090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 2674,
+      "offset": 2679,
       "length": 21,
       "value": "\"creat adView failed\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 2815,
+      "offset": 2820,
       "length": 12,
       "value": "\"has showed\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 2920,
+      "offset": 2925,
       "length": 23,
       "value": "\"container view is nil\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 3031,
+      "offset": 3036,
       "length": 16,
       "value": "\"ad data is nil\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3138,
+      "offset": 3143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 3145,
+      "offset": 3150,
       "length": 21,
       "value": "\"adView init failed!\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3311,
+      "offset": 3316,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3778,
+      "offset": 3783,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 5283,
+      "offset": 5288,
       "length": 21,
       "value": "\"creat adView failed\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 5419,
+      "offset": 5424,
       "length": 16,
       "value": "\"ad data is nil\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5526,
+      "offset": 5531,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 5533,
+      "offset": 5538,
       "length": 21,
       "value": "\"adView init failed!\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5703,
+      "offset": 5708,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 892,
       "length": 22,
       "value": "\"FSUnionAdSDK.FSNativeExpressFeedsAd\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 7049,
+      "offset": 7054,
       "length": 14,
       "value": "\"com.fs.adsdk\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7071,
+      "offset": 7076,
       "length": 4,
       "value": "1002"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7514,
+      "offset": 7519,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7680,
+      "offset": 7685,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8157,
+      "offset": 8162,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8206,
+      "offset": 8211,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8262,
+      "offset": 8267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 8562,
+      "offset": 8557,
       "length": 14,
       "value": "\"com.fs.adsdk\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 8584,
+      "offset": 8579,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 8628,
+      "offset": 8623,
       "length": 38,
       "value": "\"请求成功，但暂无广告下发\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 9189,
+      "offset": 9184,
       "length": 14,
       "value": "\"com.fs.adsdk\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 9211,
+      "offset": 9206,
       "length": 4,
       "value": "1002"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "StringLiteral",
-      "offset": 9255,
+      "offset": 9250,
       "length": 32,
       "value": "\"网络异常，请稍后再试\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10576,
+      "offset": 10571,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 11019,
+      "offset": 11014,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "FloatLiteral",
-      "offset": 11956,
+      "offset": 11951,
       "length": 3,
       "value": "9.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "FloatLiteral",
-      "offset": 11962,
+      "offset": 11957,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "FloatLiteral",
-      "offset": 11969,
+      "offset": 11964,
       "length": 4,
       "value": "88.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "FloatLiteral",
-      "offset": 11976,
+      "offset": 11971,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 11983,
+      "offset": 11978,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "FloatLiteral",
-      "offset": 12023,
+      "offset": 12018,
       "length": 3,
       "value": "9.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Express\/FSNativeExpressFeedsAd.swift",
       "kind": "FloatLiteral",
-      "offset": 12029,
+      "offset": 12024,
       "length": 4,
       "value": "16.0"
     },
@@ -50712,57 +51081,57 @@
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 24,
+      "value": "\"com.fs.video.loaderMap\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
       "kind": "Dictionary",
-      "offset": 399,
+      "offset": 499,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
       "kind": "StringLiteral",
-      "offset": 760,
+      "offset": 1075,
       "length": 24,
       "value": "\"me.gesen.player.loader\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 808,
+      "offset": 1123,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
       "kind": "StringLiteral",
-      "offset": 866,
+      "offset": 1181,
       "length": 46,
       "value": "\"Unsupported load request (\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
       "kind": "StringLiteral",
-      "offset": 910,
+      "offset": 1225,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 948,
+      "offset": 1263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1489,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoadManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1563,
+      "offset": 2182,
       "length": 5,
       "value": "false"
     },
@@ -51154,203 +51523,203 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 3418,
+      "offset": 3557,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 3536,
+      "offset": 3675,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 3590,
+      "offset": 3729,
       "length": 12,
       "value": "\"project_id\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 3657,
+      "offset": 3796,
       "length": 18,
       "value": "\"project_ver_code\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 3723,
+      "offset": 3862,
       "length": 18,
       "value": "\"project_ver_name\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 3824,
+      "offset": 3963,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 3881,
+      "offset": 4020,
       "length": 10,
       "value": "\"ver_code\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 3991,
+      "offset": 4130,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4059,
+      "offset": 4198,
       "length": 10,
       "value": "\"ver_name\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4131,
+      "offset": 4270,
       "length": 6,
       "value": "\"suid\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4259,
+      "offset": 4398,
       "length": 14,
       "value": "\"package_name\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4326,
+      "offset": 4465,
       "length": 10,
       "value": "\"language\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4409,
+      "offset": 4548,
       "length": 9,
       "value": "\"carrier\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4485,
+      "offset": 4624,
       "length": 11,
       "value": "\"time_zone\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4569,
+      "offset": 4708,
       "length": 14,
       "value": "\"country_code\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4659,
+      "offset": 4798,
       "length": 13,
       "value": "\"device_name\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4747,
+      "offset": 4886,
       "length": 16,
       "value": "\"device_machine\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4835,
+      "offset": 4974,
       "length": 16,
       "value": "\"system_version\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 4976,
+      "offset": 5115,
       "length": 7,
       "value": "\"longi\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 5022,
+      "offset": 5161,
       "length": 6,
       "value": "\"lati\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 5153,
+      "offset": 5292,
       "length": 6,
       "value": "\"dhid\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 5318,
+      "offset": 5457,
       "length": 6,
       "value": "\"idfa\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 5395,
+      "offset": 5534,
       "length": 12,
       "value": "\"user_agent\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 5471,
+      "offset": 5610,
       "length": 8,
       "value": "\"evt_ts\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5520,
+      "offset": 5659,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 5553,
+      "offset": 5692,
       "length": 11,
       "value": "\"net_model\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 5599,
+      "offset": 5738,
       "length": 3,
       "value": "\"w\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 5605,
+      "offset": 5744,
       "length": 3,
       "value": "\"g\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSAdSDKManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5830,
+      "offset": 5969,
       "length": 1,
       "value": "0"
     },
@@ -58105,182 +58474,182 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 9718,
+      "offset": 9702,
       "length": 18,
       "value": "\"sdk_version_name\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 9794,
+      "offset": 9778,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 9859,
+      "offset": 9843,
       "length": 12,
       "value": "\"source_app\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10059,
+      "offset": 10043,
       "length": 11,
       "value": "\"wifi_ssid\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10101,
+      "offset": 10085,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10130,
+      "offset": 10114,
       "length": 9,
       "value": "\"carrier\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10202,
+      "offset": 10186,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 10271,
+      "offset": 10255,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10335,
+      "offset": 10319,
       "length": 9,
       "value": "\"network\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10530,
+      "offset": 10514,
       "length": 10,
       "value": "\"is_https\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 10544,
+      "offset": 10528,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10575,
+      "offset": 10559,
       "length": 14,
       "value": "\"is_recommend\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10672,
+      "offset": 10656,
       "length": 14,
       "value": "\"is_teen_mode\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10765,
+      "offset": 10749,
       "length": 14,
       "value": "\"request_type\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 10783,
+      "offset": 10767,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 10820,
+      "offset": 10804,
       "length": 25,
       "value": "\"support_wechat_mini_app\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 11035,
+      "offset": 11019,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 11080,
+      "offset": 11064,
       "length": 15,
       "value": "\"fs.session.id\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 11100,
+      "offset": 11084,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 11132,
+      "offset": 11116,
       "length": 9,
       "value": "\"session\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 11362,
+      "offset": 11346,
       "length": 11,
       "value": "\"longitude\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 11413,
+      "offset": 11397,
       "length": 10,
       "value": "\"latitude\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 11462,
+      "offset": 11446,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 11472,
+      "offset": 11456,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "StringLiteral",
-      "offset": 11493,
+      "offset": 11477,
       "length": 5,
       "value": "\"geo\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Network\/Requests\/AdRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 12832,
+      "offset": 12816,
       "length": 1,
       "value": "0"
     },
@@ -59643,13 +60012,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoLoader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 892,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSTimerCloseButton.swift",
       "kind": "FloatLiteral",
       "offset": 319,
@@ -59847,64 +60209,50 @@
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 481,
-      "length": 4,
-      "value": "1024"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 488,
-      "length": 4,
-      "value": "1024"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 673,
+      "offset": 696,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
       "kind": "Array",
-      "offset": 716,
+      "offset": 739,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1097,
+      "offset": 1120,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1199,
+      "offset": 1222,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1609,
+      "offset": 1736,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1862,
+      "offset": 2074,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoPreloadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2591,
+      "offset": 3069,
       "length": 1,
       "value": "0"
     },
@@ -60310,121 +60658,268 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1450,
+      "offset": 1801,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1519,
+      "offset": 1870,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1786,
+      "offset": 2137,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2074,
+      "offset": 2425,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2299,
+      "offset": 2650,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2392,
+      "offset": 2743,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2470,
+      "offset": 2821,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2603,
+      "offset": 2954,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2830,
+      "offset": 3181,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 3789,
+      "offset": 4140,
       "length": 23,
       "value": "\"me.gesen.player.cache\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 3840,
+      "offset": 4191,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 3902,
+      "offset": 4253,
       "length": 23,
       "value": "\"Failed to create file\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 196,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 203,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 210,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 298,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 308,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
       "kind": "StringLiteral",
-      "offset": 185,
-      "length": 10,
-      "value": "\"WKPlayer\""
+      "offset": 386,
+      "length": 29,
+      "value": "\"com.fs.video.diskCacheQueue\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "StringLiteral",
+      "offset": 499,
+      "length": 5,
+      "value": "\"cfg\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "StringLiteral",
+      "offset": 552,
+      "length": 5,
+      "value": "\"mp4\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "StringLiteral",
+      "offset": 810,
+      "length": 14,
+      "value": "\"FSVideoCache\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1307,
+      "length": 20,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1326,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1671,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1678,
+      "length": 4,
+      "value": "1024"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
       "kind": "Array",
-      "offset": 1049,
+      "offset": 3782,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1096,
+      "offset": 3829,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1279,
+      "offset": 4012,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5055,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "Array",
+      "offset": 5785,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5819,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6847,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7822,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8391,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVAssetResourceLoadingRequest+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 464,
-      "length": 2,
-      "value": "\"\""
+      "kind": "BooleanLiteral",
+      "offset": 409,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Core\/FSUserDefaults.swift",
@@ -60492,23 +60987,44 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoRequestLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 963,
+      "offset": 1098,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoRequestLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1109,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoRequestLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoRequestLoader.swift",
       "kind": "StringLiteral",
-      "offset": 1430,
+      "offset": 1780,
       "length": 24,
       "value": "\"me.gesen.player.loader\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoRequestLoader.swift",
       "kind": "StringLiteral",
-      "offset": 1553,
+      "offset": 1903,
       "length": 32,
       "value": "\"Video load request is canceled\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Loader\/WfVideoRequestLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3805,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdBottomView.swift",
@@ -61458,112 +61974,84 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 817,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1824,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1996,
-      "length": 29,
-      "value": "\"An error occurred: \""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2024,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2050,
+      "offset": 457,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 2163,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2205,
+      "offset": 968,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "Array",
-      "offset": 2351,
+      "offset": 1705,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 2583,
+      "offset": 1937,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 2930,
+      "offset": 2284,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 3379,
+      "offset": 2733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "Array",
-      "offset": 3602,
+      "offset": 2956,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 3778,
+      "offset": 3132,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 4835,
+      "offset": 4189,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 5611,
+      "offset": 5261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 5903,
+      "offset": 5477,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Cache\/WfVideoCacheHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6003,
       "length": 4,
       "value": "true"
     },
@@ -62333,149 +62821,128 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 1069,
-      "length": 9,
-      "value": "\"loader-\""
+      "offset": 1252,
+      "length": 12,
+      "value": "\"streaming-\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 1373,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1606,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1675,
-      "length": 4,
-      "value": "1024"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1682,
-      "length": 3,
-      "value": "768"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1904,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 2079,
-      "length": 24,
-      "value": "\"me.gesen.player.loader\""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2127,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 2185,
-      "length": 63,
-      "value": "\"Wrong url \""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 2217,
-      "length": 9,
-      "value": "\"，unable to initialize Loader\""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 2384,
-      "length": 6,
-      "value": "\"m3u8\""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 2573,
+      "offset": 1469,
       "length": 6,
       "value": "\".mp4\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 2680,
+      "offset": 1701,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1747,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2469,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2538,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2545,
+      "length": 3,
+      "value": "768"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2718,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2952,
+      "length": 6,
+      "value": "\"m3u8\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3238,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3394,
       "length": 24,
       "value": "\"me.gesen.player.loader\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2728,
+      "offset": 3442,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 2786,
+      "offset": 3500,
       "length": 63,
       "value": "\"Wrong url \""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 2818,
+      "offset": 3532,
       "length": 9,
       "value": "\"，unable to initialize Loader\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3277,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3349,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 4180,
+      "length": 24,
+      "value": "\"me.gesen.player.loader\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3521,
-      "length": 1,
-      "value": "0"
+      "offset": 4228,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3525,
-      "length": 4,
-      "value": "true"
+      "kind": "StringLiteral",
+      "offset": 4286,
+      "length": 63,
+      "value": "\"Wrong url \""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/WKPlayerSwift\/Classes\/Extension\/WfAVPlayerItem+Extensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3532,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 4318,
+      "length": 9,
+      "value": "\"，unable to initialize Loader\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/Vendors\/Extensions\/Date+Extensions.swift",

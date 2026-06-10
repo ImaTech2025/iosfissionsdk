@@ -761,6 +761,20 @@ public struct WfVideoCacheConfiguration : Swift.Codable {
 public enum WfVideoCacheManager {
   public static func cachedFilePath(for url: Foundation.URL) -> Swift.String
   public static func cachedConfiguration(for url: Foundation.URL) throws -> FSUnionAdSDK.WfVideoCacheConfiguration
+  public static let defaultPreloadByteCount: Swift.Int
+  public enum PreloadState {
+    case none
+    case partial
+    case ready
+    public static func == (a: FSUnionAdSDK.WfVideoCacheManager.PreloadState, b: FSUnionAdSDK.WfVideoCacheManager.PreloadState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func preloadState(for url: Foundation.URL, preloadByteCount: Swift.Int = defaultPreloadByteCount) -> FSUnionAdSDK.WfVideoCacheManager.PreloadState
+  public static func isPreloadReady(for url: Foundation.URL, preloadByteCount: Swift.Int = defaultPreloadByteCount) -> Swift.Bool
+  public static func cleanExpiredCache()
   public static func calculateCachedSize() -> Swift.UInt
   public static func cleanAllCache() throws
 }
@@ -781,7 +795,6 @@ extension FSUnionAdSDK.WfVideoPreloadMultiManager {
 public class WfVideoCacheHandler {
   public init(url: Foundation.URL) throws
   @objc deinit
-  public class func isCache(url: Foundation.URL) -> Swift.Bool
   public func cache(data: Foundation.Data, for range: Foundation.NSRange) -> Swift.Bool
 }
 extension AVFoundation.AVPlayerItem {
@@ -834,3 +847,5 @@ extension FSUnionAdSDK.FSAdType : Swift.RawRepresentable {}
 extension FSUnionAdSDK.WfAdFeedMode : Swift.Equatable {}
 extension FSUnionAdSDK.WfAdFeedMode : Swift.Hashable {}
 extension FSUnionAdSDK.WfAdFeedMode : Swift.RawRepresentable {}
+extension FSUnionAdSDK.WfVideoCacheManager.PreloadState : Swift.Equatable {}
+extension FSUnionAdSDK.WfVideoCacheManager.PreloadState : Swift.Hashable {}
