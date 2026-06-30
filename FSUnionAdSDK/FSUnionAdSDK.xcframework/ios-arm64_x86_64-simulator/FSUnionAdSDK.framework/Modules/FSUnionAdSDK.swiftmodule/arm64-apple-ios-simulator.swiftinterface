@@ -50,6 +50,9 @@ extension AVFoundation.AVPlayer {
     get
   }
   convenience public init(asset: AVFoundation.AVURLAsset)
+  public var percentPlayProgress: Swift.Int32 {
+    get
+  }
   public func getFirstFrameFromVideo() -> UIKit.UIImage?
 }
 @objc public protocol FSInterstitialAdDelegate : ObjectiveC.NSObjectProtocol {
@@ -712,6 +715,7 @@ public enum WfAdFeedMode : Swift.Int {
   @objc @_Concurrency.MainActor(unsafe) public func replay()
   @objc @_Concurrency.MainActor(unsafe) public func destroy()
   @objc @_Concurrency.MainActor(unsafe) public func pause()
+  @objc @_Concurrency.MainActor(unsafe) public func pauseWhenNoFocus()
   @objc @_Concurrency.MainActor(unsafe) public func play()
   @objc deinit
 }

@@ -818,10 +818,10 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSSplashAd")
 @end
 
 
-
 @interface FSSplashAd (SWIFT_EXTENSION(FSUnionAdSDK))
 - (NSString * _Nonnull)price SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
@@ -890,6 +890,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 
 
 
+
 @class UIButton;
 
 /// 自渲染feed流视频播放组件
@@ -910,6 +911,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK13FSVideoAdView")
 - (void)replay;
 - (void)destroy;
 - (void)pause;
+- (void)pauseWhenNoFocus;
 - (void)play;
 @end
 
@@ -925,6 +927,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSXIDModel")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -957,6 +960,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class AVAssetResourceLoader;
 @class AVAssetResourceLoadingRequest;
 
@@ -964,7 +968,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (BOOL)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest SWIFT_WARN_UNUSED_RESULT;
 - (void)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest;
 @end
-
 
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK17WfVideoPlayerView")
