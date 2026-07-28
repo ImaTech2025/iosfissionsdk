@@ -264,6 +264,36 @@ public enum FSUnionAdType {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class FSBiddingExtraInfoKey : ObjectiveC.NSObject {
+  @objc public static let winSDKType: Swift.String
+  @objc public static let winTitle: Swift.String
+  @objc public static let winPackageName: Swift.String
+  @objc public static let loseReason: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum FSBiddingLoseReason : Swift.Int {
+  case lowPrice = 1
+  case timeOut = 2
+  case floorFilter = 3
+  case other = 10001
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FSBiddingWinSDKType : Swift.Int {
+  case pangle = 1
+  case baidu = 2
+  case gdt = 4
+  case adx = 6
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers public class FSUnionAd : ObjectiveC.NSObject {
   @objc public var dspName: Swift.String? {
     @objc get
@@ -839,6 +869,12 @@ extension FSUnionAdSDK.FSNativeExpressType : Swift.RawRepresentable {}
 extension FSUnionAdSDK.FSAdClickType : Swift.Equatable {}
 extension FSUnionAdSDK.FSAdClickType : Swift.Hashable {}
 extension FSUnionAdSDK.FSAdClickType : Swift.RawRepresentable {}
+extension FSUnionAdSDK.FSBiddingLoseReason : Swift.Equatable {}
+extension FSUnionAdSDK.FSBiddingLoseReason : Swift.Hashable {}
+extension FSUnionAdSDK.FSBiddingLoseReason : Swift.RawRepresentable {}
+extension FSUnionAdSDK.FSBiddingWinSDKType : Swift.Equatable {}
+extension FSUnionAdSDK.FSBiddingWinSDKType : Swift.Hashable {}
+extension FSUnionAdSDK.FSBiddingWinSDKType : Swift.RawRepresentable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.Equatable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.Hashable {}
 extension FSUnionAdSDK.WfVideoPlayerView.PausedReason : Swift.RawRepresentable {}

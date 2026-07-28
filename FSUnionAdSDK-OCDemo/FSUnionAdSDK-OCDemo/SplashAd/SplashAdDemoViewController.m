@@ -72,10 +72,18 @@
     [self _loadAd];
 }
 
-
 #pragma mark - FSSplashAdDelegate
 - (void)fs_splashAdLoadSuccess:(FSSplashAd *)ad {
     NSLog(@"splashAdDemo: %s",__FUNCTION__);
+    
+    // 竞价失败上报，单位分
+    [ad loseWithWinPrice:@"1000"
+            extraWinInfo:@{
+        // 失败原因
+        FSBiddingExtraInfoKey.loseReason: @(FSBiddingLoseReasonTimeOut),
+        // 竞胜 SDK 类型
+        FSBiddingExtraInfoKey.winSDKType: @(FSBiddingWinSDKTypeBaidu)
+    }];
 }
 
 - (void)fs_splashAdLoadFailed:(FSSplashAd *)ad error:(NSError *)error {

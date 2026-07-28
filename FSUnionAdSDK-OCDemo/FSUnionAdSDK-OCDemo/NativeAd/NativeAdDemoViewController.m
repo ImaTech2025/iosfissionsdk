@@ -129,6 +129,7 @@
 }
 
 - (void)show {
+    
     if (self.nativeAd.material.isVideo) {
         [self.adRelatedView refreshData:self.nativeAd];
         FSVideoAdView *videoAdView = self.adRelatedView.videoAdView;

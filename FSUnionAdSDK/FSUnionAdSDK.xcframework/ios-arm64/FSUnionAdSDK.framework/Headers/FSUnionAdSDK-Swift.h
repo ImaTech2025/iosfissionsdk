@@ -482,6 +482,41 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK5FSApp")
 @end
 
 
+/// 竞价失败 <code>extraWinInfo</code> 公开 key（OC / Swift 均可使用）
+SWIFT_CLASS("_TtC12FSUnionAdSDK21FSBiddingExtraInfoKey")
+@interface FSBiddingExtraInfoKey : NSObject
+/// 竞胜方 SDK 类型，值为 <code>win_sdk_type</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull winSDKType;)
++ (NSString * _Nonnull)winSDKType SWIFT_WARN_UNUSED_RESULT;
+/// 竞胜广告标题，值为 <code>win_title</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull winTitle;)
++ (NSString * _Nonnull)winTitle SWIFT_WARN_UNUSED_RESULT;
+/// 竞胜广告包名，值为 <code>win_package_name</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull winPackageName;)
++ (NSString * _Nonnull)winPackageName SWIFT_WARN_UNUSED_RESULT;
+/// 竞价失败原因，值为 <code>lose_reason</code>（对应 <code>FSBiddingLoseReason.rawValue</code>）
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull loseReason;)
++ (NSString * _Nonnull)loseReason SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// 竞价失败原因
+typedef SWIFT_ENUM(NSInteger, FSBiddingLoseReason, open) {
+  FSBiddingLoseReasonLowPrice = 1,
+  FSBiddingLoseReasonTimeOut = 2,
+  FSBiddingLoseReasonFloorFilter = 3,
+  FSBiddingLoseReasonOther = 10001,
+};
+
+/// 竞胜方 SDK 类型（extraWinInfo[FSBiddingExtraInfoKey.winSDKType] 取值）
+typedef SWIFT_ENUM(NSInteger, FSBiddingWinSDKType, open) {
+  FSBiddingWinSDKTypePangle = 1,
+  FSBiddingWinSDKTypeBaidu = 2,
+  FSBiddingWinSDKTypeGdt = 4,
+  FSBiddingWinSDKTypeAdx = 6,
+};
+
+
 SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @interface FSUnionAd : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable dspName;
