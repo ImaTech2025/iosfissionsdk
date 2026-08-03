@@ -646,6 +646,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 
 
 
+
 SWIFT_PROTOCOL("_TtP12FSUnionAdSDK18FSNativeAdDelegate_")
 @protocol FSNativeAdDelegate
 @optional
@@ -667,6 +668,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK20FSNativeAdMotionView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 @class UIImageView;
 @class UILabel;
@@ -995,7 +997,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class AVAssetResourceLoader;
 @class AVAssetResourceLoadingRequest;
 
@@ -1003,6 +1004,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (BOOL)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest SWIFT_WARN_UNUSED_RESULT;
 - (void)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest;
 @end
+
 
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK17WfVideoPlayerView")
@@ -1725,6 +1727,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSNativeAd")
 
 
 
+
 SWIFT_PROTOCOL("_TtP12FSUnionAdSDK18FSNativeAdDelegate_")
 @protocol FSNativeAdDelegate
 @optional
@@ -1746,6 +1749,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK20FSNativeAdMotionView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 @class UIImageView;
 @class UILabel;
@@ -2074,7 +2078,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class AVAssetResourceLoader;
 @class AVAssetResourceLoadingRequest;
 
@@ -2082,6 +2085,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (BOOL)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest SWIFT_WARN_UNUSED_RESULT;
 - (void)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest;
 @end
+
 
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK17WfVideoPlayerView")
