@@ -30,6 +30,20 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+public enum TouchClickTriggerMode {
+  case immediate
+  case onRelease
+  public static func == (a: FSUnionAdSDK.TouchClickTriggerMode, b: FSUnionAdSDK.TouchClickTriggerMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct FSTouchClickConfig {
+  public var distanceThreshold: CoreFoundation.CGFloat
+  public var triggerMode: FSUnionAdSDK.TouchClickTriggerMode
+  public init(distanceThreshold: CoreFoundation.CGFloat = 15, triggerMode: FSUnionAdSDK.TouchClickTriggerMode = .immediate)
+}
 extension AVFoundation.AVPlayer {
   public var bufferProgress: Swift.Double {
     get
@@ -223,6 +237,22 @@ public enum WfNativeAdInteractionStyle : Swift.Int {
   @objc override public func loadAdData()
   @objc public func price() -> Swift.String
   @objc public func handleClick(view: UIKit.UIView)
+}
+@objc @_Concurrency.MainActor(unsafe) final public class FSTouchClickGesture : UIKit.UIGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) final public var config: FSUnionAdSDK.FSTouchClickConfig {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var onTrigger: ((_ start: CoreFoundation.CGPoint, _ end: CoreFoundation.CGPoint) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public init(config: FSUnionAdSDK.FSTouchClickConfig = FSTouchClickConfig(), onTrigger: ((_ start: CoreFoundation.CGPoint, _ end: CoreFoundation.CGPoint) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override final public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func canPrevent(_ preventedGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func canBePrevented(by preventingGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class FSTwinAd : FSUnionAdSDK.FSNativeAd {
   @objc public var adView: FSUnionAdSDK.FSTwinAdView?
@@ -848,6 +878,8 @@ extension AVFoundation.AVPlayerItem {
     get
   }
 }
+extension FSUnionAdSDK.TouchClickTriggerMode : Swift.Equatable {}
+extension FSUnionAdSDK.TouchClickTriggerMode : Swift.Hashable {}
 extension FSUnionAdSDK.FSSplashAdCloseType : Swift.Equatable {}
 extension FSUnionAdSDK.FSSplashAdCloseType : Swift.Hashable {}
 extension FSUnionAdSDK.FSSplashAdCloseType : Swift.RawRepresentable {}

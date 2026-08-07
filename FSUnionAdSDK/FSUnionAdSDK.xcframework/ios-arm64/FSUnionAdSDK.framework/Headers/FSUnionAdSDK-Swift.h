@@ -897,6 +897,25 @@ SWIFT_PROTOCOL("_TtP12FSUnionAdSDK18FSSplashAdDelegate_")
 - (void)fs_splashAdDidCloseOtherController:(FSSplashAd * _Nonnull)ad interactionType:(enum FSAdInteractionType)interactionType;
 @end
 
+@class UITouch;
+@class UIEvent;
+
+/// 触摸点击手势
+/// 用户触摸广告视图并滑动达到阈值后识别为”触摸点击”，
+/// 与 scrollView 的 panGesture 同时识别，不影响列表正常滚动。
+SWIFT_CLASS("_TtC12FSUnionAdSDK19FSTouchClickGesture")
+@interface FSTouchClickGesture : UIGestureRecognizer
+- (void)reset;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nonnull)event;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nonnull)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nonnull)event;
+- (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nonnull)event;
+/// 手势识别后仍把触摸事件继续传递给 view，保证广告内交互（按钮等）正常工作
+- (BOOL)canPreventGestureRecognizer:(UIGestureRecognizer * _Nonnull)preventedGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)canBePreventedByGestureRecognizer:(UIGestureRecognizer * _Nonnull)preventingGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithTarget:(id _Nullable)target action:(SEL _Nullable)action SWIFT_UNAVAILABLE;
+@end
+
 @class FSTwinAdView;
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK8FSTwinAd")
@@ -910,7 +929,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK8FSTwinAd")
 - (void)render;
 @end
 
-@class UIEvent;
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 @interface FSTwinAdView : UIView
@@ -979,6 +997,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSXIDModel")
 
 
 
+
 /// 图片信息类
 SWIFT_CLASS("_TtC12FSUnionAdSDK9WfAdImage")
 @interface WfAdImage : NSObject
@@ -997,6 +1016,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class AVAssetResourceLoader;
 @class AVAssetResourceLoadingRequest;
 
@@ -1004,7 +1024,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (BOOL)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest SWIFT_WARN_UNUSED_RESULT;
 - (void)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest;
 @end
-
 
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK17WfVideoPlayerView")
