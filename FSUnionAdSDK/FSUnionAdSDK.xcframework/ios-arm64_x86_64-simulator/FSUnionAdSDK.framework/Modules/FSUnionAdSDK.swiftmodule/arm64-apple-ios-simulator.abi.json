@@ -39141,546 +39141,567 @@
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8149,
+      "offset": 8203,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8798,
+      "offset": 8698,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9122,
+      "offset": 9022,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9246,
+      "offset": 9146,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9355,
+      "offset": 9255,
       "length": 37,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
+      "offset": 9270,
+      "length": 21,
+      "value": "\"秒后可领取奖励\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9295,
+      "length": 17,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9310,
+      "length": 1,
+      "value": "\"s\""
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "BooleanLiteral",
       "offset": 9370,
-      "length": 21,
-      "value": "\"秒后可领取奖励\""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 9395,
-      "length": 17,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 9410,
-      "length": 1,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9470,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9564,
+      "offset": 9464,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9579,
+      "offset": 9479,
       "length": 1,
       "value": "\"s\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9656,
+      "offset": 9556,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9668,
+      "offset": 9568,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9799,
+      "offset": 9699,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9839,
+      "offset": 9739,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9932,
+      "offset": 9832,
       "length": 37,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9947,
+      "offset": 9847,
       "length": 21,
       "value": "\"秒后可领取奖励\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9972,
+      "offset": 9872,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9987,
+      "offset": 9887,
       "length": 1,
       "value": "\"s\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10066,
+      "offset": 9966,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10081,
+      "offset": 9981,
       "length": 1,
       "value": "\"s\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10152,
+      "offset": 10052,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10225,
+      "offset": 10125,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10373,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12040,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12257,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12344,
+      "offset": 10273,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12534,
+      "offset": 11123,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11217,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12347,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12564,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12651,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12841,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13005,
+      "offset": 13312,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13075,
+      "offset": 13382,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13084,
+      "offset": 13391,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13757,
+      "offset": 14064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13900,
+      "offset": 14207,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 14008,
+      "offset": 14315,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14078,
+      "offset": 14385,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14147,
+      "offset": 14454,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14267,
+      "offset": 14574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 14427,
+      "offset": 14734,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 14530,
+      "offset": 14837,
       "length": 5,
       "value": "-16.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14615,
+      "offset": 14922,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14724,
+      "offset": 15031,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 14881,
+      "offset": 15188,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 14981,
+      "offset": 15288,
       "length": 5,
       "value": "-16.0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15063,
+      "offset": 15370,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15164,
+      "offset": 15471,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15313,
+      "offset": 15620,
       "length": 3,
       "value": "-10"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15756,
+      "offset": 16063,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15765,
+      "offset": 16072,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15959,
+      "offset": 16380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16090,
+      "offset": 16563,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16417,
+      "offset": 16723,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17050,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17245,
+      "offset": 17878,
       "length": 14,
       "value": "\"com.fs.adsdk\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17267,
+      "offset": 17900,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17310,
+      "offset": 17943,
       "length": 17,
       "value": "\"imageURL is nil\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17532,
+      "offset": 18165,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17599,
+      "offset": 18232,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18666,
+      "offset": 19299,
       "length": 35,
       "value": "\"video nature size: \""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18700,
+      "offset": 19333,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18857,
+      "offset": 19490,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18913,
+      "offset": 19546,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19534,
+      "offset": 20167,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19590,
+      "offset": 20223,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20433,
+      "offset": 21066,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21262,
+      "offset": 21895,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22102,
+      "offset": 22735,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22527,
+      "offset": 23160,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22577,
+      "offset": 23210,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22624,
+      "offset": 23257,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22672,
+      "offset": 23305,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24039,
+      "offset": 24720,
       "length": 55,
       "value": "\"player error: \""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24087,
+      "offset": 24768,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24093,
+      "offset": 24774,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24188,
+      "offset": 24869,
       "length": 14,
       "value": "\"com.fs.adsdk\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 24210,
+      "offset": 24891,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24253,
+      "offset": 24934,
       "length": 15,
       "value": "\"player failed\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24419,
+      "offset": 25100,
       "length": 30,
       "value": "\"player state: \""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24448,
+      "offset": 25129,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yoser\/Desktop\/SDK_Build_Dir\/FSUnionAdSDK\/FSUnionAdSDK\/Source\/RewardedVideo\/FSRewardedAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24684,
+      "offset": 25318,
       "length": 13,
       "value": "\"play finish\""
     },
