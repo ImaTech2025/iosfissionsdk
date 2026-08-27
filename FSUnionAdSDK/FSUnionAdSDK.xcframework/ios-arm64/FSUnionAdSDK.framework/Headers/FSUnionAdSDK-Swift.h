@@ -527,6 +527,8 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic, readonly) NSInteger shakeSensitivity;
 @property (nonatomic, readonly) enum FSAdInteractionType interactionType;
 @property (nonatomic) enum FSAdClickType clickType;
+/// 静音开关
+@property (nonatomic) BOOL videoMuted;
 - (void)win;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice extraWinInfo:(NSDictionary<NSString *, id> * _Nonnull)extraWinInfo;
@@ -540,10 +542,10 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 SWIFT_CLASS("_TtC12FSUnionAdSDK16FSInterstitialAd")
 @interface FSInterstitialAd : FSUnionAd
 @property (nonatomic, weak) id <FSInterstitialAdDelegate> _Nullable delegate;
-@property (nonatomic) BOOL videoMuted;
 @property (nonatomic, readonly, strong) FSAdSlot * _Nonnull slot;
 @property (nonatomic) NSTimeInterval timeout;
 - (NSString * _Nonnull)price SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL videoMuted;
 - (nonnull instancetype)initWithSlot:(FSAdSlot * _Nonnull)slot OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAdData;
 - (void)showAdFromRootViewController:(UIViewController * _Nonnull)rootViewController;
@@ -800,6 +802,7 @@ typedef SWIFT_ENUM(NSInteger, FSPlayerPlayState, open) {
 SWIFT_CLASS("_TtC12FSUnionAdSDK12FSRewardedAd")
 @interface FSRewardedAd : FSUnionAd
 @property (nonatomic, weak) id <FSRewardedAdDelegate> _Nullable delegate;
+@property (nonatomic) BOOL videoMuted;
 - (nonnull instancetype)initWithSlot:(FSAdSlot * _Nonnull)slot OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAdData;
 - (void)showAdFromRootViewController:(UIViewController * _Nullable)rootViewController;

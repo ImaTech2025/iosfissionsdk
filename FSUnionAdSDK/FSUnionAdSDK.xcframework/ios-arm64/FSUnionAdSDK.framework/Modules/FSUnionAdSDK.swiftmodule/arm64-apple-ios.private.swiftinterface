@@ -84,16 +84,16 @@ extension AVFoundation.AVPlayer {
 }
 @objc @objcMembers public class FSInterstitialAd : FSUnionAdSDK.FSUnionAd {
   @objc weak public var delegate: (any FSUnionAdSDK.FSInterstitialAdDelegate)?
-  @objc public var videoMuted: Swift.Bool {
-    @objc get
-    @objc set
-  }
   @objc final public let slot: FSUnionAdSDK.FSAdSlot
   @objc public var timeout: Swift.Double {
     @objc get
     @objc set
   }
   @objc public func price() -> Swift.String
+  @objc override public var videoMuted: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc deinit
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc override public func loadAdData()
@@ -347,6 +347,10 @@ public enum FSUnionAdType {
     @objc get
   }
   @objc public var clickType: FSUnionAdSDK.FSAdClickType
+  @objc public var videoMuted: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc deinit
   @objc public func win()
   @objc public func lose(winPrice: Swift.String)
@@ -689,6 +693,10 @@ extension FSUnionAdSDK.WfVideoLoadManager : AVFoundation.AVAssetResourceLoaderDe
 @objc public class FSRewardedAd : FSUnionAdSDK.FSUnionAd {
   @objc weak public var delegate: (any FSUnionAdSDK.FSRewardedAdDelegate)?
   final public let slot: FSUnionAdSDK.FSAdSlot
+  @objc override public var videoMuted: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc deinit
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc override public func loadAdData()
