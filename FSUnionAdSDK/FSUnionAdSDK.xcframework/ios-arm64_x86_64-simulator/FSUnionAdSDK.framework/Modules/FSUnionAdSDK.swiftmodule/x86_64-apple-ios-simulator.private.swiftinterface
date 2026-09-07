@@ -18,6 +18,7 @@ import Foundation
 import Network
 import NetworkExtension
 import OSLog
+import ObjectiveC
 import SQLite3
 import Security
 import StoreKit
@@ -30,6 +31,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+import ObjectiveC.runtime
 public enum TouchClickTriggerMode {
   case immediate
   case onRelease

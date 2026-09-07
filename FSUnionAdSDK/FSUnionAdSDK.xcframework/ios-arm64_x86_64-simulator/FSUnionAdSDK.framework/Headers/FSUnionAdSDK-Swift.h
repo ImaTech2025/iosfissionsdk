@@ -949,6 +949,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 
 
 
+
 @class UIButton;
 
 /// 自渲染feed流视频播放组件
@@ -2042,6 +2043,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK12FSTwinAdView")
 - (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 
