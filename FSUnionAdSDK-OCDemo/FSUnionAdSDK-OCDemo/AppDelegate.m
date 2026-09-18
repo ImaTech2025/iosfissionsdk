@@ -30,6 +30,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // initialize AD SDK
+    
     [self setupFSAdSDK];
     
     // fetch IDFA

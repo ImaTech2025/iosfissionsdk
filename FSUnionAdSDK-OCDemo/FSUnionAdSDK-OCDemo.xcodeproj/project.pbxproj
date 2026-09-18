@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FC60A49305A895100736993 /* FSUnionAdSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC60A48305A895100736993 /* FSUnionAdSDK.xcframework */; };
+		1FC60A4A305A895100736993 /* FSUnionAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1FC60A47305A895100736993 /* FSUnionAdSDK.bundle */; };
 		4F7B5417E7635AD272B23099 /* Pods_FSUnionAdSDK_OCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4117487D67822AC0D1054EF /* Pods_FSUnionAdSDK_OCDemo.framework */; };
 		5707267E2C9A7B400003F34F /* DemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5707267D2C9A7B400003F34F /* DemoMainViewController.m */; };
 		570726862C9A7C140003F34F /* InterstitialAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570726852C9A7C140003F34F /* InterstitialAdDemoViewController.m */; };
@@ -14,7 +16,6 @@
 		5707268F2C9A7C5C0003F34F /* NativeAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5707268E2C9A7C5C0003F34F /* NativeAdDemoViewController.m */; };
 		570726922C9A7D3B0003F34F /* AdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570726912C9A7D3B0003F34F /* AdDemoViewController.m */; };
 		5707272B2C9BC6380003F34F /* FeedBannerAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5707272A2C9BC6380003F34F /* FeedBannerAdDemoViewController.m */; };
-		573DD0D12CF982CA00C11004 /* FSUnionAdSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BADAC42CC1587E005E1DBD /* FSUnionAdSDK.xcframework */; };
 		573DD0D72CF9845300C11004 /* RewardedVideoAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573DD0D62CF9845300C11004 /* RewardedVideoAdDemoViewController.m */; };
 		579CB4E72C9707DA00E7FCC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 579CB4E62C9707DA00E7FCC8 /* AppDelegate.m */; };
 		579CB4EA2C9707DA00E7FCC8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 579CB4E92C9707DA00E7FCC8 /* SceneDelegate.m */; };
@@ -25,7 +26,6 @@
 		57AC3C2D2CB7A97E00F7ED71 /* FSUnionAdSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5710A3582C9716AC00B579F5 /* FSUnionAdSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57AE2E3A2CF9851500A94E13 /* FeedFullAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AE2E392CF9851500A94E13 /* FeedFullAdDemoViewController.m */; };
 		57BADABE2CC15820005E1DBD /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BADABD2CC15820005E1DBD /* empty.swift */; };
-		57BADAC62CC1587E005E1DBD /* FSUnionAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57BADAC32CC1587E005E1DBD /* FSUnionAdSDK.bundle */; };
 		57E9C2032E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E9C2022E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.m */; };
 		ADA16B8450833F8D1A9F892A /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
@@ -45,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FC60A47305A895100736993 /* FSUnionAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FSUnionAdSDK.bundle; sourceTree = "<group>"; };
+		1FC60A48305A895100736993 /* FSUnionAdSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FSUnionAdSDK.xcframework; sourceTree = "<group>"; };
 		5707267C2C9A7B400003F34F /* DemoMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoMainViewController.h; sourceTree = "<group>"; };
 		5707267D2C9A7B400003F34F /* DemoMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMainViewController.m; sourceTree = "<group>"; };
 		570726842C9A7C140003F34F /* InterstitialAdDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialAdDemoViewController.h; sourceTree = "<group>"; };
@@ -73,8 +75,6 @@
 		57AE2E382CF9851500A94E13 /* FeedFullAdDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedFullAdDemoViewController.h; sourceTree = "<group>"; };
 		57AE2E392CF9851500A94E13 /* FeedFullAdDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedFullAdDemoViewController.m; sourceTree = "<group>"; };
 		57BADABD2CC15820005E1DBD /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
-		57BADAC32CC1587E005E1DBD /* FSUnionAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FSUnionAdSDK.bundle; sourceTree = "<group>"; };
-		57BADAC42CC1587E005E1DBD /* FSUnionAdSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FSUnionAdSDK.xcframework; sourceTree = "<group>"; };
 		57E9C2012E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedSmallBannerAdDemoViewController.h; sourceTree = "<group>"; };
 		57E9C2022E5DB0310098DCC9 /* FeedSmallBannerAdDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedSmallBannerAdDemoViewController.m; sourceTree = "<group>"; };
 		57FDD3D72CA488A600196E05 /* FSUnionAdSDK_WK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSUnionAdSDK_WK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,8 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				573DD0D12CF982CA00C11004 /* FSUnionAdSDK.xcframework in Frameworks */,
 				ADA16B8450833F8D1A9F892A /* (null) in Frameworks */,
+				1FC60A49305A895100736993 /* FSUnionAdSDK.xcframework in Frameworks */,
 				4F7B5417E7635AD272B23099 /* Pods_FSUnionAdSDK_OCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,8 +216,8 @@
 		57BADAC52CC1587E005E1DBD /* FSUnionAdSDK */ = {
 			isa = PBXGroup;
 			children = (
-				57BADAC32CC1587E005E1DBD /* FSUnionAdSDK.bundle */,
-				57BADAC42CC1587E005E1DBD /* FSUnionAdSDK.xcframework */,
+				1FC60A47305A895100736993 /* FSUnionAdSDK.bundle */,
+				1FC60A48305A895100736993 /* FSUnionAdSDK.xcframework */,
 			);
 			name = FSUnionAdSDK;
 			path = ../../FSUnionAdSDK;
@@ -284,7 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57BADAC62CC1587E005E1DBD /* FSUnionAdSDK.bundle in Resources */,
+				1FC60A4A305A895100736993 /* FSUnionAdSDK.bundle in Resources */,
 				579CB4F22C9707DB00E7FCC8 /* Assets.xcassets in Resources */,
 				579CB4F52C9707DB00E7FCC8 /* Base in Resources */,
 				579CB4F02C9707DA00E7FCC8 /* Base in Resources */,
@@ -518,7 +518,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -564,7 +564,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
