@@ -503,7 +503,10 @@ extension FSUnionAdSDK.WfVideoPlayerView.State : Swift.Equatable {
     @objc get
     @objc set
   }
-  @objc public var xids: [FSUnionAdSDK.FSXIDModel]?
+  @objc public var xids: [FSUnionAdSDK.FSXIDModel]? {
+    @objc get
+    @objc set
+  }
   @objc public var extraUserData: [Swift.String : Swift.AnyHashable]?
   @objc public var personalRecommend: Swift.Bool
   @objc public var teenagerModel: Swift.Bool
