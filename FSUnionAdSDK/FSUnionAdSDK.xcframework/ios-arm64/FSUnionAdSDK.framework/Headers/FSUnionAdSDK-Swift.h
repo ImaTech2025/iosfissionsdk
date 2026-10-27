@@ -522,6 +522,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic, readonly, copy) NSString * _Nullable dspName;
 @property (nonatomic, readonly, copy) NSString * _Nullable dspID;
 @property (nonatomic, readonly, copy) NSString * _Nullable sid;
+@property (nonatomic, readonly, copy) NSString * _Nullable enECPM;
 @property (nonatomic, readonly) uint32_t dealType;
 @property (nonatomic, readonly) BOOL disableCpmFilter;
 @property (nonatomic, readonly) NSInteger shakeSensitivity;

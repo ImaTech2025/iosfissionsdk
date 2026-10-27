@@ -336,6 +336,9 @@ public enum FSUnionAdType {
   @objc public var sid: Swift.String? {
     @objc get
   }
+  @objc public var enECPM: Swift.String? {
+    @objc get
+  }
   @objc public var dealType: Swift.UInt32 {
     @objc get
   }
