@@ -371,7 +371,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic, copy) NSArray<FSXIDModel *> * _Nullable xids;
 /// 自定义参数
 @property (nonatomic, copy) NSDictionary<NSString *, NSObject *> * _Nullable extraUserData;
-/// 个性化推荐开关  默认 false
+/// 个性化推荐开关  默认 true
 @property (nonatomic) BOOL personalRecommend;
 /// 青少年模式 默认 false
 @property (nonatomic) BOOL teenagerModel;
@@ -1476,7 +1476,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FSAdSDKConfi
 @property (nonatomic, copy) NSArray<FSXIDModel *> * _Nullable xids;
 /// 自定义参数
 @property (nonatomic, copy) NSDictionary<NSString *, NSObject *> * _Nullable extraUserData;
-/// 个性化推荐开关  默认 false
+/// 个性化推荐开关  默认 true
 @property (nonatomic) BOOL personalRecommend;
 /// 青少年模式 默认 false
 @property (nonatomic) BOOL teenagerModel;
