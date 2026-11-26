@@ -338,6 +338,13 @@ typedef SWIFT_ENUM(NSUInteger, FSAdLandStyle, open) {
   FSAdLandStyleSheet = 1,
 };
 
+typedef SWIFT_ENUM(NSInteger, FSAdLoadType, open) {
+  FSAdLoadTypeCacheOnly = 4,
+  FSAdLoadTypeRealtime = 1,
+  FSAdLoadTypeCacheFirst = 2,
+  FSAdLoadTypeRealtimeCache = 3,
+};
+
 @class NSString;
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK13FSAdParamsKey")
@@ -530,11 +537,12 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK9FSUnionAd")
 @property (nonatomic) enum FSAdClickType clickType;
 /// 静音开关
 @property (nonatomic) BOOL videoMuted;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)win;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice;
 - (void)loseWithWinPrice:(NSString * _Nonnull)winPrice extraWinInfo:(NSDictionary<NSString *, id> * _Nonnull)extraWinInfo;
 - (void)loadAdData;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)loadAdCache;
 @end
 
 @protocol FSInterstitialAdDelegate;
@@ -549,6 +557,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK16FSInterstitialAd")
 @property (nonatomic) BOOL videoMuted;
 - (nonnull instancetype)initWithSlot:(FSAdSlot * _Nonnull)slot OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAdData;
+- (void)loadAdCache;
 - (void)showAdFromRootViewController:(UIViewController * _Nonnull)rootViewController;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -697,6 +706,8 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18FSNativeAdsManager")
 - (nonnull instancetype)initWithSlot:(FSAdSlot * _Nonnull)slot OBJC_DESIGNATED_INITIALIZER;
 /// 请求广告
 - (void)loadAd;
+/// 请求缓存广告
+- (void)loadAdCache;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -806,6 +817,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK12FSRewardedAd")
 @property (nonatomic) BOOL videoMuted;
 - (nonnull instancetype)initWithSlot:(FSAdSlot * _Nonnull)slot OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAdData;
+- (void)loadAdCache;
 - (void)showAdFromRootViewController:(UIViewController * _Nullable)rootViewController;
 - (NSString * _Nonnull)price SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -853,17 +865,18 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK10FSSplashAd")
 @property (nonatomic, strong) UIView * _Nullable bottomView;
 - (nonnull instancetype)initWithSlot:(FSAdSlot * _Nonnull)slot OBJC_DESIGNATED_INITIALIZER;
 - (void)loadAdData;
+- (void)loadAdCache;
 - (void)showSplashIn:(UIViewController * _Nonnull)rootViewController bottomView:(UIView * _Nullable)bottomView;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
+
+
 @interface FSSplashAd (SWIFT_EXTENSION(FSUnionAdSDK))
 - (NSString * _Nonnull)price SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 
@@ -1021,7 +1034,6 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class AVAssetResourceLoader;
 @class AVAssetResourceLoadingRequest;
 
@@ -1029,6 +1041,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK18WfVideoLoadManager")
 - (BOOL)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest SWIFT_WARN_UNUSED_RESULT;
 - (void)resourceLoader:(AVAssetResourceLoader * _Nonnull)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest * _Nonnull)loadingRequest;
 @end
+
 
 
 SWIFT_CLASS("_TtC12FSUnionAdSDK17WfVideoPlayerView")
@@ -1078,9 +1091,12 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK21WfVideoPreloadManager")
 
 
 
+
 SWIFT_PROTOCOL("_TtP12FSUnionAdSDK29WfVideoPreloadManagerDelegate_")
 @protocol WfVideoPreloadManagerDelegate <NSObject>
 - (void)videoPreloadManagerDidFinish:(WfVideoPreloadManager * _Nonnull)preloadManager;
+@optional
+- (void)videoPreloadManager:(WfVideoPreloadManager * _Nonnull)preloadManager didFailWithError:(NSError * _Nonnull)error;
 @end
 
 
@@ -1092,6 +1108,7 @@ SWIFT_CLASS("_TtC12FSUnionAdSDK26WfVideoPreloadMultiManager")
 
 @interface WfVideoPreloadMultiManager (SWIFT_EXTENSION(FSUnionAdSDK)) <WfVideoPreloadManagerDelegate>
 - (void)videoPreloadManagerDidFinish:(WfVideoPreloadManager * _Nonnull)preloadManager;
+- (void)videoPreloadManager:(WfVideoPreloadManager * _Nonnull)preloadManager didFailWithError:(NSError * _Nonnull)error;
 @end
 
 

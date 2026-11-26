@@ -8,6 +8,7 @@ import AppTrackingTransparency
 import SystemConfiguration.CaptiveNetwork
 import CommonCrypto
 import Compression
+import CoreFoundation
 import CoreLocation
 import CoreMedia
 import CoreMotion
@@ -18,7 +19,6 @@ import Foundation
 import Network
 import NetworkExtension
 import OSLog
-import ObjectiveC
 import SQLite3
 import Security
 import StoreKit
@@ -31,7 +31,6 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-import ObjectiveC.runtime
 public enum TouchClickTriggerMode {
   case immediate
   case onRelease
@@ -99,6 +98,7 @@ extension AVFoundation.AVPlayer {
   @objc deinit
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc override public func loadAdData()
+  @objc override public func loadAdCache()
   @objc public func showAdFromRootViewController(_ rootViewController: UIKit.UIViewController)
 }
 @_hasMissingDesignatedInitializers public class XIDHelper {
@@ -145,6 +145,7 @@ extension AVFoundation.AVPlayer {
   @objc deinit
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc override public func loadAdData()
+  @objc override public func loadAdCache()
   @objc public func showSplash(in rootViewController: UIKit.UIViewController, bottomView: UIKit.UIView?)
 }
 extension FSUnionAdSDK.FSSplashAd {
@@ -179,6 +180,7 @@ extension FSUnionAdSDK.WfNetwork {
   final public let slot: FSUnionAdSDK.FSAdSlot!
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc public func loadAd()
+  @objc public func loadAdCache()
   @objc deinit
 }
 public enum WfNativeAdDealType : Swift.Int {
@@ -356,12 +358,13 @@ public enum FSUnionAdType {
     @objc get
     @objc set
   }
+  @objc override dynamic public init()
   @objc deinit
   @objc public func win()
   @objc public func lose(winPrice: Swift.String)
   @objc public func lose(winPrice: Swift.String, extraWinInfo: [Swift.String : Any])
   @objc public func loadAdData()
-  @objc override dynamic public init()
+  @objc public func loadAdCache()
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FSTwinAdView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
@@ -708,6 +711,7 @@ extension FSUnionAdSDK.WfVideoLoadManager : AVFoundation.AVAssetResourceLoaderDe
   @objc deinit
   @objc public init(slot: FSUnionAdSDK.FSAdSlot)
   @objc override public func loadAdData()
+  @objc override public func loadAdCache()
   @objc public func showAdFromRootViewController(_ rootViewController: UIKit.UIViewController?)
   @objc public func price() -> Swift.String
 }
@@ -717,6 +721,17 @@ extension FSUnionAdSDK.WfVideoLoadManager : AVFoundation.AVAssetResourceLoaderDe
   @objc public static func startWithCompletionHandler(_ completionHandler: ((Swift.Bool, (any Swift.Error)?) -> Swift.Void)?)
   @objc override dynamic public init()
   @objc deinit
+}
+@objc public enum FSAdLoadType : Swift.Int {
+  case cacheOnly = 4
+  case realtime = 1
+  case cacheFirst = 2
+  case realtimeCache = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public enum WfAdFeedMode : Swift.Int {
   case WfAdFeedModeUnspecified
@@ -811,6 +826,7 @@ public enum AdConfigRequestError : Swift.Error, Foundation.LocalizedError {
 }
 @objc public protocol WfVideoPreloadManagerDelegate : ObjectiveC.NSObjectProtocol {
   @objc func videoPreloadManagerDidFinish(_ preloadManager: FSUnionAdSDK.WfVideoPreloadManager)
+  @objc optional func videoPreloadManager(_ preloadManager: FSUnionAdSDK.WfVideoPreloadManager, didFailWithError error: any Swift.Error)
 }
 @objc @_inheritsConvenienceInitializers public class WfVideoPreloadManager : ObjectiveC.NSObject {
   final public let delegates: Foundation.NSPointerArray
@@ -865,6 +881,7 @@ public enum WfVideoCacheManager {
 }
 extension FSUnionAdSDK.WfVideoPreloadMultiManager : FSUnionAdSDK.WfVideoPreloadManagerDelegate {
   @objc dynamic public func videoPreloadManagerDidFinish(_ preloadManager: FSUnionAdSDK.WfVideoPreloadManager)
+  @objc dynamic public func videoPreloadManager(_ preloadManager: FSUnionAdSDK.WfVideoPreloadManager, didFailWithError error: any Swift.Error)
 }
 extension FSUnionAdSDK.WfVideoPreloadMultiManager {
   public func addManager(_ manager: FSUnionAdSDK.WfVideoPreloadManager, withURLString URLString: Swift.String)
@@ -932,6 +949,9 @@ extension FSUnionAdSDK.FSAdLandStyle : Swift.RawRepresentable {}
 extension FSUnionAdSDK.FSAdType : Swift.Equatable {}
 extension FSUnionAdSDK.FSAdType : Swift.Hashable {}
 extension FSUnionAdSDK.FSAdType : Swift.RawRepresentable {}
+extension FSUnionAdSDK.FSAdLoadType : Swift.Equatable {}
+extension FSUnionAdSDK.FSAdLoadType : Swift.Hashable {}
+extension FSUnionAdSDK.FSAdLoadType : Swift.RawRepresentable {}
 extension FSUnionAdSDK.WfAdFeedMode : Swift.Equatable {}
 extension FSUnionAdSDK.WfAdFeedMode : Swift.Hashable {}
 extension FSUnionAdSDK.WfAdFeedMode : Swift.RawRepresentable {}
